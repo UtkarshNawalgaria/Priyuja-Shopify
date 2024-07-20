@@ -1,0 +1,397 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_AnVpxQ": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "PREMIUM ZARI\nEXCLUSIVE",
+            "title_size": 65,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Show More",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/hero-banner.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "PRIYUJA\nNEW ARRIVALS",
+            "title_size": 65,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "SHOW MORE",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/hero-baner-3.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_q8g4af": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Shop Banarsi",
+            "title": "HANDLOOM SILK",
+            "title_size": 65,
+            "subheading": "",
+            "link": "",
+            "link_text": "SHOW MORE",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/hero-baner-2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_AnVpxQ",
+        "slideshow-1",
+        "image_q8g4af"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "400px",
+        "parallax": true,
+        "style": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "new_list_collections_w4Dxha": {
+      "type": "new-list-collections",
+      "blocks": {
+        "collection_eyXhNg": {
+          "type": "collection",
+          "settings": {
+            "collection": "katan-silk"
+          }
+        },
+        "collection_XG9eY8": {
+          "type": "collection",
+          "settings": {
+            "collection": "georgette-silk"
+          }
+        },
+        "collection_Fkr4fM": {
+          "type": "collection",
+          "settings": {
+            "collection": "organza-silk"
+          }
+        },
+        "collection_LKmjkx": {
+          "type": "collection",
+          "settings": {
+            "collection": "tissue-silk"
+          }
+        }
+      },
+      "block_order": [
+        "collection_eyXhNg",
+        "collection_XG9eY8",
+        "collection_Fkr4fM",
+        "collection_LKmjkx"
+      ],
+      "settings": {
+        "title_enable": true,
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "grid": "4"
+      }
+    },
+    "new_featured_collection_NnhHd7": {
+      "type": "new-featured-collection",
+      "blocks": {
+        "tab_6fPiEy": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Festive",
+            "collection": "festive"
+          }
+        },
+        "tab_gJNKxq": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Pujas",
+            "collection": "pujas"
+          }
+        },
+        "tab_i7wwnr": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Wedding",
+            "collection": "wedding"
+          }
+        },
+        "tab_iDixTr": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Formal",
+            "collection": "formal"
+          }
+        }
+      },
+      "block_order": [
+        "tab_6fPiEy",
+        "tab_gJNKxq",
+        "tab_i7wwnr",
+        "tab_iDixTr"
+      ],
+      "settings": {
+        "title": "Shop by Occasion",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_t96KiT": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "home_featured_products": "new-arrivals",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "promo_grid_L7fehF": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_9WUgtb": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/2_c8a4b7a1-01d7-4e9e-b03c-2c0a0289148e.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 400,
+            "text_size": 100,
+            "text_align": "vertical-top horizontal-left",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "advanced_aCpqL8": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/1_1772fc1b-0cc4-4418-bc4c-a2d362e3b82a.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 400,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_9WUgtb",
+        "advanced_aCpqL8"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false,
+        "lazyload_images": false
+      }
+    },
+    "featured_collection_89bA7T": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "featured",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "silk_mark_dJBjk6": {
+      "type": "silk-mark",
+      "settings": {
+        "title": "silk-mark",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collections_9LHmBF": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_BCxTbT": {
+          "type": "collection",
+          "settings": {
+            "collection": "kadwa",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_XFMJAU": {
+          "type": "collection",
+          "settings": {
+            "collection": "jangla",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_kYC6fL": {
+          "type": "collection",
+          "settings": {
+            "collection": "kadiyal",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_eXUPgr": {
+          "type": "collection",
+          "settings": {
+            "collection": "meenakari",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_BCxTbT",
+        "collection_XFMJAU",
+        "collection_kYC6fL",
+        "collection_eXUPgr"
+      ],
+      "settings": {
+        "title": "Shop by weaves",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "featured_collection_iLYJh9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Best Seller",
+        "home_featured_products": "bestsellers",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_a3LDDP": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Trending Now",
+        "home_featured_products": "trending-now",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "our_journey_AFktkQ": {
+      "type": "our-journey",
+      "disabled": true,
+      "settings": {
+        "title": "Our Journey",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "blog_posts_TpkNXz": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": true,
+        "view_all": true,
+        "blog_image_size": "landscape",
+        "divider": false
+      }
+    },
+    "17191198064dfa0775": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_ePxNrf": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Follow @priyuja on Instagram",
+            "title_color": "",
+            "alignment": "center",
+            "margin_bottom": 0,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_ePxNrf"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "new_list_collections_w4Dxha",
+    "new_featured_collection_NnhHd7",
+    "featured_collection_t96KiT",
+    "promo_grid_L7fehF",
+    "featured_collection_89bA7T",
+    "silk_mark_dJBjk6",
+    "featured_collections_9LHmBF",
+    "featured_collection_iLYJh9",
+    "featured_collection_a3LDDP",
+    "our_journey_AFktkQ",
+    "blog_posts_TpkNXz",
+    "17191198064dfa0775"
+  ]
+}
