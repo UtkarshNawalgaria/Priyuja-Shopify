@@ -69,13 +69,13 @@
   {% unless isModal %}
     data-history="true"
   {% endunless %}
-  data-modal="{{ isModal }}">
+  data-modal="{{ isModal }}"
+>
 
   {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
 
   <div class="page-content page-content--product">
     <div class="page-width">
-
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky">
@@ -145,8 +145,6 @@
               {%- endif -%}
             </div>
 
-
-
             <div data-product-blocks>
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
               {%- for block in blocks -%}
@@ -190,8 +188,9 @@
                         <span
                           data-a11y-price
                           class="visually-hidden"
-                          aria-hidden="{{ hide_sale_price }}">
-                            {{ 'products.general.regular_price' | t }}
+                          aria-hidden="{{ hide_sale_price }}"
+                        >
+                          {{ 'products.general.regular_price' | t }}
                         </span>
                         <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
                           <span data-compare-price class="product__price product__price--compare">
@@ -206,7 +205,8 @@
                       {%- endif -%}
 
                       <span data-product-price
-                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
+                      >
                         {%- unless product.empty? -%}
                           {{ current_variant.price | money }}
                         {%- else -%}
@@ -226,13 +226,10 @@
                           {%- endunless -%}
                         </span>
                       {%- endif -%}
-
-
-
-
                       <div
                         data-unit-price-wrapper
-                        class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}">
+                        class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}"
+                      >
                         {%- capture unit_price_base_unit -%}
                           <span data-unit-base>
                             {%- if current_variant.unit_price_measurement -%}
@@ -259,9 +256,9 @@
                       {%- endif -%}
                     </div>
 
-              {% if product.metafields.discount != blank %}
-  {{ product.metafields.discount }}
-{% endif %}
+                    {% if product.metafields.discount != blank %}
+                      {{ product.metafields.discount }}
+                    {% endif %}
 
 
                   {%- when 'quantity_selector' -%}
@@ -396,6 +393,27 @@
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {%- render 'product-complementary', block: block, product: product, type: 'block', image_style: block.settings.image_style -%}
                     </div>
+                  {%- when 'related_products' -%}
+                    {% assign related_products = product.metafields.custom.related_products.value %}
+                    {% assign related_products_count = related_products | reverse | reverse | size %}
+
+                    {% if related_products_count > 0 %}
+                      <div class="product-block related-products" {{ block.shopify_attributes }}>
+                        {% if block.settings.heading %}
+                          <p class="related-products__title">{{ block.settings.heading }}</p>
+                        {% endif %}
+                        <div class="products_list">
+                          {%- for _product in related_products -%}
+                            {% assign first_image = _product.media[0] %}
+                            <div class="related-products__item">
+                              <a href="{{ _product.url }}">
+                                {{ first_image | image_url: height: 100 | image_tag }}
+                              </a>
+                            </div>
+                          {%- endfor -%}
+                        </div>
+                      </div>
+                    {% endif %}
                   {%- when 'trust_badge' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="aos-animate" style="max-width: {{ block.settings.trust_image.width }}px; margin: 0 auto;">
@@ -448,9 +466,11 @@
 
                 {%- endcase -%}
               {%- else -%}
-                <div data-blocks-holder
-                     data-url="{{ product.url | within: collection }}"
-                     data-template="{{ product.template_suffix }}">
+                <div
+                  data-blocks-holder
+                  data-url="{{ product.url | within: collection }}"
+                  data-template="{{ product.template_suffix }}"
+                >
                   <div class="placeholder-content" style="min-height: 86px;"></div>
                 </div>
               {%- endfor -%}

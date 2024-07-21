@@ -168,7 +168,7 @@
         "home_featured_products": "new-arrivals",
         "per_row": 4,
         "rows": 1,
-        "mobile_scrollable": true,
+        "mobile_scrollable": false,
         "view_all": true,
         "divider": false
       }
@@ -238,7 +238,7 @@
         "home_featured_products": "featured",
         "per_row": 4,
         "rows": 1,
-        "mobile_scrollable": true,
+        "mobile_scrollable": false,
         "view_all": false,
         "divider": false
       }
@@ -311,7 +311,7 @@
         "home_featured_products": "bestsellers",
         "per_row": 4,
         "rows": 1,
-        "mobile_scrollable": true,
+        "mobile_scrollable": false,
         "view_all": true,
         "divider": false
       }
@@ -323,20 +323,7 @@
         "home_featured_products": "trending-now",
         "per_row": 4,
         "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "our_journey_AFktkQ": {
-      "type": "our-journey",
-      "disabled": true,
-      "settings": {
-        "title": "Our Journey",
-        "home_featured_products": "",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
+        "mobile_scrollable": false,
         "view_all": true,
         "divider": false
       }
@@ -366,6 +353,7 @@
             "title_color": "",
             "alignment": "center",
             "margin_bottom": 0,
+            "margin_sides": 20,
             "html_area": ""
           }
         }
@@ -390,7 +378,6 @@
     "featured_collections_9LHmBF",
     "featured_collection_iLYJh9",
     "featured_collection_a3LDDP",
-    "our_journey_AFktkQ",
     "blog_posts_TpkNXz",
     "17191198064dfa0775"
   ]
