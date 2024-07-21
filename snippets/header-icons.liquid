@@ -1,5 +1,8 @@
 <div class="site-nav">
   <div class="site-nav__icons">
+    {% comment %}
+    
+    {% endcomment %}
     {%- if shop.customer_accounts_enabled -%}
       <a class="site-nav__link site-nav__link--icon small--hide" href="{{ routes.account_url }}">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" fill="none" viewBox="0 0 28 28" stroke-width="1.5" stroke="currentColor" class="icon icon-user">
@@ -23,7 +26,7 @@
         <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
       </button>
     {%- endif -%}
-
+    
     {%- if settings.search_enable -%}
       <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header{% if section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-split' %} medium-up--hide{% endif %}">
         <svg  aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" fill="none" viewBox="0 0 28 28" stroke-width="1.5" stroke="currentColor" class="icon icon-search">
