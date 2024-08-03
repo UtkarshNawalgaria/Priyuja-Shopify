@@ -128,7 +128,7 @@ box-shadow: 0 0 0 12px #fff, 12px 1px 58px rgba(0, 0, 0, .14);
 }
 .btn--secondary, .btn, .Know-more-btn{
   background:#A91C0C; 
-  border-radius:10px;
+  border-radius:5px;
   color:#fff;
   font-weight:500;
   font-size:16px;
@@ -546,4 +546,73 @@ padding:0 4px
 
 .wishlist-hero-list-header-login {
   font-size: 14px !important;
+}
+
+.grid-product {
+  position: relative;
+}
+
+.wishlist-hero-page-header {
+  margin-top: 50px;
+}
+
+.btn--secondary {
+  max-width: 48%;
+  transition: 0.4s;
+  border-radius: 6px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  line-height: 2.7rem;
+  min-height: 3rem !important;
+  max-height: 3rem;
+}
+
+.payment-buttons .shopify-payment-button {
+  margin: 0;
+}
+.wallet-button-fade-in .shopify-payment-button__button {
+  min-height: 3rem !important;
+  max-height: 3rem;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+}
+.product__quantity {
+  display: flex;
+  justify-content: space-around;
+  max-width: 180px;
+  align-content: center;
+}
+label:not(.variant__button-label):not(.text-label) {
+  font-size: 0.8em;
+  margin: 0;
+  line-height: 2.25rem;
+}
+.payment-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+.add-to-cart.btn--secondary {
+  border-color: #a91c0c;
+}
+h1.product-single__title {
+  text-transform: capitalize !important;
+  font-weight: 600;
+  font-size: 32px;
+}
+@media screen and (max-width: 767px) {
+  h1.product-single__title {
+    font-size: 22px;
+  }
+
+  .product-block--price .product__price {
+    font-size: 16px;
+  }
 }

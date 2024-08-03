@@ -158,7 +158,8 @@
         "rows": 1,
         "mobile_scrollable": true,
         "view_all": true,
-        "divider": false
+        "divider": false,
+        "background_color": "#FAEEE6"
       }
     },
     "featured_collection_t96KiT": {
@@ -171,6 +172,23 @@
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
+      }
+    },
+    "background_image_text_tUJmJc": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Your_paragraph_text_8416e881-6950-46b4-9714-cfa4c9104d33.png",
+        "layout": "right",
+        "height": 550,
+        "framed": false,
+        "parallax": false,
+        "parallax_direction": "top",
+        "lazyload_images": true
       }
     },
     "promo_grid_L7fehF": {
@@ -223,6 +241,7 @@
         "advanced_9WUgtb",
         "advanced_aCpqL8"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "gutter_size": 20,
@@ -240,18 +259,6 @@
         "rows": 1,
         "mobile_scrollable": false,
         "view_all": false,
-        "divider": false
-      }
-    },
-    "silk_mark_dJBjk6": {
-      "type": "silk-mark",
-      "settings": {
-        "title": "silk-mark",
-        "home_featured_products": "",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
         "divider": false
       }
     },
@@ -304,6 +311,18 @@
         "enable_gutter": true
       }
     },
+    "silk_mark_dJBjk6": {
+      "type": "silk-mark",
+      "settings": {
+        "title": "silk-mark",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "featured_collection_iLYJh9": {
       "type": "featured-collection",
       "settings": {
@@ -338,7 +357,7 @@
         "blog_show_date": true,
         "blog_show_comments": true,
         "blog_show_author": true,
-        "view_all": true,
+        "view_all": false,
         "blog_image_size": "landscape",
         "divider": false
       }
@@ -372,10 +391,11 @@
     "new_list_collections_w4Dxha",
     "new_featured_collection_NnhHd7",
     "featured_collection_t96KiT",
+    "background_image_text_tUJmJc",
     "promo_grid_L7fehF",
     "featured_collection_89bA7T",
-    "silk_mark_dJBjk6",
     "featured_collections_9LHmBF",
+    "silk_mark_dJBjk6",
     "featured_collection_iLYJh9",
     "featured_collection_a3LDDP",
     "blog_posts_TpkNXz",

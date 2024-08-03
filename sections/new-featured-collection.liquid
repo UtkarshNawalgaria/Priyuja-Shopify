@@ -3,158 +3,169 @@
 {%- assign collection = collections[section.settings.home_featured_products] -%}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
- <div id="ShopbyOccasionTab" class="container-wrapper">
-<div class="product-grid_tabs section-tab--{{ section.id }}"
-  id="CollectionSection-{{ section.id }}"
-  data-section-id="{{ section.id }}"
-  data-section-type="collection-grid"
-  data-context="featured-collection">
-  {%- if section.settings.title != blank or  section.settings.view_all -%}
-    <div class="page-width">
-      <div class="section-header{% if section.settings.view_all %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
-        <h2 class="section-header__title">
-          {{ section.settings.title }}
-        </h2>
-        <div class="view-btn-wrapper{% if section.settings.mobile_scrollable %} {% endif %}">
-          <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn" id="tab-btn">{{ 'collections.general.all_of_collection' | t }}</a>
-        </div>
-        
-        {%- if section.settings.view_all and section.settings.rows == 1 -%}
-         
-        {%- endif -%}
-      </div>
-    </div>
-  {%- endif -%}
+<div id="ShopbyOccasionTab" class="container-wrapper">
+  <div
+    class="product-grid_tabs section-tab--{{ section.id }}"
+    id="CollectionSection-{{ section.id }}"
+    data-section-id="{{ section.id }}"
+    data-section-type="collection-grid"
+    data-context="featured-collection"
+  >
+    {%- if section.settings.title != blank or section.settings.view_all -%}
+      <div class="page-width">
+        <div class="section-header{% if section.settings.view_all %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
+          <h2 class="section-header__title">
+            {{ section.settings.title }}
+          </h2>
+          <div class="view-btn-wrapper{% if section.settings.mobile_scrollable %} {% endif %}">
+            <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn" id="tab-btn">
+              {{- 'collections.general.all_of_collection' | t -}}
+            </a>
+          </div>
 
+          {%- if section.settings.view_all and section.settings.rows == 1 -%}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
 
     <div class="tab tab_grid page-width-desktop page-width {% if section.blocks.size > 2 %}scroll_hori{% endif %}">
-        {%- for block in section.blocks -%}
-          <button id="tab_btn-{{ block.id }}" class="tablinks {% if forloop.first %}active{% endif %}" data-tab="{{ block.id }}" data-collection-url="{{ block.settings.collection.url }}">
-            {{ block.settings.tab_title }}
-          </button>
-        {% endfor %}
-
-      </div>
-  
- {%- for block in section.blocks -%}
-  <div id="tab-{{ block.id }}" class="tabcontent page-width-desktop page-width {% if forloop.first %}active{% endif %}">
-    <div{% if section.settings.mobile_scrollable %} class="grid-overflow-wrapper"{% endif %}>
-      <div class="grid grid--uniform"{% if section.settings.mobile_scrollable %} data-aos="overflow__animation"{% endif %}>
-        {%- liquid
-          capture gridView
-            render 'products_per_row', products_per_row: per_row, style: 'fractions'
-          endcapture
-
-          if section.settings.mobile_scrollable
-            assign fallback = '39vw'
-          else
-            assign fallback = 'variable'
-          endif
-        -%}
-
-
-        {%- if block.settings.collection == blank or collections[block.settings.collection].empty? or collections[block.settings.collection].products_count == 0 -%}
-    
-         
-          {%- unless emptyState -%}
-            {%- assign emptyState = true -%}
-          {%- endunless -%}
-      
-          <div class="grid__item">
-            <div class="grid grid--uniform">
-              {%- for i in (1..product_limit) -%}
-                <div class="grid__item grid-product {{ gridView }}" data-aos="row-of-{{ per_row }}">
-                  <div class="grid-product__content">
-                    <a href="{{ product.url | within: collection }}" class="grid-product__link">
-                      <div class="grid-product__image-mask">
-                        {%- capture current -%}{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
-                        <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
-                      </div>
-                      <div class="grid-product__meta">
-                        <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
-                        <div class="grid-product__price">$29</div>
-                          
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-              {%- endfor -%}
-            </div>
-          </div>
-        
-  <style>
-    #ShopbyOccasion {
-      margin: 110px auto;
-}
-  
-  #ShopbyOccasion h2.section-header__title {
-    width: 50%;
-    text-align: left;
-}
-    #ShopbyOccasion .section-header .grid__item {
-    width: 50%;
-    text-align: right;
-    flex-basis: fit-content;
-}
-@media screen and (max-width: 767px) {
-    #ShopbyOccasion h2.section-header__title {
-    width: 70%;
-    text-align: left;
-}
-  #ShopbyOccasion .section-header .grid__item {
-    width: 30%;
-    text-align: right;
-}
-    #ShopbyOccasion {
-      margin: 60px auto;
-}
-}
-</style>
-
-        {%- else -%}
-
-          {%- for product in collections[block.settings.collection].products limit: product_limit -%}
-            {%- render 'product-grid-item',
-              product: product,
-              collection: collection,
-              per_row: per_row,
-              quick_shop_enable: settings.quick_shop_enable,
-              fallback: fallback,
-            -%}
-          {%- endfor -%}
-
-        {%- endif -%}
-      </div>
+      {%- for block in section.blocks -%}
+        <button
+          id="tab_btn-{{ block.id }}"
+          class="tablinks {% if forloop.first %}active{% endif %}"
+          data-tab="{{ block.id }}"
+          data-collection-url="{{ block.settings.collection.url }}"
+        >
+          {{ block.settings.tab_title }}
+        </button>
+      {% endfor %}
     </div>
+
+    {%- for block in section.blocks -%}
+      <div
+        id="tab-{{ block.id }}"
+        class="tabcontent page-width-desktop page-width {% if forloop.first %}active{% endif %}"
+      >
+        <div
+          {% if section.settings.mobile_scrollable %}
+            class="grid-overflow-wrapper"
+          {% endif %}
+        >
+          <div
+            class="grid grid--uniform"
+            {% if section.settings.mobile_scrollable %}
+              data-aos="overflow__animation"
+            {% endif %}
+          >
+            {%- liquid
+              capture gridView
+                render 'products_per_row', products_per_row: per_row, style: 'fractions'
+              endcapture
+
+              if section.settings.mobile_scrollable
+                assign fallback = '39vw'
+              else
+                assign fallback = 'variable'
+              endif
+            -%}
+
+            {%- if block.settings.collection == blank
+              or collections[block.settings.collection].empty?
+              or collections[block.settings.collection].products_count == 0
+            -%}
+              {%- unless emptyState -%}
+                {%- assign emptyState = true -%}
+              {%- endunless -%}
+
+              <div class="grid__item">
+                <div class="grid grid--uniform">
+                  {%- for i in (1..product_limit) -%}
+                    <div class="grid__item grid-product {{ gridView }}" data-aos="row-of-{{ per_row }}">
+                      <div class="grid-product__content">
+                        <a href="{{ product.url | within: collection }}" class="grid-product__link">
+                          <div class="grid-product__image-mask">
+                            {%- capture current -%}{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
+                            <div class="image-wrap">
+                              {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                            </div>
+                          </div>
+                          <div class="grid-product__meta">
+                            <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
+                            <div class="grid-product__price">$29</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              </div>
+
+              <style>
+                #ShopbyOccasion {
+                  margin: 110px auto;
+                }
+
+                #ShopbyOccasion h2.section-header__title {
+                  width: 50%;
+                  text-align: left;
+                }
+                #ShopbyOccasion .section-header .grid__item {
+                  width: 50%;
+                  text-align: right;
+                  flex-basis: fit-content;
+                }
+                @media screen and (max-width: 767px) {
+                  #ShopbyOccasion h2.section-header__title {
+                    width: 70%;
+                    text-align: left;
+                  }
+                  #ShopbyOccasion .section-header .grid__item {
+                    width: 30%;
+                    text-align: right;
+                  }
+                  #ShopbyOccasion {
+                    margin: 60px auto;
+                  }
+                }
+              </style>
+
+            {%- else -%}
+              {%- for product in collections[block.settings.collection].products limit: product_limit -%}
+                {%- render 'product-grid-item',
+                  product: product,
+                  collection: collection,
+                  per_row: per_row,
+                  quick_shop_enable: settings.quick_shop_enable,
+                  fallback: fallback
+                -%}
+              {%- endfor -%}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
-  
-   </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
-
-
 {% style %}
-
-#shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab {
+  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab {
     border: none;
     background-color: transparent;
     display: flex;
-    /* justify-content: center; */
     margin-bottom: 50px;
-}
-  
-#shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button.active {
+  }
+
+  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button.active {
     background-color: transparent;
     border-bottom: 3px solid;
     color: #000 !important;
     padding:0 10px;
-}
+  }
 
-#shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button {
+  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button {
     cursor: pointer;
     font-size: 18px;
     border: none;
@@ -164,37 +175,37 @@
     border-bottom: 3px solid transparent;
     margin:0  20px;
     padding: 0 10px;
-   line-height: 3rem;
-}
-  
-#shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent {
-  display: none;
-  border: none;
-  border-top: none;
-}
+    line-height: 3rem;
+  }
+
+  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent {
+    display: none;
+    border: none;
+    border-top: none;
+  }
   #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent.active {
     display: block;
-}
-  @media(max-width:749px){
+  }
+  @media(max-width:749px) {
     #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent.active {
-    display: flex;
-    width: 100%;
-    max-width: 100%;
+      display: flex;
+      width: 100%;
+      max-width: 100%;
     }
     #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent.active ul{
-    overflow-x: scroll;
-    overflow-y: hidden;
+      overflow-x: scroll;
+      overflow-y: hidden;
     }
     {% if section.settings.swipe_on_mobile != blank %}
-    #shopify-section-{{ section.id }}.tab_product_grid ul.grid.product-grid.contains-card.swipe_mobile {
-    flex-wrap: nowrap;
-    }
-    #shopify-section-{{ section.id }}.tab_product_grid ul.grid.product-grid.contains-card.swipe_mobile li:last-child {
-    margin-right: 2rem;
-    }
+      #shopify-section-{{ section.id }}.tab_product_grid ul.grid.product-grid.contains-card.swipe_mobile {
+        flex-wrap: nowrap;
+      }
+      #shopify-section-{{ section.id }}.tab_product_grid ul.grid.product-grid.contains-card.swipe_mobile li:last-child {
+        margin-right: 2rem;
+      }
     {% endif %}
-      .tab_product_grid .product-grid_tabs .tabcontent.active {
-        flex-wrap: wrap;
+    .tab_product_grid .product-grid_tabs .tabcontent.active {
+      flex-wrap: wrap;
     }
     .tab_product_grid .product-grid_tabs .tabcontent.active .center.collection__view-all {
       max-width: 100%;
@@ -206,59 +217,54 @@
       width: 100%;
       display: none;
     }
-     #shopify-section-{{ section.id }}.tab_product_grid .grid {
-        margin-bottom: 0px !important;
-      }
+    #shopify-section-{{ section.id }}.tab_product_grid .grid {
+      margin-bottom: 0px !important;
+    }
     #shopify-section-template--22365461446964__new_featured_collection_NnhHd7.tab_product_grid .product-grid_tabs .tab button.active {
-  padding: 0 5px;
-}
+      padding: 0 5px;
+    }
     #shopify-section-template--22365461446964__new_featured_collection_NnhHd7.tab_product_grid .product-grid_tabs .tab button {
-  font-size: 16px;
-  margin: 0  5px;
-  padding: 0 5px;
-  line-height: 2rem;
-    
-  }
+      font-size: 16px;
+      margin: 0  5px;
+      padding: 0 5px;
+      line-height: 2rem;
+    }
     #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab.scroll_hori {
-    justify-content: left;
+      justify-content: left;
       margin-bottom:35px;
-}
-  
+    }
   }
   @media(min-width: 750px){
     #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent {
       padding: 0px 5rem;
     }
-
-     .tab button.active + .center.collection__view-all:nth-child(2) {
-        display: block;
-      }
-      .tab button.active + .center.collection__view-all:nth-child(4) {
-          display: block;
-        }
-      .tab button.active + .center.collection__view-all:nth-child(6) {
-          display: block;
-      }
-      .tab button.active + .center.collection__view-all:nth-child(8) {
-    display: block;
-}
-      .tab_product_grid .tab.tab_grid {
-        position: relative;
-      }
-     #ShopbyOccasionTab {
-  padding: 40px 0;
-}
+    .tab button.active + .center.collection__view-all:nth-child(2) {
+      display: block;
+    }
+    .tab button.active + .center.collection__view-all:nth-child(4) {
+      display: block;
+    }
+    .tab button.active + .center.collection__view-all:nth-child(6) {
+      display: block;
+    }
+    .tab button.active + .center.collection__view-all:nth-child(8) {
+      display: block;
+    }
+    .tab_product_grid .tab.tab_grid {
+      position: relative;
+    }
+    #ShopbyOccasionTab {
+      padding: 40px 0;
+    }
   }
   @media(min-width: 990px){
     #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent {
-     max-width: 160rem;
+      max-width: 160rem;
     }
     #shopify-section-template--22365461446964__new_featured_collection_NnhHd7.tab_product_grid .product-grid_tabs .tab {
-  margin-left: -1rem;
-}
+      margin-left: -1rem;
+    }
   }
-  
- 
 
   #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs {
     display: block;
@@ -267,76 +273,64 @@
     display: inline-block !important;
     border: none;
     transition: .9s ease all;
-}
+  }
   #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button.active a.redirect_btn {
-      padding-left: 10px;
+    padding-left: 10px;
     transform: translateY(0);
   }
-  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button.active a.redirect_btn span{
-      color: #000;
+  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button.active a.redirect_btn span {
+    color: #000;
   }
- 
-.site-nav__icons .site-nav__link{
-  padding: 5px 12px;
-}
+  .site-nav__icons .site-nav__link {
+    padding: 5px 12px;
+  }
 
- #ShopbyOccasionTab{
-    background:#FAEEE6;
-   padding:60px 0;
+  #ShopbyOccasionTab {
+    padding: 60px 0;
   }
-  #shopify-section-template--22365461446964__new_featured_collection_NnhHd7{
-      background:#FAEEE6;
+  #shopify-section-{{  section.id }} {
+    background: {{ section.settings.background_color }};
   }
-  #ShopbyOccasionTab .section-header{
+  #ShopbyOccasionTab .section-header {
     display:flex;
     margin:0 auto 30px 0;
   }
- #ShopbyOccasionTab .section-header__title{
-   width:50%;
-   text-align: left;
- }
+  #ShopbyOccasionTab .section-header__title {
+    width:50%;
+    text-align: left;
+  }
   .section-header .view-btn-wrapper {
-  display: flex;
-  flex-basis: content;
-  width: 50%;
-}
-  
-
+    display: flex;
+    flex-basis: content;
+    width: 50%;
+  }
 {% endstyle %}
 
-
-
-
-
-
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const sectionContainers = document.querySelectorAll('.section-tab--{{ section.id }}');
-  const tabCollectionLink = document.querySelector("#tab-btn");
-  console.log(tabCollectionLink)
+  document.addEventListener('DOMContentLoaded', function () {
+    const sectionContainers = document.querySelectorAll('.section-tab--{{ section.id }}');
+    const tabCollectionLink = document.querySelector('#tab-btn');
+    console.log(tabCollectionLink);
 
-  sectionContainers.forEach(container => {
-    const buttons = container.querySelectorAll('.tablinks');
-    const tabContents = container.querySelectorAll('.tabcontent');
+    sectionContainers.forEach((container) => {
+      const buttons = container.querySelectorAll('.tablinks');
+      const tabContents = container.querySelectorAll('.tabcontent');
 
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        const tabId = this.getAttribute('data-tab');
-        tabCollectionLink.href = this.getAttribute('data-collection-url');
+      buttons.forEach((button) => {
+        button.addEventListener('click', function () {
+          const tabId = this.getAttribute('data-tab');
+          tabCollectionLink.href = this.getAttribute('data-collection-url');
 
-        buttons.forEach(btn => btn.classList.remove('active'));
-        tabContents.forEach(tab => tab.classList.remove('active'));
+          buttons.forEach((btn) => btn.classList.remove('active'));
+          tabContents.forEach((tab) => tab.classList.remove('active'));
 
-        this.classList.add('active');
-        container.querySelector(`#tab-${tabId}`).classList.add('active');
+          this.classList.add('active');
+          container.querySelector(`#tab-${tabId}`).classList.add('active');
+        });
       });
     });
   });
-});
-
 </script>
-
-
 
 {% schema %}
 {
@@ -349,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
       "label": "t:sections.featured-collection.settings.title.label",
       "default": "Featured collection"
     },
-    
+
     {
       "type": "range",
       "id": "per_row",
@@ -385,6 +379,12 @@ document.addEventListener('DOMContentLoaded', function() {
       "id": "divider",
       "label": "t:sections.featured-collection.settings.divider.label",
       "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
     }
   ],
   "presets": [
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
       "name": "New featured collection"
     }
   ],
- "blocks": [
+  "blocks": [
     {
       "type": "tab",
       "name": "Product Block",
