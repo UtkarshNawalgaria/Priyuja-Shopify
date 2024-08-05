@@ -39,10 +39,64 @@
       "type": "about-new",
       "settings": {
       }
+    },
+    "image_gallery_8btGai": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_block_eKfjz6": {
+          "type": "image_block",
+          "settings": {
+            "block_image": "shopify:\/\/shop_images\/priyuja-founder.jpg"
+          }
+        },
+        "image_block_PrqUCK": {
+          "type": "image_block",
+          "settings": {
+            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_Mr_Sharad_Nawalgaria_at_FI_Store_Launch_Event_JHV_Mall.jpg"
+          }
+        },
+        "image_block_cgV7if": {
+          "type": "image_block",
+          "settings": {
+            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_with_Brand_Ambassador_Actress_Prachi_Desai_at_Opening_of_FI_Store.jpg"
+          }
+        },
+        "image_block_rTfyxr": {
+          "type": "image_block",
+          "settings": {
+            "block_image": "shopify:\/\/shop_images\/IMG_3914.jpg"
+          }
+        },
+        "image_block_7kwrmA": {
+          "type": "image_block",
+          "settings": {
+            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_Mr_Sharad_Nawalgaria_with_ALBELI_Priyuja_Team.jpg"
+          }
+        },
+        "image_block_8thDAz": {
+          "type": "image_block",
+          "settings": {
+            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_Portfolio_Picture.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_eKfjz6",
+        "image_block_PrqUCK",
+        "image_block_cgV7if",
+        "image_block_rTfyxr",
+        "image_block_7kwrmA",
+        "image_block_8thDAz"
+      ],
+      "settings": {
+        "full_width": false,
+        "heading": "Gallery"
+      }
     }
   },
   "order": [
     "slideshow_4TXNB8",
-    "main"
+    "main",
+    "image_gallery_8btGai"
   ]
 }
