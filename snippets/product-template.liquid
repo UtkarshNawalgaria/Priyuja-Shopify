@@ -431,7 +431,7 @@
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {{ block.settings.code }}
                     </div>
-                     {% when 'product_specification' %}
+                  {% when 'product_specification' %}
                     <div class="product-block product-specification" {{ block.shopify_attributes }}>
                       {% assign value_count = 0 %}
                       {% assign metafield_keys = block.settings.field_list | split: ',' %}
