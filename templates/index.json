@@ -269,18 +269,6 @@
         "divider": false
       }
     },
-    "featured_collection_a3LDDP": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Trending Now",
-        "home_featured_products": "trending-now",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "blog_posts_TpkNXz": {
       "type": "blog-posts",
       "settings": {
@@ -331,7 +319,6 @@
     "featured_collections_9LHmBF",
     "silk_mark_dJBjk6",
     "featured_collection_iLYJh9",
-    "featured_collection_a3LDDP",
     "blog_posts_TpkNXz",
     "17191198064dfa0775"
   ]
