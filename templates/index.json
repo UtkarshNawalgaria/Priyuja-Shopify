@@ -184,70 +184,11 @@
         "lazyload_images": true
       }
     },
-    "promo_grid_L7fehF": {
-      "type": "promo-grid",
-      "blocks": {
-        "advanced_9WUgtb": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "textarea": "",
-            "cta_text1": "",
-            "cta_link1": "",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/2_c8a4b7a1-01d7-4e9e-b03c-2c0a0289148e.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 400,
-            "text_size": 100,
-            "text_align": "vertical-top horizontal-left",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "advanced_aCpqL8": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "textarea": "",
-            "cta_text1": "",
-            "cta_link1": "",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/1_1772fc1b-0cc4-4418-bc4c-a2d362e3b82a.jpg",
-            "video_url": "",
-            "width": "50",
-            "height": 400,
-            "text_size": 100,
-            "text_align": "vertical-center horizontal-center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        }
-      },
-      "block_order": [
-        "advanced_9WUgtb",
-        "advanced_aCpqL8"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "gutter_size": 20,
-        "space_above": false,
-        "space_below": false,
-        "lazyload_images": false
-      }
-    },
     "featured_collection_89bA7T": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
-        "home_featured_products": "featured",
+        "title": "Katan SIlk Sarees",
+        "home_featured_products": "katan-silk",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": false,
@@ -386,7 +327,6 @@
     "new_featured_collection_NnhHd7",
     "featured_collection_t96KiT",
     "background_image_text_tUJmJc",
-    "promo_grid_L7fehF",
     "featured_collection_89bA7T",
     "featured_collections_9LHmBF",
     "silk_mark_dJBjk6",
