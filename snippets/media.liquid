@@ -97,6 +97,7 @@
             assign fallback = '75vw'
           endif
         -%}
+
         {% liquid
           assign image_alt_text = media.alt | escape | split: '#' | first
           assign image_alt_text = image_alt_text | append: "_" | append: loopIndex
