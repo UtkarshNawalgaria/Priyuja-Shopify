@@ -74,7 +74,8 @@
       <div
         class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: media_aspect_ratio }}%;"
         data-product-media-type-model
-        data-media-id="{{ section_id }}-{{ media.id }}">
+        data-media-id="{{ section_id }}-{{ media.id }}"
+      >
         {{ media | model_viewer_tag: image_size: product_zoom_size, reveal: 'interaction', toggleable: true, data-model-id: media.id }}
       </div>
       <button class="hide btn btn--circle btn--static product-single__close-media">
@@ -96,12 +97,16 @@
             assign fallback = '75vw'
           endif
         -%}
+        {% liquid
+          assign image_alt_text = media.alt | escape | split: '#' | first
+          assign image_alt_text = image_alt_text | append: "_" | append: loopIndex
+        %}
 
         {%- render 'image-element',
           img: media.preview_image,
           type: 'photoswipe',
           classes: image_classes,
-          alt: media.alt | escape | split: '#' | first,
+          alt: image_alt_text,
           widths: '360, 540, 720, 900, 1080',
           product_zoom_size: product_zoom_size,
           loopIndex: loopIndex,
