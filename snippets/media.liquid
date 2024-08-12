@@ -113,6 +113,9 @@
           fallback: fallback,
           loading: loading,
         -%}
+        <script>
+          console.log({{ media.alt }});  
+        </script>
 
         {%- if product_zoom_enable and media.media_type == 'image' -%}
           <button type="button" class="btn btn--body btn--circle js-photoswipe__zoom product__photo-zoom">
