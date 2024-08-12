@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "footer",
   "name": "t:sections.footer-group.name",
@@ -76,13 +85,13 @@
             "container_width": 33
           }
         },
-        "footer2": {
-          "type": "newsletter",
+        "custom_xNVTCq": {
+          "type": "custom",
           "settings": {
             "show_footer_title": true,
-            "title": "Sign up and save",
-            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-            "container_width": 33
+            "title": "Contact Info",
+            "text": "<p><strong>Address<\/strong> - 2nd Floor, B-39, Flameproof Equipments Pvt Ltd, Veera Desai Industrial Estate, Andheri West, Mumbai, India 400053<\/p><p><strong>Phone Number<\/strong> - +919112044277<\/p>",
+            "container_width": 25
           }
         }
       },
@@ -90,7 +99,7 @@
         "footer-0",
         "footer-1",
         "menu_a8QKRq",
-        "footer2"
+        "custom_xNVTCq"
       ],
       "settings": {
         "show_locale_selector": true,
