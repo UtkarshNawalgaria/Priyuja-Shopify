@@ -133,20 +133,6 @@
             "collection": "festive"
           }
         },
-        "tab_gJNKxq": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Pujas",
-            "collection": "pujas"
-          }
-        },
-        "tab_i7wwnr": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Wedding",
-            "collection": "wedding"
-          }
-        },
         "tab_iDixTr": {
           "type": "tab",
           "settings": {
@@ -157,8 +143,6 @@
       },
       "block_order": [
         "tab_6fPiEy",
-        "tab_gJNKxq",
-        "tab_i7wwnr",
         "tab_iDixTr"
       ],
       "settings": {
@@ -168,7 +152,7 @@
         "mobile_scrollable": true,
         "view_all": true,
         "divider": false,
-        "background_color": "#FAEEE6"
+        "background_color": "#faeee6"
       }
     },
     "featured_collection_t96KiT": {
@@ -382,6 +366,7 @@
             "alignment": "center",
             "margin_bottom": 0,
             "margin_sides": 20,
+            "background_color": "",
             "html_area": ""
           }
         }
