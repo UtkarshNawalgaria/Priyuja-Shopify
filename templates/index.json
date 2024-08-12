@@ -207,18 +207,18 @@
             "focal_point": "center center"
           }
         },
-        "collection_XFMJAU": {
+        "collection_kYC6fL": {
           "type": "collection",
           "settings": {
-            "collection": "jangla",
+            "collection": "rangkat",
             "title": "",
             "focal_point": "center center"
           }
         },
-        "collection_kYC6fL": {
+        "collection_XFMJAU": {
           "type": "collection",
           "settings": {
-            "collection": "kadiyal",
+            "collection": "jangla",
             "title": "",
             "focal_point": "center center"
           }
@@ -234,8 +234,8 @@
       },
       "block_order": [
         "collection_BCxTbT",
-        "collection_XFMJAU",
         "collection_kYC6fL",
+        "collection_XFMJAU",
         "collection_eXUPgr"
       ],
       "settings": {
