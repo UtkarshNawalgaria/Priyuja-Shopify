@@ -25,7 +25,7 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/1_819cb868-5187-441a-8de6-c86eb46f8745.png",
+            "image": "shopify:\/\/shop_images\/1_f2dedacd-bcea-4ff8-97fa-bd15221a78bb.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -44,6 +44,7 @@
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify:\/\/shop_images\/2_2b003675-30ee-4d6d-bc2d-8832d1c9b402.png",
+            "image_mobile": "shopify:\/\/shop_images\/2_251a51ae-2a99-4f4e-a232-4a13d1ccd8ff.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -62,6 +63,7 @@
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify:\/\/shop_images\/3_053beb1a-8364-47b1-b58f-2ea5d3cebd85.png",
+            "image_mobile": "shopify:\/\/shop_images\/3_b19f55f3-9d36-43a8-a2cc-434c78e03f3a.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -74,7 +76,7 @@
       ],
       "settings": {
         "section_height": "natural",
-        "mobile_height": "400px",
+        "mobile_height": "300px",
         "parallax": false,
         "style": "dots",
         "autoplay": true,
