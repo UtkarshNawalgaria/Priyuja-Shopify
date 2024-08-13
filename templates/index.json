@@ -16,11 +16,11 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "PREMIUM ZARI\nEXCLUSIVES",
+            "title": "Handloom\nBanarasi Classics",
             "title_size": 65,
             "subheading": "",
             "link": "shopify:\/\/collections\/all",
-            "link_text": "Show More",
+            "link_text": "Shop Now",
             "link_2": "shopify:\/\/collections\/all",
             "link_text_2": "",
             "color_accent": "#ffffff",
@@ -34,9 +34,9 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "PRIYUJA\nNEW ARRIVALS",
+            "title": "Organza Weaves",
             "title_size": 65,
-            "subheading": "",
+            "subheading": "Sheer Elegance in every thread",
             "link": "shopify:\/\/collections\/all",
             "link_text": "SHOW MORE",
             "link_2": "shopify:\/\/collections\/all",
@@ -51,8 +51,8 @@
         "image_q8g4af": {
           "type": "image",
           "settings": {
-            "top_subheading": "Shop Banarsi",
-            "title": "HANDLOOM SILK",
+            "top_subheading": "",
+            "title": "Banarasi Prints",
             "title_size": 65,
             "subheading": "",
             "link": "",
@@ -76,7 +76,7 @@
         "section_height": "natural",
         "mobile_height": "400px",
         "parallax": false,
-        "style": "dots",
+        "style": "minimal",
         "autoplay": true,
         "autoplay_speed": 7,
         "lazyload_images": true
