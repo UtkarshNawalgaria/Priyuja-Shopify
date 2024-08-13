@@ -198,6 +198,18 @@
         "divider": false
       }
     },
+    "silk_mark_dJBjk6": {
+      "type": "silk-mark",
+      "settings": {
+        "title": "silk-mark",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "featured_collections_9LHmBF": {
       "type": "featured-collections",
       "blocks": {
@@ -205,7 +217,7 @@
           "type": "collection",
           "settings": {
             "collection": "kadwa",
-            "title": "",
+            "title": "Kadhwa",
             "focal_point": "center center"
           }
         },
@@ -213,7 +225,7 @@
           "type": "collection",
           "settings": {
             "collection": "rangkat",
-            "title": "",
+            "title": "Rangkat",
             "focal_point": "center center"
           }
         },
@@ -221,7 +233,7 @@
           "type": "collection",
           "settings": {
             "collection": "jangla",
-            "title": "",
+            "title": "Jaal",
             "focal_point": "center center"
           }
         },
@@ -229,7 +241,7 @@
           "type": "collection",
           "settings": {
             "collection": "meenakari",
-            "title": "",
+            "title": "Meenakari",
             "focal_point": "center center"
           }
         }
@@ -245,18 +257,6 @@
         "divider": false,
         "per_row": 4,
         "enable_gutter": true
-      }
-    },
-    "silk_mark_dJBjk6": {
-      "type": "silk-mark",
-      "settings": {
-        "title": "silk-mark",
-        "home_featured_products": "",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
       }
     },
     "featured_collection_iLYJh9": {
@@ -318,8 +318,8 @@
     "featured_collection_t96KiT",
     "background_image_text_tUJmJc",
     "featured_collection_89bA7T",
-    "featured_collections_9LHmBF",
     "silk_mark_dJBjk6",
+    "featured_collections_9LHmBF",
     "featured_collection_iLYJh9",
     "blog_posts_TpkNXz",
     "17191198064dfa0775"
