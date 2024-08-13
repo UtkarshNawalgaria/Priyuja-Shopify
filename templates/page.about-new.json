@@ -101,42 +101,11 @@
         "heading": "Gallery",
         "full_width": false
       }
-    },
-    "advanced_content_n9DJT6": {
-      "type": "advanced-content",
-      "blocks": {
-        "liquid_TbTgwB": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Priyuja: Weaving Threads of Heritage and Elegance<\/h2>",
-            "width": "25%",
-            "alignment": "center"
-          }
-        },
-        "liquid_gALXpP": {
-          "type": "liquid",
-          "settings": {
-            "code": "<p>Nestled in the heart of Mumbai, Priyuja stands as a testament to the enduring allure of Indian heritage. Our brand specializes in the timeless craft of Banarasi Pure Handloom Silk Sarees, each piece a tapestry of meticulous craftsmanship and historical richness. Priyuja is not just a brand; it is a celebration of the ancient weaving traditions brought directly from the heart of Banaras to the contemporary pulse of Mumbai.<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_TbTgwB",
-        "liquid_gALXpP"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true,
-        "lazyload_images": true
-      }
     }
   },
   "order": [
     "slideshow_4TXNB8",
     "main",
-    "image_gallery_8btGai",
-    "advanced_content_n9DJT6"
+    "image_gallery_8btGai"
   ]
 }
