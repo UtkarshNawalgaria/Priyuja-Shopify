@@ -69,9 +69,10 @@
     },
     "map_tQhfrG": {
       "type": "map",
+      "disabled": true,
       "settings": {
         "map_title": "Our retail store",
-        "address": "<p>B-39, New Link Road, Near Kalyan Jewellers, Veera Desai Industrial Estate, Andheri (W), Mumbai, 400053<\/p><p>Mon - Sat, 9:00am - 10:30pm<\/p>",
+        "address": "<p>B-39, 2nd Floor, Flameproof House, Veera Desai Industrial Estate, New Link Road, Andheri (W), Mumbai, 400053<\/p><p>Mon - Sat, 9:00am - 10:30pm<\/p>",
         "map_address": "2nd Floor, B-39, Flameproof Equipments Pvt Ltd, Veera Desai Industrial Estate, Andheri West, Mumbai, India 400053",
         "api_key": "",
         "show_button": false,
