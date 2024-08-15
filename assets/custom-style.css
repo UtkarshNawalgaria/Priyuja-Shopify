@@ -119,7 +119,7 @@ box-shadow: 0 0 0 12px #fff, 12px 1px 58px rgba(0, 0, 0, .14);
   text-transform: capitalize;
   font-family: poppins;
   line-height: 23px;
-  
+
 }
 .grid-product__image-mask {
   overflow: hidden;
@@ -127,7 +127,7 @@ box-shadow: 0 0 0 12px #fff, 12px 1px 58px rgba(0, 0, 0, .14);
   border-radius: 10px 0 10px 0;
 }
 .btn--secondary, .btn, .Know-more-btn{
-  background:#A91C0C; 
+  background:#A91C0C;
   border-radius:5px;
   color:#fff;
   font-weight:500;
@@ -151,7 +151,7 @@ box-shadow: 0 0 0 12px #fff, 12px 1px 58px rgba(0, 0, 0, .14);
 }
 .blog-wrapper .btn{
   max-width:fit-content;
-  
+
 }
 .btn--secondary:hover,.btn:hover, .Know-more-btn:hover{
   border:1px solid #A91C0C;
@@ -335,7 +335,7 @@ h4.product-specification__heading{
  .app-icon-text{
    font-size: 12px !important;
  }
-  
+
   .logo-bar__image {
     height: 100px;
     width: 100px;
@@ -362,7 +362,7 @@ h4.product-specification__heading{
   .h2.drawer__title {
     font-size: 24px;
   }
-  
+
   [data-type_product_capitalize="true"] .grid-product__title {
     font-size: 16px;
     text-transform: capitalize;
@@ -423,7 +423,7 @@ padding-left: 17px;
 .header-layout {
 align-items: center;
 }
-  
+
 .hambuger-menu{
 text-align:left;
 width: 30%;
@@ -508,7 +508,7 @@ padding:0 4px
       padding: 0;
       line-height: 60px;
   }
-  
+
   #ShopbyOccasionTab .grid {
     list-style: none;
     /* margin: 0 0 0 0px; */
@@ -615,4 +615,40 @@ h1.product-single__title {
   .product-block--price .product__price {
     font-size: 16px;
   }
+}
+
+.faq-question {
+  border-bottom: 1px solid black;
+}
+
+.faq-question summary {
+  cursor: pointer;
+  padding: 25px 0 15px 0;
+  font-size: 20px;
+}
+
+.faq-question summary div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .faq-question--icon.open,
+details.faq-question[open] .faq-question--icon.close {
+  display: block;
+}
+
+.faq-question .faq-question--icon.close,
+details.faq-question[open] .faq-question--icon.open {
+  display: none;
+}
+
+.faq-question--icon svg {
+  width: 20px;
+}
+
+.faq-question--answer {
+  padding: 15px;
+  padding-left: 0;
+  font-size: 16px;
 }
