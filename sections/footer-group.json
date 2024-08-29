@@ -106,8 +106,8 @@
         "show_currency_selector": true,
         "show_currency_flags": true,
         "show_payment_icons": true,
-        "show_copyright": false,
-        "copyright_text": ""
+        "show_copyright": true,
+        "copyright_text": "Powered by Olivecloud"
       }
     }
   },
