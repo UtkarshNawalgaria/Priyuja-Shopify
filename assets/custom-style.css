@@ -58,7 +58,7 @@ letter-spacing: 0.01rem;
 }
 footer.site-footer{
   background: #C8675C url("https://cdn.shopify.com/s/files/1/0704/1119/0580/files/footer-backroung_new.jpg") no-repeat left top;
-  padding-bottom: 8% !important;
+  /* padding-bottom: 8% !important; */
   padding-top: 40px !important;
   background-position: bottom center !important;
   position: relative;
