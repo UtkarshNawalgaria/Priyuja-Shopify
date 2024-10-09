@@ -21,19 +21,10 @@
             "link_text": "To Experience Our Entire Collection",
             "link": ""
           }
-        },
-        "announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "",
-            "link_text": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-0",
-        "announcement-1"
+        "announcement-0"
       ],
       "settings": {
         "announcement_compact": true
