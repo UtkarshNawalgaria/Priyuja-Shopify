@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "header",
   "name": "t:sections.header-group.name",
@@ -8,16 +17,16 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free shipping",
-            "link_text": "On all orders in India",
+            "text": "BOOK VIDEO CALL",
+            "link_text": "To Experience Our Entire Collection",
             "link": ""
           }
         },
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "text": "Hassle-free returns",
-            "link_text": "30-day postage paid returns",
+            "text": "",
+            "link_text": "",
             "link": ""
           }
         }
@@ -36,7 +45,7 @@
         "header-0": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/priyuja-logo.png",
+            "logo": "shopify://shop_images/priyuja-logo.png",
             "desktop_logo_width": 140,
             "mobile_logo_width": 160
           }
