@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -19,13 +19,13 @@
             "title": "Handloom\nBanarasi Classics",
             "title_size": 65,
             "subheading": "",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify://collections/all",
             "link_text": "Shop Now",
-            "link_2": "shopify:\/\/collections\/all",
+            "link_2": "shopify://collections/all",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/1_c854681e-c05b-4d5a-92d6-7087896ddbd9.png",
+            "image": "shopify://shop_images/1_c854681e-c05b-4d5a-92d6-7087896ddbd9.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -37,14 +37,14 @@
             "title": "Organza Weaves",
             "title_size": 65,
             "subheading": "Sheer Elegance in every thread",
-            "link": "shopify:\/\/collections\/organza-silk-banarasi-sarees",
+            "link": "shopify://collections/organza-silk-banarasi-sarees",
             "link_text": "SHOP NOW",
-            "link_2": "shopify:\/\/collections\/all",
+            "link_2": "shopify://collections/all",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/2_73fc3fc2-daa5-4275-8c22-f75b74b6d3e4.png",
-            "image_mobile": "shopify:\/\/shop_images\/2_251a51ae-2a99-4f4e-a232-4a13d1ccd8ff.png",
+            "image": "shopify://shop_images/2_73fc3fc2-daa5-4275-8c22-f75b74b6d3e4.png",
+            "image_mobile": "shopify://shop_images/2_251a51ae-2a99-4f4e-a232-4a13d1ccd8ff.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -56,14 +56,14 @@
             "title": "PURE SILK\nEXCLUSIVES",
             "title_size": 65,
             "subheading": "",
-            "link": "shopify:\/\/collections\/katan-silk-banarasi-sarees",
+            "link": "shopify://collections/katan-silk-banarasi-sarees",
             "link_text": "SHOP NOW",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/3_82b760fa-cf01-4708-b777-69d459d1d1fb.png",
-            "image_mobile": "shopify:\/\/shop_images\/3_b19f55f3-9d36-43a8-a2cc-434c78e03f3a.png",
+            "image": "shopify://shop_images/3_82b760fa-cf01-4708-b777-69d459d1d1fb.png",
+            "image_mobile": "shopify://shop_images/3_b19f55f3-9d36-43a8-a2cc-434c78e03f3a.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -177,7 +177,7 @@
         "text": "",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/Your_paragraph_text_ea0eb20e-64c1-42f1-85e5-64f75f83a854.png",
+        "image": "shopify://shop_images/Your_paragraph_text_ea0eb20e-64c1-42f1-85e5-64f75f83a854.png",
         "layout": "left",
         "height": 550,
         "framed": false,
@@ -224,7 +224,7 @@
         "collection_kYC6fL": {
           "type": "collection",
           "settings": {
-            "collection": "rangkat",
+            "collection": "rangkat-saree",
             "title": "Rangkat",
             "focal_point": "center center"
           }
@@ -290,7 +290,7 @@
       "type": "apps",
       "blocks": {
         "instafeed_app_block_ePxNrf": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "Follow @priyuja on Instagram",
             "title_color": "",
