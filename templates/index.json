@@ -26,6 +26,7 @@
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify://shop_images/1_b9da6f82-3d90-4152-9998-e861f6c00f1a.png",
+            "image_mobile": "shopify://shop_images/1_1.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -44,6 +45,7 @@
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify://shop_images/3_9f0a556f-b85b-4cb8-b7b9-43df3325f859.png",
+            "image_mobile": "shopify://shop_images/3_1.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -62,6 +64,7 @@
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify://shop_images/2_2a389b8b-e894-43f6-8947-7e2aae5c95cb.png",
+            "image_mobile": "shopify://shop_images/2_1.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
