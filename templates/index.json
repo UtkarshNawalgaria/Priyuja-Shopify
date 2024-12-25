@@ -16,54 +16,52 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Handloom\nBanarasi Classics",
+            "title": "",
             "title_size": 65,
             "subheading": "",
             "link": "shopify://collections/all",
-            "link_text": "Shop Now",
-            "link_2": "shopify://collections/all",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/1_c854681e-c05b-4d5a-92d6-7087896ddbd9.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "slideshow-1": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "Organza Weaves",
-            "title_size": 65,
-            "subheading": "Sheer Elegance in every thread",
-            "link": "shopify://collections/organza-silk-banarasi-sarees",
-            "link_text": "SHOP NOW",
-            "link_2": "shopify://collections/all",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/2_73fc3fc2-daa5-4275-8c22-f75b74b6d3e4.png",
-            "image_mobile": "shopify://shop_images/2_251a51ae-2a99-4f4e-a232-4a13d1ccd8ff.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_q8g4af": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "PURE SILK\nEXCLUSIVES",
-            "title_size": 65,
-            "subheading": "",
-            "link": "shopify://collections/katan-silk-banarasi-sarees",
-            "link_text": "SHOP NOW",
+            "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/3_82b760fa-cf01-4708-b777-69d459d1d1fb.png",
-            "image_mobile": "shopify://shop_images/3_b19f55f3-9d36-43a8-a2cc-434c78e03f3a.png",
+            "image": "shopify://shop_images/1_b9da6f82-3d90-4152-9998-e861f6c00f1a.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_tHinMX": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 65,
+            "subheading": "",
+            "link": "shopify://collections/all",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/3_9f0a556f-b85b-4cb8-b7b9-43df3325f859.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_PMT446": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 65,
+            "subheading": "",
+            "link": "shopify://collections/all",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/2_2a389b8b-e894-43f6-8947-7e2aae5c95cb.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -71,8 +69,8 @@
       },
       "block_order": [
         "image_AnVpxQ",
-        "slideshow-1",
-        "image_q8g4af"
+        "image_tHinMX",
+        "image_PMT446"
       ],
       "settings": {
         "section_height": "natural",
@@ -298,6 +296,7 @@
             "margin_bottom": 0,
             "margin_sides": 20,
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
