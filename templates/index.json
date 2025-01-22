@@ -158,18 +158,6 @@
         "background_color": "#faeee6"
       }
     },
-    "featured_collection_t96KiT": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New Arrivals",
-        "home_featured_products": "new-arrivals",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "background_image_text_tUJmJc": {
       "type": "background-image-text",
       "settings": {
@@ -190,8 +178,8 @@
     "featured_collection_89bA7T": {
       "type": "featured-collection",
       "settings": {
-        "title": "Katan SIlk Sarees",
-        "home_featured_products": "katan-silk-banarasi-sarees",
+        "title": "Bandhani Sarees",
+        "home_featured_products": "bandhani-saree",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": false,
@@ -317,7 +305,6 @@
     "slideshow",
     "new_list_collections_w4Dxha",
     "new_featured_collection_NnhHd7",
-    "featured_collection_t96KiT",
     "background_image_text_tUJmJc",
     "featured_collection_89bA7T",
     "silk_mark_dJBjk6",
