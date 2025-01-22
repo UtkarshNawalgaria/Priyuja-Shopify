@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_body_bg": "#ffffff",
@@ -33,13 +33,13 @@
     "color_modal_overlays": "#e6e6e6",
     "color_image_overlay": "#000000",
     "color_image_overlay_text_shadow": 20,
-    "type_header_font_family": "cormorant_n4",
+    "type_header_font_family": "inter_n4",
     "type_header_spacing": "0",
     "type_header_base_size": 36,
     "type_header_line_height": 1,
     "type_header_capitalize": true,
     "type_headers_align_text": true,
-    "type_base_font_family": "twentieth_century_n4",
+    "type_base_font_family": "inter_n4",
     "type_base_spacing": "25",
     "type_base_size": 18,
     "type_base_line_height": 1.4,
@@ -70,10 +70,10 @@
     "cart_icon": "cart",
     "cart_notes_enable": true,
     "cart_terms_conditions_enable": true,
-    "social_facebook_link": "https:\/\/www.facebook.com\/priyujafashion",
-    "social_pinterest_link": "https:\/\/in.pinterest.com\/priyujafashion",
-    "social_instagram_link": "https:\/\/www.instagram.com\/priyujafashion",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCCHsx0d5pGMjxw3O_vBr8Ug",
+    "social_facebook_link": "https://www.facebook.com/priyujafashion",
+    "social_pinterest_link": "https://in.pinterest.com/priyujafashion",
+    "social_instagram_link": "https://www.instagram.com/priyujafashion",
+    "social_youtube_link": "https://www.youtube.com/channel/UCCHsx0d5pGMjxw3O_vBr8Ug",
     "show_breadcrumbs": true,
     "show_breadcrumbs_collection_link": true,
     "checkout_logo_position": "left",
@@ -95,24 +95,20 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "940650814580334357": {
-        "type": "shopify:\/\/apps\/product-compare\/blocks\/app-embed-block\/2ec083cc-5677-4d10-a2af-c02464aa361b",
+        "type": "shopify://apps/product-compare/blocks/app-embed-block/2ec083cc-5677-4d10-a2af-c02464aa361b",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "7870687481494312845": {
-        "type": "shopify:\/\/apps\/wishlist-hero\/blocks\/app-embed\/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+        "type": "shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
         "disabled": false,
         "settings": {
           "customThemeName": "Impulse",
@@ -123,10 +119,9 @@
         }
       },
       "15202526072292146591": {
-        "type": "shopify:\/\/apps\/lm-add-to-cart-sticky\/blocks\/app-embed\/2af1b5f6-34fa-4b15-b391-c6e67976f074",
+        "type": "shopify://apps/lm-add-to-cart-sticky/blocks/app-embed/2af1b5f6-34fa-4b15-b391-c6e67976f074",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -325,7 +320,7 @@
               "settings": {
                 "show_footer_title": true,
                 "title": "Sign up and save",
-                "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+                "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
                 "container_width": 30
               }
             },
@@ -358,7 +353,7 @@
             "popup_seconds": 5,
             "popup_days": 30,
             "popup_title": "Sign up and save",
-            "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
+            "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.</p>",
             "popup_image": "",
             "enable_newsletter": true,
             "button_label": "Optional button",
@@ -382,7 +377,7 @@
                 "enable_image": true,
                 "image": "",
                 "title": "Site-wide promotion",
-                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
                 "button_label": "Optional button",
                 "button_link": ""
               }
@@ -393,7 +388,7 @@
                 "enable_image": true,
                 "image": "",
                 "title": "Site-wide promotion",
-                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
                 "button_label": "Optional button",
                 "button_link": ""
               }
@@ -404,7 +399,7 @@
                 "enable_image": true,
                 "image": "",
                 "title": "Site-wide promotion",
-                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
                 "button_label": "Optional button",
                 "button_link": ""
               }
@@ -517,8 +512,7 @@
           "blocks": {
             "1524768779513": {
               "type": "logo",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -538,8 +532,7 @@
           "blocks": {
             "1494292487693": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "1526406521795": {
               "type": "menu",
@@ -566,8 +559,7 @@
         },
         "newsletter-popup": {
           "type": "newsletter-popup",
-          "settings": {
-          }
+          "settings": {}
         },
         "collection-header": {
           "type": "collection-header",
@@ -581,8 +573,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
