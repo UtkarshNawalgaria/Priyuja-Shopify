@@ -1,0 +1,42 @@
+<offer-list class="product-block block-padding product-block__offer-list">
+  <h4>{{ block.settings.header }}</h4>
+  <div class="offer-list">
+    {% if block.settings.offer_1_code != blank %}
+      <div class="offer-item">
+        <span class="offer-code">{{ block.settings.offer_1_code }}</span>
+        {% if block.settings.offer_1_text != blank %}
+          <p class="offer-text">{{ block.settings.offer_1_text }}</p>
+        {% endif %}
+        <span class="info">Click to Copy</span>
+      </div>
+    {% endif %}
+    {% if block.settings.offer_2_code != blank %}
+      <div class="offer-item">
+        <span class="offer-code">{{ block.settings.offer_2_code }}</span>
+        {% if block.settings.offer_2_text != blank %}
+          <p class="offer-text">{{ block.settings.offer_2_text }}</p>
+        {% endif %}
+        <span class="info">Click to Copy</span>
+      </div>
+    {% endif %}
+    {% if block.settings.offer_3_code != blank %}
+      <div class="offer-item 3">
+        <span class="offer-code">{{ block.settings.offer_3_code }}</span>
+        {% if block.settings.offer_3_text != blank %}
+          <p class="offer-text">{{ block.settings.offer_3_text }}</p>
+        {% endif %}
+        <span class="info">Click to Copy</span>
+      </div>
+    {% endif %}
+    {% if block.settings.offer_4_code != blank %}
+      <div class="offer-item">
+        <span class="offer-code">{{ block.settings.offer_4_code }}</span>
+        {% if block.settings.offer_4_text != blank %}
+          <p class="offer-text">{{ block.settings.offer_4_text }}</p>
+        {% endif %}
+        <span class="info">Click to Copy</span>
+      </div>
+    {% endif %}
+  </div>
+  <p style="font-size: 12px;"><i>*Coupon can be applied at checkout</i></p>
+</offer-list>
