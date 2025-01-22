@@ -1,10 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
 <head>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,7 +14,7 @@
   <link rel="dns-prefetch" href="https://maps.gstatic.com">
 
   {%- if settings.favicon != blank -%}
-    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+    <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32 }}" type="image/png" />
   {%- endif -%}
 
   {%- render 'seo-title' -%}
@@ -30,10 +26,10 @@
   {%- render 'social-meta-tags' -%}
 
   {%- render 'font-face' -%}
-  {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
-
-  {{ 'custom-style.css' | asset_url | stylesheet_tag: preload: true }}
   {%- render 'css-variables' -%}
+
+  {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+  {{ 'custom-style.css' | asset_url | stylesheet_tag: preload: true }}
 
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -109,8 +105,8 @@
   <div id="PageContainer" class="page-container">
     <div class="transition-body">
 
-    {%- sections 'header-group' -%}
-    {%- sections 'popup-group' -%}
+      {%- sections 'header-group' -%}
+      {%- sections 'popup-group' -%}
 
       <main class="main-content" id="MainContent">
         {{ content_for_layout }}
