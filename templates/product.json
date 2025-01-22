@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -50,20 +59,22 @@
           "type": "product_specification",
           "settings": {
             "heading": "Product Specification",
-            "field_list": "Fabric,Color,Weave,Border,Pallu,Occasion"
+            "field_list": "Fabric,Color,Weave,Border,Pallu,Occasion,Loom"
           }
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
-            "is_tab": true
+            "is_tab": false
           }
         },
         "tab": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Shipping information",
-            "content": "<h3><strong>What is the cost of shipping?<\/strong><\/h3><p>For all orders above Rs. 1000\/-, shipping is done free of cost. A shipping charge of Rs.99 is applicable to all orders under Rs. 1000\/-.<\/p>",
+            "content": "<h5><strong>What is the cost of shipping?<\/strong><\/h5><p>For all orders above Rs. 1000\/-, shipping is done free of cost. A shipping charge of Rs.99 is applicable to all orders under Rs. 1000\/-.<\/p>",
             "page": "shipping-policy"
           }
         },
@@ -96,7 +107,6 @@
       },
       "block_order": [
         "price",
-        "variant_picker",
         "related_products_kFgtbC",
         "separator",
         "quantity_selector_XeJGQA",
@@ -105,15 +115,14 @@
         "product_specification_t7GN7t",
         "description",
         "tab",
-        "contact",
         "sales_point",
         "inventory_status",
-        "share"
+        "share",
       ],
       "settings": {
-        "sku_enable": false,
+        "sku_enable": true,
         "image_position": "left",
-        "image_size": "medium",
+        "image_size": "large",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
         "thumbnail_height": "flexible",
