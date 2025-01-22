@@ -102,13 +102,14 @@
         {%- endif -%}
 
         <div class="grid__item {{ product_description_width }}">
-
           <div class="product-single__meta">
             <div class="product-block product-block--header">
+              {% comment %} Breadcrumbs {% endcomment %}
               {%- if settings.show_breadcrumbs and isModal != true -%}
                 {%- render 'breadcrumbs' -%}
               {%- endif -%}
 
+              {% comment %} Vendor Details {% endcomment %}
               {%- if settings.vendor_enable -%}
                 <div class="product-single__vendor">
                   {%- assign vendor_handle = product.vendor | handleize -%}
@@ -122,6 +123,7 @@
                 </div>
               {%- endif -%}
 
+              {% comment %} Product Title {% endcomment %}
               {%- if isModal -%}
                 <p class="h2 product-single__title">
                   {{ product.title }}
@@ -136,15 +138,17 @@
                 </h1>
               {%- endif -%}
 
+              {% comment %} Product SKU {% endcomment %}
               {%- if sku_enable -%}
                 <p data-sku class="product-single__sku">
                   {%- if current_variant.sku -%}
-                    {{ current_variant.sku }}
+                    SKU: {{ current_variant.sku }}
                   {%- endif -%}
                 </p>
               {%- endif -%}
             </div>
 
+            {% comment %} Product Blocks {% endcomment %}
             <div data-product-blocks>
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
               {%- for block in blocks -%}
@@ -160,8 +164,11 @@
                   {%- when 'tab' -%}
                     {% assign tab_id = block.id | append: product.id %}
                     {% capture tab_content %}
-                      {{ block.settings.content }}
-                      {{ block.settings.page.content }}
+                      {% if block.settings.content != blank %}
+                        {{ block.settings.content }}
+                      {% else %}
+                        {{ block.settings.page.content }}
+                      {% endif %}
                     {% endcapture %}
                     {% unless tab_content == blank and block.settings.title == blank %}
                       <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
@@ -174,12 +181,24 @@
                       {%- render 'tab-contact', id: tab_id, block: block -%}
                     </div>
                   {%- when 'description' -%}
-                    <div class="product-block{% if block.settings.is_tab %} product-block--tab{% endif %}" {{ block.shopify_attributes }}>
+                    <div class="product-block product-description{% if block.settings.is_tab %} product-block--tab{% endif %}" {{ block.shopify_attributes }}>
                       {%- assign id = block.id | append: product.id -%}
                       {%- render 'product-description', id: id, product: product, is_tab: block.settings.is_tab -%}
                     </div>
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
+                      {% comment %} Show Sale Price {% endcomment %}
+                      <span data-product-price
+                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
+                      >
+                        {%- unless product.empty? -%}
+                          {{ current_variant.price | money_with_currency }}
+                        {%- else -%}
+                          {{ 1999 | money }}
+                        {%- endunless -%}
+                      </span>
+
+                      {% comment %} Show MRP {% endcomment %}
                       {%- assign hide_sale_price = true -%}
                       {%- if product.compare_at_price_max > product.price -%}
                         {%- if current_variant.compare_at_price > current_variant.price -%}
@@ -192,10 +211,11 @@
                         >
                           {{ 'products.general.regular_price' | t }}
                         </span>
-                        <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+                        <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}" style="color: grey; font-size: 16px;">
+                          MRP:
                           <span data-compare-price class="product__price product__price--compare">
                             {%- if current_variant.compare_at_price > current_variant.price -%}
-                              {{ current_variant.compare_at_price | money }}
+                              {{ current_variant.compare_at_price | money_with_currency }}
                             {%- endif -%}
                           </span>
                         </span>
@@ -204,16 +224,7 @@
                         <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
                       {%- endif -%}
 
-                      <span data-product-price
-                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
-                      >
-                        {%- unless product.empty? -%}
-                          {{ current_variant.price | money }}
-                        {%- else -%}
-                          {{ 1999 | money }}
-                        {%- endunless -%}
-                      </span>
-
+                      {% comment %} Show Saved amount {% endcomment %}
                       {%- if settings.product_save_amount -%}
                         {%- if settings.product_save_type == 'dollar' -%}
                           {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
@@ -260,7 +271,6 @@
                       {{ product.metafields.discount }}
                     {% endif %}
 
-
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="product__quantity">
@@ -290,6 +300,7 @@
                         {% endstyle %}
                       </div>
                     {% endif %}
+
                   {%- when 'variant_picker' -%}
                     <div class="product-block" {% if block.settings.product_dynamic_variants_enable %}data-dynamic-variants-enabled{% endif %} {{ block.shopify_attributes }}>
                       {%- unless product.has_only_default_variant -%}
@@ -336,6 +347,7 @@
                         {%- endfor -%}
                       {%- endunless -%}
                     </div>
+
                   {%- when 'buy_buttons' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {%- unless product.empty? -%}
@@ -357,6 +369,7 @@
                           ></div>
                       {%- endif -%}
                     </div>
+
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
@@ -464,7 +477,8 @@
                         {{ table }}
                       {% endif %}
                     </div>
-
+                  {% when 'offer_list' %}
+                    {% render 'offer-list', block: block %}
                 {%- endcase -%}
               {%- else -%}
                 <div
