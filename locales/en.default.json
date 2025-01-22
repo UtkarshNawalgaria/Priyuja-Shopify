@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "404": {
@@ -324,7 +333,7 @@
       "quantity": "Quantity",
       "add_to_cart": "Add to cart",
       "preorder": "Pre-order",
-      "include_taxes": "Tax included.",
+      "include_taxes": "Inclusive of all Taxes",
       "shipping_policy_html": "<a href='{{ link }}'>Shipping<\/a> calculated at checkout.",
       "will_not_ship_until": "Ready to ship {{ date }}",
       "will_be_in_stock_after": "Back in stock {{ date }}",
