@@ -85,6 +85,7 @@
     "checkout_button_color": "#111111",
     "checkout_error_color": "#ff6d6d",
     "breadcrumb": false,
+    "product_save_type": "percent",
     "sections": {
       "collection-header": {
         "type": "collection-header",
