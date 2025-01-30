@@ -1,5 +1,3 @@
-<div>
-
 {%- liquid
   assign per_row = section.settings.grid
   assign paginate_by = per_row | times: 7
@@ -16,106 +14,98 @@
 -%}
 
 {%- paginate collections by paginate_by -%}
-<div id="new-list-collection">
-<div class="page-width page-content">
+  <div id="new-list-collection">
+    <div class="page-width page-content">
+      {%- render 'breadcrumbs' -%}
 
-  {%- render 'breadcrumbs' -%}
-
-  {%- if section.settings.title_enable -%}
-    <header class="section-header">
-      <h2 class="section-header__title">Shop By Fabrics</h2>
-      <div></div>
-    </header>
-  {%- endif -%}
-
-  <div class="grid abc grid--uniform{% unless settings.collection_grid_gutter %} grid--no-gutters{% endunless %}">
-    {%- if section.settings.display_type == 'all' -%}
-      {%- liquid
-        case section.settings.sort
-          when 'products_high' or 'products_low'
-            assign collections = collections | sort: 'all_products_count'
-          when 'date' or 'date_reversed'
-            assign collections = collections | sort: 'published_at'
-        endcase
-      -%}
-      {%- if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' -%}
-        {%- for collection in collections -%}
-          {%- render 'collection-grid-item',
-              collection: collection,
-              gridView: gridView,
-              sizeVariable: gridView,
-              fallback: 'variable',
-          -%}
-        {%- endfor -%}
-      {%- else -%}
-        {%- for collection in collections reversed -%}
-          {%- render 'collection-grid-item',
-              collection: collection,
-              gridView: gridView,
-              sizeVariable: gridView,
-              fallback: 'variable',
-          -%}
-        {%- endfor -%}
+      {%- if section.settings.title_enable -%}
+        <header class="section-header">
+          <h2 class="section-header__title">Shop By Fabrics</h2>
+          <div></div>
+        </header>
       {%- endif -%}
-    {%- else -%}
-      {%- for block in section.blocks -%}
-        {%- assign collection = collections[block.settings.collection] -%}
-        {%- render 'collection-grid-item',
-          collection: collection,
-          gridView: gridView,
-          block: block,
-          sizeVariable: gridView,
-          fallback: 'variable',
-        -%}
-      {%- endfor -%}
-    {%- endif -%}
+
+      <div class="grid abc grid--uniform{% unless settings.collection_grid_gutter %} grid--no-gutters{% endunless %}">
+        {%- if section.settings.display_type == 'all' -%}
+          {%- liquid
+            case section.settings.sort
+              when 'products_high', 'products_low'
+                assign collections = collections | sort: 'all_products_count'
+              when 'date', 'date_reversed'
+                assign collections = collections | sort: 'published_at'
+            endcase
+          -%}
+          {%- if section.settings.sort == 'products_low'
+            or section.settings.sort == 'date'
+            or section.settings.sort == 'alphabetical'
+          -%}
+            {%- for collection in collections -%}
+              {%- render 'collection-grid-item',
+                collection: collection,
+                gridView: gridView,
+                sizeVariable: gridView,
+                fallback: 'variable'
+              -%}
+            {%- endfor -%}
+          {%- else -%}
+            {%- for collection in collections reversed -%}
+              {%- render 'collection-grid-item',
+                collection: collection,
+                gridView: gridView,
+                sizeVariable: gridView,
+                fallback: 'variable'
+              -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- for block in section.blocks -%}
+            {%- assign collection = collections[block.settings.collection] -%}
+            {%- render 'collection-grid-item',
+              collection: collection,
+              gridView: gridView,
+              block: block,
+              sizeVariable: gridView,
+              fallback: 'variable'
+            -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+
+      {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    </div>
   </div>
-
-  {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
-    {%- render 'pagination', paginate: paginate -%}
-  {%- endif -%}
-
-</div>
-  </div>
- <style>
-.section-header{
-  display:flex;
-  justify-content: space-between;
-}
-  .collection-item__title--center[class*=collection-item__title--overlaid]{
-     top: 90%;
-}
- .collection-item__title--overlaid-box>span {
-    background: transparent;
-    font-size: 24px;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 0.01rem;
-    text-transform: capitalize;
-}
-   #new-list-collection{
-     margin: 50px auto;
-}
-    [data-type_product_capitalize=true] .collection-item__title span {
-    letter-spacing: normal;
-}
-@media screen and (max-width: 767px) {
-
- .collection-item__title--overlaid-box>span {
-    font-size: 16px;
-    padding: 0;
-}
-   #new-list-collection{
-     margin: 20px auto;
-}
-  .collection-item__title--center[class*=collection-item__title--overlaid] {
-    top: 85%;
-}
-}
- </style>
-
+  <style>
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .collection-item__title--center[class*='collection-item__title--overlaid'] {
+      top: 90%;
+    }
+    .collection-item__title--overlaid-box > span {
+      background: transparent;
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 0.01rem;
+      text-transform: capitalize;
+    }
+    [data-type_product_capitalize='true'] .collection-item__title span {
+      letter-spacing: normal;
+    }
+    @media screen and (max-width: 767px) {
+      .collection-item__title--overlaid-box > span {
+        font-size: 16px;
+        padding: 0;
+      }
+      .collection-item__title--center[class*='collection-item__title--overlaid'] {
+        top: 85%;
+      }
+    }
+  </style>
 {%- endpaginate -%}
-</div>
 
 {% schema %}
 {
@@ -209,7 +199,7 @@
       ]
     }
   ],
-   "presets": [
+  "presets": [
     {
       "name": "new-list-collection"
     }

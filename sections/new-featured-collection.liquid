@@ -29,7 +29,7 @@
       </div>
     {%- endif -%}
 
-    <div class="tab tab_grid page-width-desktop page-width {% if section.blocks.size > 2 %}scroll_hori{% endif %}">
+    <div class="tab tab_grid page-width{% if section.blocks.size > 2 %} scroll_hori{% endif %}">
       {%- for block in section.blocks -%}
         <button
           id="tab_btn-{{ block.id }}"
@@ -158,13 +158,6 @@
     margin-bottom: 50px;
   }
 
-  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button.active {
-    background-color: transparent;
-    border-bottom: 3px solid;
-    color: #000 !important;
-    padding:0 10px;
-  }
-
   #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button {
     cursor: pointer;
     font-size: 18px;
@@ -173,9 +166,14 @@
     letter-spacing: .3px;
     color: #000 !important;
     border-bottom: 3px solid transparent;
-    margin:0  20px;
     padding: 0 10px;
     line-height: 3rem;
+  }
+
+  #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab button.active {
+    background-color: transparent;
+    border-bottom: 3px solid;
+    color: #000 !important;
   }
 
   #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent {
@@ -183,9 +181,11 @@
     border: none;
     border-top: none;
   }
+
   #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent.active {
     display: block;
   }
+
   @media(max-width:749px) {
     #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent.active {
       display: flex;
@@ -196,6 +196,7 @@
       overflow-x: scroll;
       overflow-y: hidden;
     }
+
     {% if section.settings.swipe_on_mobile != blank %}
       #shopify-section-{{ section.id }}.tab_product_grid ul.grid.product-grid.contains-card.swipe_mobile {
         flex-wrap: nowrap;
@@ -204,40 +205,48 @@
         margin-right: 2rem;
       }
     {% endif %}
+
     .tab_product_grid .product-grid_tabs .tabcontent.active {
       flex-wrap: wrap;
     }
+
     .tab_product_grid .product-grid_tabs .tabcontent.active .center.collection__view-all {
       max-width: 100%;
       width: 100%;
       display: block;
     }
+
     .tab_product_grid .product-grid_tabs .center.collection__view-all {
       max-width: 100%;
       width: 100%;
       display: none;
     }
+
     #shopify-section-{{ section.id }}.tab_product_grid .grid {
       margin-bottom: 0px !important;
     }
+
     #shopify-section-template--22365461446964__new_featured_collection_NnhHd7.tab_product_grid .product-grid_tabs .tab button.active {
       padding: 0 5px;
     }
+
     #shopify-section-template--22365461446964__new_featured_collection_NnhHd7.tab_product_grid .product-grid_tabs .tab button {
       font-size: 16px;
       margin: 0  5px;
       padding: 0 5px;
       line-height: 2rem;
     }
+
     #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab.scroll_hori {
       justify-content: left;
       margin-bottom:35px;
     }
+
+    #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tab {
+      margin-bottom: 20px;
+    }
   }
   @media(min-width: 750px){
-    #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent {
-      padding: 0px 5rem;
-    }
     .tab button.active + .center.collection__view-all:nth-child(2) {
       display: block;
     }
@@ -253,14 +262,8 @@
     .tab_product_grid .tab.tab_grid {
       position: relative;
     }
-    #ShopbyOccasionTab {
-      padding: 40px 0;
-    }
   }
   @media(min-width: 990px){
-    #shopify-section-{{ section.id }}.tab_product_grid .product-grid_tabs .tabcontent {
-      max-width: 160rem;
-    }
     #shopify-section-template--22365461446964__new_featured_collection_NnhHd7.tab_product_grid .product-grid_tabs .tab {
       margin-left: -1rem;
     }
@@ -283,10 +286,6 @@
   }
   .site-nav__icons .site-nav__link {
     padding: 5px 12px;
-  }
-
-  #ShopbyOccasionTab {
-    padding: 60px 0;
   }
   #shopify-section-{{  section.id }} {
     background: {{ section.settings.background_color }};
