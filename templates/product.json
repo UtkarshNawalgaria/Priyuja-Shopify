@@ -14,17 +14,7 @@
       "blocks": {
         "price": {
           "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": false
-          }
+          "settings": {}
         },
         "related_products_kFgtbC": {
           "type": "related_products",
@@ -34,13 +24,11 @@
         },
         "separator": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "quantity_selector_XeJGQA": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -52,8 +40,7 @@
         },
         "separator_CVFcCe": {
           "type": "separator",
-          "settings": {
-          }
+          "settings": {}
         },
         "product_specification_t7GN7t": {
           "type": "product_specification",
@@ -74,15 +61,8 @@
           "disabled": true,
           "settings": {
             "title": "Shipping information",
-            "content": "<h5><strong>What is the cost of shipping?<\/strong><\/h5><p>For all orders above Rs. 1000\/-, shipping is done free of cost. A shipping charge of Rs.99 is applicable to all orders under Rs. 1000\/-.<\/p>",
+            "content": "<h5><strong>What is the cost of shipping?</strong></h5><p>For all orders above Rs. 1000/-, shipping is done free of cost. A shipping charge of Rs.99 is applicable to all orders under Rs. 1000/-.</p>",
             "page": "shipping-policy"
-          }
-        },
-        "contact": {
-          "type": "contact",
-          "settings": {
-            "title": "Contact With Us For any Query",
-            "phone": false
           }
         },
         "sales_point": {
@@ -101,8 +81,7 @@
         },
         "share": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -117,7 +96,7 @@
         "tab",
         "sales_point",
         "inventory_status",
-        "share",
+        "share"
       ],
       "settings": {
         "sku_enable": true,
@@ -143,15 +122,15 @@
       "type": "product-recommendations",
       "settings": {
         "product_recommendations_heading": "You may also like",
-        "related_count": 4,
-        "products_per_row": 4
+        "related_count": 6,
+        "products_per_row": 5
       }
     },
     "1719414030206c37f9": {
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_epbTht": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }
@@ -173,8 +152,7 @@
     },
     "collection-return": {
       "type": "collection-return",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
