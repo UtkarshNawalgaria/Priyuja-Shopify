@@ -3410,18 +3410,21 @@ html {
 
 .page-width {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1500px;
+  padding: 0 20px;
 }
 
-.page-full,
-.page-width {
+.page-full {
   padding: 0 17px;
 }
 
 @media only screen and (min-width: 769px) {
-  .page-full,
-  .page-width {
+  .page-full {
     padding: 0 100px;
+  }
+
+  .page-width {
+    padding: 0 40px;
   }
 }
 
@@ -3444,15 +3447,6 @@ html {
 .shopify-policy__container {
   padding-bottom: 40px;
   padding-top: 40px;
-}
-
-@media only screen and (min-width: 769px) {
-  .page-content,
-  .shopify-email-marketing-confirmation__container,
-  .shopify-policy__container {
-    padding-bottom: 75px;
-    padding-top: 75px;
-  }
 }
 
 .shopify-email-marketing-confirmation__container {
@@ -3783,7 +3777,7 @@ h1 {
 
 .h2,
 h2 {
-  font-size: calc(var(--typeHeaderSize) * 0.73);
+  font-size: calc(var(--typeHeaderSize) * 0.55);
 }
 
 .h3,
@@ -3799,7 +3793,7 @@ h3 {
 
   .h2,
   h2 {
-    font-size: calc(var(--typeHeaderSize) * 0.85);
+    font-size: calc(var(--typeHeaderSize) * 0.65);
   }
 
   .h3,
@@ -6397,7 +6391,7 @@ tool-tip[data-tool-tip-open="true"] .tool-tip__inner {
   margin: 0;
   padding: 7.5px 0;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 ul + .footer__small-text {
@@ -7472,12 +7466,6 @@ form + .footer__social {
 
 .section-header {
   margin-bottom: 30px;
-}
-
-@media only screen and (min-width: 769px) {
-  .section-header {
-    margin-bottom: 50px;
-  }
 }
 
 [data-type_headers_align_text="true"] .section-header {
@@ -9321,7 +9309,7 @@ input[type="image"] {
 }
 
 .index-section {
-  margin: 40px 0;
+  padding: 40px 0;
 }
 
 .index-section--small {
@@ -9372,7 +9360,7 @@ input[type="image"] {
 
 @media only screen and (min-width: 769px) {
   .index-section {
-    margin: 75px 0;
+    padding: 75px 0;
   }
 
   .index-section--small {
