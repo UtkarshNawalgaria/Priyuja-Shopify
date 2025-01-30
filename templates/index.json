@@ -187,16 +187,21 @@
         "divider": false
       }
     },
-    "silk_mark_dJBjk6": {
-      "type": "silk-mark",
+    "background_image_text_aX3hfM": {
+      "type": "background-image-text",
       "settings": {
-        "title": "silk-mark",
-        "home_featured_products": "",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/silk-mark.png",
+        "layout": "left",
+        "height": 450,
+        "framed": false,
+        "parallax": false,
+        "parallax_direction": "top",
+        "lazyload_images": true
       }
     },
     "featured_collections_9LHmBF": {
@@ -307,7 +312,7 @@
     "new_featured_collection_NnhHd7",
     "background_image_text_tUJmJc",
     "featured_collection_89bA7T",
-    "silk_mark_dJBjk6",
+    "background_image_text_aX3hfM",
     "featured_collections_9LHmBF",
     "featured_collection_iLYJh9",
     "blog_posts_TpkNXz",
