@@ -28,14 +28,7 @@
   <div class="page-width">
 
     <div class="grid">
-      {%- assign row_width = 0 -%}
       {%- for block in section.blocks -%}
-        {%- assign row_width = row_width | plus: block.settings.container_width -%}
-        {%- if row_width > 100 -%}
-          <div class="footer__clear small--hide"></div>
-          {%- assign row_width = row_width | minus: 100 -%}
-        {%- endif -%}
-
         <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}" data-type="{{ block.type }}">
           {%- style -%}
             @media only screen and (min-width: 769px) and (max-width: 959px) {
