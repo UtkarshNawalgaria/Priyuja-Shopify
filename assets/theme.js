@@ -4723,7 +4723,7 @@ theme.recentlyViewed = {
       let priceMarkup = '';
       let vendorMarkup = '';
 
-      if (theme.settings.predictiveSearchPrice) priceMarkup = `<div class="grid-product__price">${theme.strings.productFrom}${theme.Currency.formatMoney(product.price_min, theme.moneyFormat)}</div>`;
+      if (theme.settings.predictiveSearchPrice) priceMarkup = `<div class="grid-product__price">${theme.Currency.formatMoney(product.price_min, theme.moneyFormat)}</div>`;
       if (theme.settings.predictiveSearchVendor) vendorMarkup = `<div class="grid-product__vendor">${product.vendor}</div>`;
 
       var markup = `
