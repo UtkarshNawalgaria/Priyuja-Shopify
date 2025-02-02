@@ -3426,6 +3426,10 @@ html {
   .page-width {
     padding: 0 40px;
   }
+
+  .page-width--product {
+    max-width: 1440px;
+  }
 }
 
 .page-width--narrow {
