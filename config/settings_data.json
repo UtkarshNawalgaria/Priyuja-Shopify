@@ -86,6 +86,7 @@
     "checkout_button_color": "#111111",
     "checkout_error_color": "#ff6d6d",
     "breadcrumb": false,
+    "predictive_search_show_price": true,
     "sections": {
       "collection-header": {
         "type": "collection-header",
