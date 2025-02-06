@@ -419,7 +419,7 @@
                             <div class="related-products__item">
                               <a href="{{ _product.url }}">
                                 {{ first_image | image_url: height: 100 | image_tag }}
-                                {% comment %} {% render 'image' image: first_image, width: 70, height: 70, sizes: '70px', widths: '75, 100, 150, 225, 300' %} {% endcomment %}
+                                <span>{{ _product.metafields.custom.color }}</span>
                               </a>
                             </div>
                           {%- endfor -%}
