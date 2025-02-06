@@ -646,6 +646,17 @@ h4.product-specification__heading {
   gap: 10px;
 }
 
+.product-block.related-products .related-products__item img {
+  border-radius: 3px;
+}
+
+.product-block.related-products .related-products__item span {
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
 .MuiCardHeader-content .wishlist-hero-list-card-header-added-on {
   font-size: 10px;
 }
