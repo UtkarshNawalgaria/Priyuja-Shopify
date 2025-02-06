@@ -307,7 +307,7 @@ a.btn {
 /* Product page */
 .product__policies.rte.small--text-center {
   font-size: 12px;
-  margin: 6px 0 0;
+  margin: 0;
 }
 
 .product-specification__table .column .key {
