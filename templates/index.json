@@ -12,6 +12,25 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_tHinMX": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 65,
+            "subheading": "",
+            "link": "shopify://collections/all",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/Priyuja_Banner-_Desktop_Size.jpg",
+            "image_mobile": "shopify://shop_images/Priyuja_Banner-_Mobile_Size.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
         "image_AnVpxQ": {
           "type": "image",
           "settings": {
@@ -27,25 +46,6 @@
             "text_align": "vertical-center horizontal-left",
             "image": "shopify://shop_images/1_b9da6f82-3d90-4152-9998-e861f6c00f1a.png",
             "image_mobile": "shopify://shop_images/1_1.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_tHinMX": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 65,
-            "subheading": "",
-            "link": "shopify://collections/all",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/3_9f0a556f-b85b-4cb8-b7b9-43df3325f859.png",
-            "image_mobile": "shopify://shop_images/3_1.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -71,13 +71,13 @@
         }
       },
       "block_order": [
-        "image_AnVpxQ",
         "image_tHinMX",
+        "image_AnVpxQ",
         "image_PMT446"
       ],
       "settings": {
         "section_height": "natural",
-        "mobile_height": "auto",
+        "mobile_height": "500px",
         "parallax": false,
         "style": "dots",
         "autoplay": true,

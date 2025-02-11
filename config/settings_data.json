@@ -75,6 +75,7 @@
     "social_pinterest_link": "https://in.pinterest.com/priyujafashion",
     "social_instagram_link": "https://www.instagram.com/priyujafashion",
     "social_youtube_link": "https://www.youtube.com/channel/UCCHsx0d5pGMjxw3O_vBr8Ug",
+    "predictive_search_show_price": true,
     "show_breadcrumbs": true,
     "show_breadcrumbs_collection_link": true,
     "checkout_logo_position": "left",
@@ -86,7 +87,6 @@
     "checkout_button_color": "#111111",
     "checkout_error_color": "#ff6d6d",
     "breadcrumb": false,
-    "predictive_search_show_price": true,
     "sections": {
       "collection-header": {
         "type": "collection-header",
