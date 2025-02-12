@@ -44,27 +44,8 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/1_b9da6f82-3d90-4152-9998-e861f6c00f1a.png",
-            "image_mobile": "shopify://shop_images/1_1.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_PMT446": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 65,
-            "subheading": "",
-            "link": "shopify://collections/all",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/2_2a389b8b-e894-43f6-8947-7e2aae5c95cb.png",
-            "image_mobile": "shopify://shop_images/2_1.png",
+            "image": "shopify://shop_images/Priyuja_Banner_2_-_Desktop_Size.jpg",
+            "image_mobile": "shopify://shop_images/Priyuja_Banners_-_Mobile_Size_2.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -72,8 +53,7 @@
       },
       "block_order": [
         "image_tHinMX",
-        "image_AnVpxQ",
-        "image_PMT446"
+        "image_AnVpxQ"
       ],
       "settings": {
         "section_height": "natural",
