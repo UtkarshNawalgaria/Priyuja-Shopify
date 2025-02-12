@@ -65,6 +65,18 @@
         "lazyload_images": true
       }
     },
+    "featured_collection_CYzjFp": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Sarees Below Rs 5000",
+        "home_featured_products": "sarees-under-5000",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "new_list_collections_w4Dxha": {
       "type": "new-list-collections",
       "blocks": {
@@ -284,22 +296,11 @@
         "full_width": true,
         "space_around": true
       }
-    },
-    "featured_collection_CYzjFp": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Sarees Below Rs 5000",
-        "home_featured_products": "sarees-under-5000",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
     }
   },
   "order": [
     "slideshow",
+    "featured_collection_CYzjFp",
     "new_list_collections_w4Dxha",
     "new_featured_collection_NnhHd7",
     "background_image_text_tUJmJc",
@@ -308,7 +309,6 @@
     "featured_collections_9LHmBF",
     "featured_collection_iLYJh9",
     "blog_posts_TpkNXz",
-    "17191198064dfa0775",
-    "featured_collection_CYzjFp"
+    "17191198064dfa0775"
   ]
 }
