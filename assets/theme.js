@@ -8262,6 +8262,23 @@ theme.recentlyViewed = {
   })();
 
 
+  // Show about us drawer on product page only(if available)
+  if (document.body.classList.contains('template-product') &&
+      (document.querySelector('.product-block--drawer [data-drawer-trigger]'))) {
+
+    const aboutUsDrawerLink = document.querySelector('.product-block--drawer [data-drawer-trigger]');
+    const targetDrawerId = aboutUsDrawerLink.dataset.target;
+
+    const targetDrawer = new theme.Drawers(targetDrawerId, 'about');
+    theme.collapsibles.init(document.getElementById(targetDrawerId));
+
+    aboutUsDrawerLink.addEventListener("click", event => {
+      event.preventDefault();
+      targetDrawer.open(event)
+    })
+  }
+
+
   theme.isStorageSupported = function(type) {
     // Return false if we are in an iframe without access to sessionStorage
     if (window.self !== window.top) {
