@@ -156,9 +156,9 @@
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'separator' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}><hr></div>
+                    <div class="product-block product-block--separator" {{ block.shopify_attributes }}><hr></div>
                   {%- when 'text' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--text" {{ block.shopify_attributes }}>
                       {{ block.settings.text }}
                     </div>
                   {%- when 'tab' -%}
@@ -272,7 +272,7 @@
                     {% endif %}
 
                   {%- when 'quantity_selector' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--quantity_selector" {{ block.shopify_attributes }}>
                       <div class="product__quantity">
                         {% assign qty_id = section_id | append: product.id %}
                         <label for="Quantity-{{ qty_id }}">{{ 'products.product.quantity' | t }}</label>
@@ -302,7 +302,7 @@
                     {% endif %}
 
                   {%- when 'variant_picker' -%}
-                    <div class="product-block" {% if block.settings.product_dynamic_variants_enable %}data-dynamic-variants-enabled{% endif %} {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--variant_picker" {% if block.settings.product_dynamic_variants_enable %}data-dynamic-variants-enabled{% endif %} {{ block.shopify_attributes }}>
                       {%- unless product.has_only_default_variant -%}
                         {%- for option in product.options_with_values -%}
                           {%- liquid
@@ -349,7 +349,7 @@
                     </div>
 
                   {%- when 'buy_buttons' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--product_form" {{ block.shopify_attributes }}>
                       {%- unless product.empty? -%}
                         {%- render 'product-form',
                           form_id: form_id,
@@ -397,11 +397,11 @@
                   {%- when 'inventory_status' -%}
                     {%- render 'product-inventory', product: product, current_variant: current_variant, block: block -%}
                   {%- when 'share' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--share" {{ block.shopify_attributes }}>
                       {%- render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product -%}
                     </div>
                   {%- when 'complementary_products' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--complementary_products" {{ block.shopify_attributes }}>
                       {%- render 'product-complementary', block: block, product: product, type: 'block', image_style: block.settings.image_style -%}
                     </div>
                   {%- when 'related_products' -%}
@@ -427,7 +427,7 @@
                       </div>
                     {% endif %}
                   {%- when 'trust_badge' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--trust_badge" {{ block.shopify_attributes }}>
                       <div class="aos-animate" style="max-width: {{ block.settings.trust_image.width }}px; margin: 0 auto;">
                         <div class="image-wrap " style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.trust_image.aspect_ratio }}%;">
                           {%- render 'image-element',
@@ -479,7 +479,7 @@
                     {% render 'offer-list', block: block %}
                   {% when 'associated_product' %}
                     {% if block.settings.product != blank %}
-                      <div class="product-block">
+                      <div class="product-block product-block--associated_product">
                         <h4 style="text-transform: capitalize;">{{ block.settings.heading }}</h4>
                         <div class="associated-product">
                           {% assign associated_product = block.settings.product %}
@@ -503,6 +503,13 @@
                         </div>
                       </div>
                     {% endif %}
+                  {% when 'drawer' %}
+                    <div class="product-block product-block--drawer">
+                      {% if block.settings.title != blank %}
+                        <a data-drawer-trigger data-target="AboutDrawer">{{ block.settings.link_text | default: "About Priyuja" }}</a>
+                      {% endif %}
+                      {% render 'drawer', id: "AboutDrawer", title: block.settings.title %}
+                    </div>
                 {%- endcase -%}
               {%- else -%}
                 <div
