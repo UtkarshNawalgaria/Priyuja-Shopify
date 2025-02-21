@@ -51,12 +51,13 @@
   </div>
 {%- endif -%}
 
-<div class="page-width page-width--narrow page-content">
+<div class="page-width page-width--narrow page-content" data-section-type="article">
   <article class="article">
     {%- unless section.settings.image_hero and article.image -%}
       {%- render 'breadcrumbs' -%}
 
       <header class="section-header">
+        <h1 class="section-header__title">{{ article.title }}</h1>
         {%- if section.settings.blog_show_date or article.tags.size > 0 or articles.comments_count > 0 -%}
           <div class="article__date">
             {%- if section.settings.blog_show_tags and article.tags.size > 0 -%}
@@ -75,7 +76,6 @@
             {%- endif -%}
           </div>
         {%- endif -%}
-        <h1 class="section-header__title">{{ article.title }}</h1>
         {%- if section.settings.blog_show_author -%}
           <div class="article__author">by {{ article.author }}</div>
         {%- endif -%}
@@ -165,7 +165,7 @@
                 <p><small>{{ 'blogs.comments.moderated' | t }}</small></p>
               {%- endif -%}
 
-              <button type="submit" class="btn btn--secondary">
+              <button type="submit" class="btn btn--secondary" style="padding: 0 10px;">
                 {{ 'blogs.comments.post' | t }}
               </button>
 
