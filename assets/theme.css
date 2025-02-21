@@ -8,7 +8,7 @@
 @media only screen and (min-width: 769px) {
   :root {
     --grid-gutter: 22px;
-    --drawer-gutter: 30px;
+    --drawer-gutter: 20px;
   }
 }
 
@@ -3433,7 +3433,7 @@ html {
 }
 
 .page-width--narrow {
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .page-width--tiny {
@@ -5780,7 +5780,7 @@ svg.icon-cart circle {
 @media only screen and (min-width: 769px) {
   .drawer__fixed-header,
   .drawer__header {
-    min-height: 80px;
+    min-height: 60px;
   }
 }
 
@@ -5792,11 +5792,6 @@ svg.icon-cart circle {
 
 .drawer__title {
   width: 100%;
-}
-
-.drawer__close {
-  text-align: center;
-  width: 1%;
 }
 
 .drawer__close-button {
@@ -11499,16 +11494,18 @@ a.color-swatch:hover {
   text-align: right;
 }
 
+[data-section-type="blog"] .blog-grid {
+  display: block;
+}
+
+[data-section-type="article"].page-content {
+  padding-top: 100px;
+}
+
 .article__grid-image {
   display: block;
   margin-bottom: 17px;
   text-align: center;
-}
-
-@media only screen and (min-width: 769px) {
-  .article__grid-image {
-    margin-bottom: 20px;
-  }
 }
 
 .article__grid-image img {
@@ -11516,7 +11513,7 @@ a.color-swatch:hover {
 }
 
 .article__title {
-  font-size: calc(var(--typeBaseSize) + 2px);
+  font-size: calc(var(--typeBaseSize) - 2px);
 }
 
 .article__date {
@@ -11540,6 +11537,16 @@ a.color-swatch:hover {
 @media only screen and (min-width: 769px) {
   [data-center-text="true"] .article__grid-meta {
     text-align: center;
+  }
+
+  [data-section-type="blog"] .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .article__grid-image {
+    margin-bottom: 20px;
   }
 }
 
@@ -13397,7 +13404,7 @@ newsletter-reminder .newsletter-reminder__message {
 
 .cart__item-name {
   display: block;
-  font-size: calc(var(--typeBaseSize) + 1px);
+  font-size: calc(var(--typeBaseSize) - 1px);
   margin-bottom: 8px;
 }
 
@@ -13411,6 +13418,7 @@ newsletter-reminder .newsletter-reminder__message {
 
 .cart__price {
   display: block;
+  font-size: calc(var(--typeBaseSize) - 2px);
 }
 
 .cart__price--strikethrough {
@@ -13520,7 +13528,7 @@ iframe.zoid-component-frame {
 }
 
 .product-single__meta {
-  padding-left: 45px;
+  padding-left: 30px;
 }
 
 @media only screen and (max-width: 768px) {
