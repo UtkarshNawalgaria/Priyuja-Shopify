@@ -11494,7 +11494,7 @@ a.color-swatch:hover {
   text-align: right;
 }
 
-[data-section-type="blog"] .blog-grid {
+.blog-grid {
   display: block;
 }
 
@@ -11539,7 +11539,7 @@ a.color-swatch:hover {
     text-align: center;
   }
 
-  [data-section-type="blog"] .blog-grid {
+  .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
