@@ -6391,6 +6391,7 @@ tool-tip[data-tool-tip-open="true"] .tool-tip__inner {
   padding: 7.5px 0;
   text-align: center;
   margin-top: 60px;
+  color: white;
 }
 
 ul + .footer__small-text {
@@ -6404,6 +6405,20 @@ ul + .footer__small-text {
 
 .footer__section {
   margin-bottom: 15px;
+}
+
+.site-footer .other-links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  gap: 5px;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.site-footer .other-links ul a {
+  color: white;
 }
 
 @media only screen and (min-width: 769px) {

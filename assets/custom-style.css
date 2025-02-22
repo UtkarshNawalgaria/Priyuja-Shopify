@@ -509,8 +509,7 @@ h4.product-specification__heading {
   }
 
   footer.site-footer {
-    padding-bottom: 50% !important;
-    padding-top: 25px !important;
+    padding: 25px 0 !important;
   }
 
   .footer__item--footer-0 {

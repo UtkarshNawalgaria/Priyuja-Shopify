@@ -26,10 +26,13 @@
 
 <footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
-
     <div class="grid">
       {%- for block in section.blocks -%}
-        <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}" data-type="{{ block.type }}">
+        <div
+          {{ block.shopify_attributes }}
+          class="grid__item footer__item--{{ block.id }}"
+          data-type="{{ block.type }}"
+        >
           {%- style -%}
             @media only screen and (min-width: 769px) and (max-width: 959px) {
               .footer__item--{{ block.id }} {
@@ -71,7 +74,7 @@
         {%- render 'multi-selectors',
           locale_selector: locale_selector,
           currency_selector: currency_selector,
-          show_currency_flags: section.settings.show_currency_flags
+          show_currency_flags: section.settings.show_currency_flags,
           location: 'footer'
         -%}
       </div>
@@ -97,6 +100,23 @@
         {%- endif -%}
       </p>
     {%- endif -%}
+    <div class="other-links">
+      {% liquid
+        assign collections_to_show = blank
+        if section.settings.more_collection_links != blank
+          assign collections_to_show = section.settings.more_collection_links
+        else
+          assign collections_to_show = collections
+        endif
+      %}
+      <ul>
+        {% for collection in collections_to_show %}
+          <li>
+            <a href="{{ collection.url }}">{{ collection.title }} |</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </footer>
 
@@ -152,6 +172,11 @@
       "type": "text",
       "id": "copyright_text",
       "label": "t:sections.footer.settings.copyright_text.label"
+    },
+    {
+      "type": "collection_list",
+      "id": "more_collection_links",
+      "label": "Extra Collection Links"
     }
   ],
   "blocks": [
@@ -172,6 +197,7 @@
           "default": 50,
           "min": 20,
           "max": 120,
+          "step": 10,
           "unit": "px"
         },
         {
@@ -181,6 +207,7 @@
           "default": 25,
           "min": 15,
           "max": 95,
+          "step": 5,
           "unit": "%"
         }
       ]
@@ -208,6 +235,7 @@
           "default": 25,
           "min": 15,
           "max": 95,
+          "step": 5,
           "unit": "%"
         }
       ]
@@ -247,6 +275,7 @@
           "default": 25,
           "min": 15,
           "max": 95,
+          "step": 5,
           "unit": "%"
         }
       ]
@@ -285,6 +314,7 @@
           "default": 25,
           "min": 15,
           "max": 95,
+          "step": 5,
           "unit": "%"
         }
       ]
@@ -305,6 +335,7 @@
           "default": 25,
           "min": 20,
           "max": 95,
+          "step": 5,
           "unit": "%"
         }
       ]
