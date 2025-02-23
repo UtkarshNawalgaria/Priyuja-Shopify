@@ -281,15 +281,14 @@ a.btn {
 .product-specification__table {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 1fr;
   text-align: left;
 }
 
 .product-specification__table .column {
   display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #e3e3e3;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .section-header__title {
@@ -314,11 +313,15 @@ a.btn {
   font-size: 14px;
   font-weight: 500;
   margin: 5px 0;
+  width: 100%;
 }
 
 .product-specification__table .column span.value {
   font-size: 15px;
-  margin: 0 0 8px 0;
+  padding: 15px;
+  background-color: #fdf7f3;
+  width: 100%;
+  font-weight: 600;
 }
 
 .product-specification {
