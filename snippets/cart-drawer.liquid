@@ -42,14 +42,8 @@
           </div>
 
           <div class="cart__item-sub cart__item-row">
-            <div class="ajaxcart__subtotal">{{ 'cart.general.subtotal' | t }}</div>
-            <div data-subtotal>{{ cart.total_price | money }}</div>
-          </div>
-
-          <div class="cart__item-row text-center">
-            <small>
-              {{ 'cart.general.shipping_at_checkout' | t }}<br />
-            </small>
+            <div class="ajaxcart__subtotal"><strong>{{ 'cart.general.subtotal' | t }}</strong></div>
+            <div data-subtotal><strong>{{ cart.total_price | money }}</strong></div>
           </div>
 
           {% if settings.cart_terms_conditions_enable %}
@@ -73,6 +67,12 @@
             {% if additional_checkout_buttons and settings.cart_additional_buttons %}
               <div class="additional-checkout-buttons additional-checkout-buttons--vertical">{{ content_for_additional_checkout_buttons }}</div>
             {% endif %}
+          </div>
+
+          <div class="cart__item-row text-center" style="font-size: 14px; margin-bottom: 5px; margin-top: 5px;">
+            <small>
+              {{ 'cart.general.shipping_at_checkout' | t }}<br />
+            </small>
           </div>
         </div>
       </div>

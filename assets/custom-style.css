@@ -385,8 +385,8 @@ h4.product-specification__heading {
 }
 
 .cart__checkout-wrapper button.btn.cart__checkout:hover {
-  background: #000;
-  color: #000;
+  background: #000 !important;
+  color: #fff;
   opacity: 0.8;
   letter-spacing: normal;
 }
