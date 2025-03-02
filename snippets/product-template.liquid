@@ -187,10 +187,13 @@
                     </div>
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
-                      {% comment %} Show Sale Price {% endcomment %}
+                      {% comment %} Show Final Price {% endcomment %}
                       <span data-product-price
                         class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
                       >
+                        {% if current_variant.compare_at_price == blank %}
+                          <span style="margin-right: 10px;">MRP</span>
+                        {% endif %}
                         {%- unless product.empty? -%}
                           {{ current_variant.price | money_with_currency }}
                         {%- else -%}
