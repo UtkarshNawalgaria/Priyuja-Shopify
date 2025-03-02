@@ -45,7 +45,7 @@
 
           <div class="cart__item-sub cart__item-row">
             <div>{{ 'cart.general.subtotal' | t }}</div>
-            <div data-subtotal>{{ cart.total_price | money }}</div>
+            <div data-subtotal><strong>{{ cart.total_price | money }}</strong></div>
           </div>
 
           {% if settings.cart_terms_conditions_enable %}
@@ -93,7 +93,7 @@
 .cart__checkout-wrapper  .btn:hover {
   background: #000 !important;
 }
-  
+
 </style>
 
 {% schema %}
