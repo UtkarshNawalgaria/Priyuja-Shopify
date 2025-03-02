@@ -3410,7 +3410,7 @@ html {
 
 .page-width {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 92%;
   padding: 0 20px;
 }
 
@@ -8120,10 +8120,6 @@ details[open] > .site-nav__dropdown {
   top: 50%;
 }
 
-[data-type_headers_align_text="true"] .breadcrumb {
-  text-align: center;
-}
-
 .breadcrumb {
   font-size: calc(var(--typeBaseSize) * 0.85);
   margin: -25px 0 10px;
@@ -10713,15 +10709,9 @@ html[dir="rtl"] .grid-product__content {
 }
 
 [data-type_product_capitalize="true"] .grid-product__title {
-  font-size: calc(var(--typeBaseSize) - 2px);
+  font-size: calc(var(--typeBaseSize) - 3px);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
-
-@media only screen and (max-width: 768px) {
-  [data-type_product_capitalize="true"] .grid-product__title {
-    font-size: calc(var(--typeBaseSize) - 3px);
-  }
 }
 
 .grid-product__title {
@@ -11513,8 +11503,12 @@ a.color-swatch:hover {
   display: block;
 }
 
+[data-section-type="blog"] .section-header {
+  text-align: center;
+}
+
 [data-section-type="article"].page-content {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .article__grid-image {
@@ -11549,6 +11543,35 @@ a.color-swatch:hover {
   margin-bottom: 30px;
 }
 
+.article h2 {
+  font-size: calc(var(--typeHeaderSize) * 0.55);
+  font-weight: 600;
+}
+
+.article h3 {
+  font-size: calc(var(--typeHeaderSize) * 0.45);
+  margin-top: 30px;
+}
+
+.article__excerpt {
+  margin-top: 10px;
+}
+
+.article-hero image-element {
+  display: flex;
+  justify-content: center;
+  height: 420px;
+}
+
+.article-hero__content {
+  margin-top: 50px;
+}
+
+.article-hero__content .section-header__title {
+  font-size: calc(var(--typeHeaderSize) * 0.75);
+  margin-bottom: 15px;
+}
+
 @media only screen and (min-width: 769px) {
   [data-center-text="true"] .article__grid-meta {
     text-align: center;
@@ -11557,16 +11580,13 @@ a.color-swatch:hover {
   .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
     gap: 20px;
   }
 
   .article__grid-image {
     margin-bottom: 20px;
   }
-}
-
-.article__excerpt {
-  margin-top: 10px;
 }
 
 .logo-bar {
@@ -13449,13 +13469,14 @@ newsletter-reminder .newsletter-reminder__message {
   align-items: center;
   display: flex;
   font-size: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .cart__terms label {
-  letter-spacing: 0;
+  letter-spacing: 0.1em !important;
   margin-bottom: 0;
   text-transform: none;
+  line-height: 1;
 }
 
 .cart__checkout-wrapper {
