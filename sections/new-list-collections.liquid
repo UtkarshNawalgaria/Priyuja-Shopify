@@ -18,9 +18,9 @@
     <div class="page-width page-content">
       {%- render 'breadcrumbs' -%}
 
-      {%- if section.settings.title_enable -%}
+      {%- if section.settings.title_enable and section.settings.title != blank -%}
         <header class="section-header">
-          <h2 class="section-header__title">Shop By Fabrics</h2>
+          <h2 class="section-header__title">{{  section.settings.title }}</h2>
           <div></div>
         </header>
       {%- endif -%}
@@ -118,6 +118,12 @@
       "default": true
     },
     {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Shop By"
+    },
+    {
       "type": "paragraph",
       "content": "t:sections.list-collections-template.settings.content"
     },
@@ -213,6 +219,18 @@
           "label": "t:sections.list-collections-template.blocks.collection.settings.collection.label",
           "id": "collection",
           "type": "collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "Cover Image",
+          "info": "If cover image is not provided, first image of the first product in the collection is used."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_collection_title",
+          "label": "Show Collection Title",
+          "default": false
         }
       ]
     }

@@ -3411,7 +3411,7 @@ html {
 .page-width {
   margin: 0 auto;
   max-width: 92%;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .page-full {
@@ -10143,7 +10143,7 @@ input[type="image"] {
 
 @media only screen and (min-width: 769px) {
   .collection-content {
-    padding-top: 45px;
+    padding-top: 60px;
   }
 }
 
@@ -10946,9 +10946,9 @@ html[dir="rtl"] .grid-product__content {
     width: 39vw;
   }
 
-  .grid-overflow-wrapper .grid__item:first-child {
+  /* .grid-overflow-wrapper .grid__item:first-child {
     margin-left: 17px;
-  }
+  } */
 
   .grid-overflow-wrapper .grid__item:last-child:after {
     content: "";

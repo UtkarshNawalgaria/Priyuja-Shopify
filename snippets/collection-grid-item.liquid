@@ -6,6 +6,8 @@
 
   if settings.collection_grid_image == 'collection' and collection.image
     assign collection_image = collection.image
+  elsif block.settings.cover_image != blank
+    assign collection_image = block.settings.cover_image
   else
     assign collection_image = collection.products.first.featured_media.preview_image
   endif
@@ -54,12 +56,13 @@
       </div>
     {%- endif -%}
 
-    <span
-      class="collection-item__title collection-item__title--{{ settings.collection_grid_style }} collection-item__title--{{ settings.type_collection_font }} collection-item__title--{{ settings.collection_grid_text_align }}">
-      <span>
-        {{ title_output }}
+    {% if block.settings.show_collection_title == true %}
+      <span
+        class="collection-item__title collection-item__title--{{ settings.collection_grid_style }} collection-item__title--{{ settings.type_collection_font }} collection-item__title--{{ settings.collection_grid_text_align }}">
+        <span>
+          {{ title_output }}
+        </span>
       </span>
-    </span>
-
+    {% endif %}
   </a>
 </div>

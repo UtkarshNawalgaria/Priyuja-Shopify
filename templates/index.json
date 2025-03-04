@@ -103,25 +103,33 @@
         "collection_eyXhNg": {
           "type": "collection",
           "settings": {
-            "collection": "katan-kota-silk-banarasi-saree"
+            "collection": "katan-sarees",
+            "cover_image": "shopify://shop_images/Katan_Sarees.png",
+            "show_collection_title": false
           }
         },
         "collection_XG9eY8": {
           "type": "collection",
           "settings": {
-            "collection": "georgette-silk-banarasi-sarees"
+            "collection": "khaddi-georgette-sarees",
+            "cover_image": "shopify://shop_images/Khaddi_Georgette_Sarees.png",
+            "show_collection_title": false
           }
         },
         "collection_Fkr4fM": {
           "type": "collection",
           "settings": {
-            "collection": "chanderi-banarasi-sarees"
+            "collection": "kota-sarees",
+            "cover_image": "shopify://shop_images/Kota_Sarees.png",
+            "show_collection_title": false
           }
         },
         "collection_LKmjkx": {
           "type": "collection",
           "settings": {
-            "collection": "tissue-silk-banarasi-sarees"
+            "collection": "tissue-silk-banarasi-sarees",
+            "cover_image": "shopify://shop_images/Tissue_Sarees.png",
+            "show_collection_title": false
           }
         }
       },
@@ -133,6 +141,7 @@
       ],
       "settings": {
         "title_enable": true,
+        "title": "Shop By Fabrics",
         "display_type": "selected",
         "sort": "alphabetical",
         "grid": "4"
@@ -157,8 +166,8 @@
         }
       },
       "block_order": [
-        "tab_6fPiEy",
-        "tab_iDixTr"
+        "tab_iDixTr",
+        "tab_6fPiEy"
       ],
       "settings": {
         "title": "Shop by Occasion",
@@ -170,27 +179,46 @@
         "background_color": "#faeee6"
       }
     },
-    "background_image_text_tUJmJc": {
-      "type": "background-image-text",
+    "slideshow_ALK7H7": {
+      "type": "slideshow",
+      "blocks": {
+        "image_8pyFHb": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/8_fa98a130-b079-4d0d-9d37-741813e7a424.png",
+            "image_mobile": "shopify://shop_images/4_a628858b-ef12-4a36-9a46-3263f5a70424.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_8pyFHb"
+      ],
       "settings": {
-        "subtitle": "",
-        "title": "",
-        "text": "",
-        "button_label": "",
-        "button_link": "",
-        "image": "shopify://shop_images/8_fa98a130-b079-4d0d-9d37-741813e7a424.png",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
+        "section_height": "natural",
+        "mobile_height": "auto",
         "parallax": false,
-        "parallax_direction": "top",
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
         "lazyload_images": true
       }
     },
     "featured_collection_89bA7T": {
       "type": "featured-collection",
       "settings": {
-        "title": "Bandhani Sarees",
+        "title": "Chanderi Sarees",
         "home_featured_products": "bandhani-saree",
         "per_row": 4,
         "rows": 1,
@@ -199,70 +227,90 @@
         "divider": false
       }
     },
-    "background_image_text_aX3hfM": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "",
-        "title": "",
-        "text": "",
-        "button_label": "",
-        "button_link": "https://maps.app.goo.gl/DCfh1oZ3qWnFBNTw5",
-        "image": "shopify://shop_images/9_4782a67b-fcc7-4fee-91df-c26557549f12.png",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": false,
-        "parallax_direction": "top",
-        "lazyload_images": true
-      }
-    },
-    "featured_collections_9LHmBF": {
-      "type": "featured-collections",
+    "slideshow_8kPraM": {
+      "type": "slideshow",
       "blocks": {
-        "collection_BCxTbT": {
-          "type": "collection",
+        "image_QCkTrR": {
+          "type": "image",
           "settings": {
-            "collection": "kadhwa-saree",
-            "title": "Kadhwa",
-            "focal_point": "center center"
-          }
-        },
-        "collection_kYC6fL": {
-          "type": "collection",
-          "settings": {
-            "collection": "rangkat-saree",
-            "title": "Rangkat",
-            "focal_point": "center center"
-          }
-        },
-        "collection_XFMJAU": {
-          "type": "collection",
-          "settings": {
-            "collection": "jaal-saree",
-            "title": "Jaal",
-            "focal_point": "center center"
-          }
-        },
-        "collection_eXUPgr": {
-          "type": "collection",
-          "settings": {
-            "collection": "meenakari-saree",
-            "title": "Meenakari",
-            "focal_point": "center center"
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "https://maps.app.goo.gl/DCfh1oZ3",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/9_4782a67b-fcc7-4fee-91df-c26557549f12.png",
+            "image_mobile": "shopify://shop_images/5_ff657173-97bb-4372-af55-43cd89722f56.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "collection_BCxTbT",
-        "collection_kYC6fL",
-        "collection_XFMJAU",
-        "collection_eXUPgr"
+        "image_QCkTrR"
       ],
       "settings": {
-        "title": "Shop by weaves",
-        "divider": false,
-        "per_row": 4,
-        "enable_gutter": true
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "new_list_collections_pqkbbp": {
+      "type": "new-list-collections",
+      "blocks": {
+        "collection_XfUtfb": {
+          "type": "collection",
+          "settings": {
+            "collection": "kadhwa-saree",
+            "cover_image": "shopify://shop_images/Kadhwa_Weaves.png",
+            "show_collection_title": false
+          }
+        },
+        "collection_wDQrjY": {
+          "type": "collection",
+          "settings": {
+            "collection": "rangkat-saree",
+            "cover_image": "shopify://shop_images/Rangkat_Weaves.png",
+            "show_collection_title": false
+          }
+        },
+        "collection_FryYNg": {
+          "type": "collection",
+          "settings": {
+            "collection": "jaal-saree",
+            "cover_image": "shopify://shop_images/Jaal_Weaves.png",
+            "show_collection_title": false
+          }
+        },
+        "collection_YRp4hf": {
+          "type": "collection",
+          "settings": {
+            "collection": "meenakari-saree",
+            "cover_image": "shopify://shop_images/Meenakari_Weaves.png",
+            "show_collection_title": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_XfUtfb",
+        "collection_wDQrjY",
+        "collection_FryYNg",
+        "collection_YRp4hf"
+      ],
+      "settings": {
+        "title_enable": true,
+        "title": "Shop By Weaves",
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "grid": "4"
       }
     },
     "featured_collection_iLYJh9": {
@@ -323,10 +371,10 @@
     "featured_collection_CYzjFp",
     "new_list_collections_w4Dxha",
     "new_featured_collection_NnhHd7",
-    "background_image_text_tUJmJc",
+    "slideshow_ALK7H7",
     "featured_collection_89bA7T",
-    "background_image_text_aX3hfM",
-    "featured_collections_9LHmBF",
+    "slideshow_8kPraM",
+    "new_list_collections_pqkbbp",
     "featured_collection_iLYJh9",
     "blog_posts_TpkNXz",
     "17191198064dfa0775"

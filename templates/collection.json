@@ -13,9 +13,10 @@
       "type": "collection-header",
       "settings": {
         "enable": true,
-        "collection_image_enable": false,
+        "collection_image_enable": true,
         "parallax": false,
-        "parallax_direction": "top"
+        "parallax_direction": "top",
+        "collection_image": "shopify://shop_images/Priyuja_Website_Category_Banners_1280_x_250_px.png"
       }
     },
     "main-collection": {
