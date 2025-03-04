@@ -22,6 +22,20 @@
             "heading": ""
           }
         },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free Shipping all over India"
+          }
+        },
+        "sales_point_rEqrmV": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "tag",
+            "text": "COD Available on orders below Rs 5000"
+          }
+        },
         "separator": {
           "type": "separator",
           "settings": {}
@@ -65,17 +79,10 @@
             "page": "shipping-policy"
           }
         },
-        "sales_point": {
-          "type": "sales_point",
-          "settings": {
-            "icon": "globe",
-            "text": "Free India shipping"
-          }
-        },
         "inventory_status": {
           "type": "inventory_status",
           "settings": {
-            "inventory_threshold": 10,
+            "inventory_threshold": 5,
             "inventory_transfers_enable": true
           }
         },
@@ -87,15 +94,16 @@
       "block_order": [
         "price",
         "related_products_kFgtbC",
+        "sales_point",
+        "sales_point_rEqrmV",
         "separator",
         "quantity_selector_XeJGQA",
         "buy_buttons",
         "separator_CVFcCe",
+        "inventory_status",
         "product_specification_t7GN7t",
         "description",
         "tab",
-        "sales_point",
-        "inventory_status",
         "share"
       ],
       "settings": {

@@ -2,68 +2,7 @@
   "article": [],
   "blog": [],
   "brand": [],
-  "collection": [
-    {
-      "key": "size_chart",
-      "namespace": "custom",
-      "name": "Size Chart",
-      "description": "",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "is_brand_collection",
-      "namespace": "custom",
-      "name": "Is Brand Collection",
-      "description": "",
-      "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
-      }
-    },
-    {
-      "key": "seo_products",
-      "namespace": "custom",
-      "name": "SEO Products",
-      "description": "",
-      "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "short_description",
-      "namespace": "custom",
-      "name": "Short Description",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "promotional_banner",
-      "namespace": "custom",
-      "name": "Promotional Banner",
-      "description": "",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "sub_collections",
-      "namespace": "custom",
-      "name": "Sub Collections",
-      "description": "List of collections related to the parent collection",
-      "type": {
-        "name": "list.collection_reference",
-        "category": "REFERENCE"
-      }
-    }
-  ],
+  "collection": [],
   "company": [],
   "company_location": [],
   "location": [],

@@ -11083,7 +11083,7 @@ html[dir="rtl"] .grid-product__content {
 
 .inventory--low .icon--inventory:after,
 .inventory--low .icon--inventory:before {
-  background: #f4af29;
+  background: red;
 }
 
 .color-swatch {
