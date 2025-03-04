@@ -729,7 +729,7 @@ label:not(.variant__button-label):not(.text-label) {
 h1.product-single__title {
   text-transform: capitalize !important;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 767px) {
@@ -890,4 +890,8 @@ a[data-drawer-trigger] {
 
 [data-section-type="collection-header"].page-content {
   padding-top: 0;
+}
+
+.slide_right {
+  width: auto !important;
 }
