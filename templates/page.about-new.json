@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow_4TXNB8": {
@@ -16,8 +16,8 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "",
-            "title_size": 80,
+            "title": "About Us",
+            "title_size": 64,
             "subheading": "",
             "link": "",
             "link_text": "",
@@ -25,9 +25,9 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Untitled_design_1_ba5103da-e504-4ffe-978a-1c19d6f9e48c.png",
+            "image": "shopify://shop_images/Banaras_to_Priyuja.png",
             "parallax_direction": "top",
-            "overlay_opacity": 50
+            "overlay_opacity": 22
           }
         }
       },
@@ -41,13 +41,12 @@
         "style": "minimal",
         "autoplay": true,
         "autoplay_speed": 5,
-        "lazyload_images": true
+        "lazyload_images": false
       }
     },
     "main": {
       "type": "about-new",
-      "settings": {
-      }
+      "settings": {}
     },
     "image_gallery_8btGai": {
       "type": "image-gallery",
@@ -55,37 +54,37 @@
         "image_block_eKfjz6": {
           "type": "image_block",
           "settings": {
-            "block_image": "shopify:\/\/shop_images\/priyuja-founder.jpg"
+            "block_image": "shopify://shop_images/priyuja-founder.jpg"
           }
         },
         "image_block_PrqUCK": {
           "type": "image_block",
           "settings": {
-            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_Mr_Sharad_Nawalgaria_at_FI_Store_Launch_Event_JHV_Mall.jpg"
+            "block_image": "shopify://shop_images/Mr_Samir_Nawalgaria_Mr_Sharad_Nawalgaria_at_FI_Store_Launch_Event_JHV_Mall.jpg"
           }
         },
         "image_block_cgV7if": {
           "type": "image_block",
           "settings": {
-            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_with_Brand_Ambassador_Actress_Prachi_Desai_at_Opening_of_FI_Store.jpg"
+            "block_image": "shopify://shop_images/Mr_Samir_Nawalgaria_with_Brand_Ambassador_Actress_Prachi_Desai_at_Opening_of_FI_Store.jpg"
           }
         },
         "image_block_rTfyxr": {
           "type": "image_block",
           "settings": {
-            "block_image": "shopify:\/\/shop_images\/IMG_3914.jpg"
+            "block_image": "shopify://shop_images/IMG_3914.jpg"
           }
         },
         "image_block_7kwrmA": {
           "type": "image_block",
           "settings": {
-            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_Mr_Sharad_Nawalgaria_with_ALBELI_Priyuja_Team.jpg"
+            "block_image": "shopify://shop_images/Mr_Samir_Nawalgaria_Mr_Sharad_Nawalgaria_with_ALBELI_Priyuja_Team.jpg"
           }
         },
         "image_block_8thDAz": {
           "type": "image_block",
           "settings": {
-            "block_image": "shopify:\/\/shop_images\/Mr_Samir_Nawalgaria_Portfolio_Picture.jpg"
+            "block_image": "shopify://shop_images/Mr_Samir_Nawalgaria_Portfolio_Picture.jpg"
           }
         }
       },
