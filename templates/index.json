@@ -150,18 +150,18 @@
     "new_featured_collection_NnhHd7": {
       "type": "new-featured-collection",
       "blocks": {
-        "tab_6fPiEy": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Festive",
-            "collection": "festive-sarees"
-          }
-        },
         "tab_iDixTr": {
           "type": "tab",
           "settings": {
             "tab_title": "Formal",
             "collection": "formal"
+          }
+        },
+        "tab_6fPiEy": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Festive",
+            "collection": "festive-sarees"
           }
         }
       },
@@ -189,7 +189,7 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "",
+            "link": "https://wa.me/+919112044277",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
