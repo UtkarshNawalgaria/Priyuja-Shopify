@@ -3418,6 +3418,10 @@ html {
   padding: 0 17px;
 }
 
+.page-width--narrow {
+  max-width: 92%;
+}
+
 @media only screen and (min-width: 769px) {
   .page-full {
     padding: 0 100px;
@@ -3430,11 +3434,12 @@ html {
   .page-width--product {
     max-width: 1440px;
   }
+
+  .page-width--narrow {
+    max-width: 1200px;
+  }
 }
 
-.page-width--narrow {
-  max-width: 1200px;
-}
 
 .page-width--tiny {
   max-width: 450px;
