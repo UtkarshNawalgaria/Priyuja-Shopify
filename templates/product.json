@@ -29,11 +29,18 @@
             "text": "Free Shipping all over India"
           }
         },
-        "sales_point_rEqrmV": {
+        "sales_point_UVzzeq": {
           "type": "sales_point",
           "settings": {
-            "icon": "tag",
-            "text": "COD Available on orders below Rs 5000"
+            "icon": "truck",
+            "text": "*COD Available"
+          }
+        },
+        "sales_point_B6bRbj": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "Easy 7 day Returns"
           }
         },
         "separator": {
@@ -82,7 +89,7 @@
         "inventory_status": {
           "type": "inventory_status",
           "settings": {
-            "inventory_threshold": 5,
+            "inventory_threshold": 10,
             "inventory_transfers_enable": true
           }
         },
@@ -95,15 +102,16 @@
         "price",
         "related_products_kFgtbC",
         "sales_point",
-        "sales_point_rEqrmV",
+        "sales_point_UVzzeq",
+        "sales_point_B6bRbj",
         "separator",
         "quantity_selector_XeJGQA",
         "buy_buttons",
         "separator_CVFcCe",
-        "inventory_status",
         "product_specification_t7GN7t",
         "description",
         "tab",
+        "inventory_status",
         "share"
       ],
       "settings": {
