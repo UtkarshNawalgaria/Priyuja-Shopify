@@ -828,6 +828,7 @@ offer-list {
   align-items: center;
   padding: 15px;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 
 .product-block--tab details summary svg {

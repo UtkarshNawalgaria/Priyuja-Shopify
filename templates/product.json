@@ -63,6 +63,21 @@
           "type": "separator",
           "settings": {}
         },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "text_with_image_4F3GJb": {
+          "type": "text_with_image",
+          "settings": {
+            "heading": "Visit Our Store",
+            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053",
+            "image": "shopify://shop_images/priyuja_store.jpg"
+          }
+        },
         "product_specification_t7GN7t": {
           "type": "product_specification",
           "settings": {
@@ -72,9 +87,8 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
-            "is_tab": false
+            "is_tab": true
           }
         },
         "tab": {
@@ -93,24 +107,9 @@
             "page": "shipping-policy"
           }
         },
-        "inventory_status": {
-          "type": "inventory_status",
-          "settings": {
-            "inventory_threshold": 10,
-            "inventory_transfers_enable": true
-          }
-        },
         "share": {
           "type": "share",
           "settings": {}
-        },
-        "text_with_image_4F3GJb": {
-          "type": "text_with_image",
-          "settings": {
-            "heading": "Visit Our Store",
-            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053",
-            "image": "shopify://shop_images/priyuja_store.jpg"
-          }
         }
       },
       "block_order": [
@@ -123,13 +122,13 @@
         "quantity_selector_XeJGQA",
         "buy_buttons",
         "separator_CVFcCe",
+        "inventory_status",
         "text_with_image_4F3GJb",
         "product_specification_t7GN7t",
         "description",
         "tab",
         "tab_VQqH6J",
-        "inventory_status",
-        "share",
+        "share"
       ],
       "settings": {
         "sku_enable": true,
