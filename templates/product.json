@@ -63,12 +63,16 @@
           "type": "separator",
           "settings": {}
         },
-        "text_with_image_4F3GJb": {
-          "type": "text_with_image",
+        "offer_list_WthdjK": {
+          "type": "offer_list",
           "settings": {
-            "heading": "Visit Our Store",
-            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053",
-            "image": "shopify://shop_images/priyuja_store.jpg"
+            "header": "",
+            "offer_1_code": "FIRST20",
+            "offer_1_text": "Get 20% off on all products",
+            "offer_2_code": "",
+            "offer_2_text": "",
+            "offer_3_code": "",
+            "offer_3_text": ""
           }
         },
         "product_specification_t7GN7t": {
@@ -100,6 +104,14 @@
             "page": "shipping-policy"
           }
         },
+        "text_with_image_4F3GJb": {
+          "type": "text_with_image",
+          "settings": {
+            "heading": "Visit Our Store",
+            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053",
+            "image": "shopify://shop_images/priyuja_store.jpg"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {}
@@ -115,6 +127,7 @@
         "quantity_selector_XeJGQA",
         "buy_buttons",
         "separator_CVFcCe",
+        "offer_list_WthdjK",
         "product_specification_t7GN7t",
         "description",
         "tab",
