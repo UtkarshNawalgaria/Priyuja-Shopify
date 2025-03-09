@@ -63,13 +63,6 @@
           "type": "separator",
           "settings": {}
         },
-        "inventory_status": {
-          "type": "inventory_status",
-          "settings": {
-            "inventory_threshold": 10,
-            "inventory_transfers_enable": true
-          }
-        },
         "text_with_image_4F3GJb": {
           "type": "text_with_image",
           "settings": {
@@ -122,12 +115,11 @@
         "quantity_selector_XeJGQA",
         "buy_buttons",
         "separator_CVFcCe",
-        "inventory_status",
-        "text_with_image_4F3GJb",
         "product_specification_t7GN7t",
         "description",
         "tab",
         "tab_VQqH6J",
+        "text_with_image_4F3GJb",
         "share"
       ],
       "settings": {

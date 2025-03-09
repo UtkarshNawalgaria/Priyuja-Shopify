@@ -795,13 +795,13 @@ offer-list {
 }
 
 .product-block__offer-list .offer-item {
-  border: 1px solid grey;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	border: 1px solid #a41b0c;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	background: #fdf7f3;
 }
 
 .product-block__offer-list .offer-item .offer-code {
@@ -913,4 +913,8 @@ a[data-drawer-trigger] {
 
 .product-block--text_with_image .flex-block .text {
   font-size: 12px;
+}
+
+.product-block--product_form {
+  margin-bottom: 0;
 }
