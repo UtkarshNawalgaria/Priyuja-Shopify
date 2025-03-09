@@ -895,3 +895,21 @@ a[data-drawer-trigger] {
 .slide_right {
   width: auto !important;
 }
+
+.product-block--text_with_image .flex-block {
+  display: flex;
+  gap: 20px;
+}
+
+.product-block--text_with_image .flex-block .image-block {
+  flex-shrink: 0;
+}
+
+.product-block--text_with_image .flex-block .heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-block--text_with_image .flex-block .text {
+  font-size: 12px;
+}

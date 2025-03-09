@@ -157,9 +157,23 @@
                     {% render block %}
                   {%- when 'separator' -%}
                     <div class="product-block product-block--separator" {{ block.shopify_attributes }}><hr></div>
-                  {%- when 'text' -%}
-                    <div class="product-block product-block--text" {{ block.shopify_attributes }}>
-                      {{ block.settings.text }}
+                  {%- when 'text_with_image' -%}
+                    <div class="product-block product-block--text_with_image" {{ block.shopify_attributes }}>
+                      <div class="flex-block">
+                        <div class="image-block">
+                          {% if block.settings.image != blank %}
+                            {{ block.settings.image | image_url: width: 150 | image_tag: class: 'image' }}
+                          {% endif %}
+                        </div>
+                        <div>
+                          {% if block.settings.heading != blank %}
+                            <div class="heading">{{ block.settings.heading }}</div>
+                          {% endif %}
+                          {% if block.settings.text != blank %}
+                            <div class="text">{{ block.settings.text }}</div>
+                          {% endif %}
+                        </div>
+                      </div>
                     </div>
                   {%- when 'tab' -%}
                     {% assign tab_id = block.id | append: product.id %}

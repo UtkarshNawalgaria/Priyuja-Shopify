@@ -103,6 +103,14 @@
         "share": {
           "type": "share",
           "settings": {}
+        },
+        "text_with_image_4F3GJb": {
+          "type": "text_with_image",
+          "settings": {
+            "heading": "Visit Our Store",
+            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053",
+            "image": "shopify://shop_images/priyuja_store.jpg"
+          }
         }
       },
       "block_order": [
@@ -115,12 +123,13 @@
         "quantity_selector_XeJGQA",
         "buy_buttons",
         "separator_CVFcCe",
+        "text_with_image_4F3GJb",
         "product_specification_t7GN7t",
         "description",
         "tab",
         "tab_VQqH6J",
         "inventory_status",
-        "share"
+        "share",
       ],
       "settings": {
         "sku_enable": true,

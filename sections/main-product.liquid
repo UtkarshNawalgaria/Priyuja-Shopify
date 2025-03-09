@@ -430,14 +430,25 @@
       ]
     },
     {
-      "type": "text",
+      "type": "text_with_image",
       "name": "t:product_block.text.name",
       "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading"
+        },
         {
           "type": "text",
           "id": "text",
           "default": "Text block",
           "label": "t:product_block.text.settings.text.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         }
       ]
     },
