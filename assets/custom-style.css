@@ -3,9 +3,7 @@
 }
 
 .site-nav__link {
-  letter-spacing: 0.07em !important;
   font-weight: 500;
-  font-size: 18px;
   padding: 5px 10px;
   margin: 0 2rem;
 }
@@ -64,7 +62,7 @@
 
 footer.site-footer {
   background: #c8675c
-    url("https://cdn.shopify.com/s/files/1/0704/1119/0580/files/Footer.jpg?v=1741179024")
+    url("https://cdn.shopify.com/s/files/1/0704/1119/0580/files/footer_2.png?v=1741671768")
     no-repeat left top;
   /* padding-bottom: 8% !important; */
   padding-top: 40px !important;
@@ -77,6 +75,11 @@ footer.site-footer {
   border-top: none !important;
   padding-bottom: 0;
   padding-top: 0;
+}
+
+.site-footer .page-width {
+	padding-bottom: 180px;
+	max-width: 69%;
 }
 
 .footer__newsletter-input {
@@ -346,7 +349,7 @@ a.btn {
 }
 
 .product-single__meta .social-sharing {
-  margin-top: 30px;
+  margin-top: 0;
   text-align: left;
 }
 

@@ -85,18 +85,6 @@
         "lazyload_images": true
       }
     },
-    "featured_collection_CYzjFp": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Sarees Below Rs 5000",
-        "home_featured_products": "sarees-under-5000",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "new_list_collections_w4Dxha": {
       "type": "new-list-collections",
       "blocks": {
@@ -147,27 +135,39 @@
         "grid": "4"
       }
     },
+    "featured_collection_CYzjFp": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Sarees Below Rs 5000",
+        "home_featured_products": "sarees-under-5000",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "new_featured_collection_NnhHd7": {
       "type": "new-featured-collection",
       "blocks": {
-        "tab_iDixTr": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Formal",
-            "collection": "formal"
-          }
-        },
         "tab_6fPiEy": {
           "type": "tab",
           "settings": {
             "tab_title": "Festive",
             "collection": "festive-sarees"
           }
+        },
+        "tab_iDixTr": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Formal",
+            "collection": "formal"
+          }
         }
       },
       "block_order": [
-        "tab_iDixTr",
-        "tab_6fPiEy"
+        "tab_6fPiEy",
+        "tab_iDixTr"
       ],
       "settings": {
         "title": "Shop by Occasion",
@@ -218,8 +218,8 @@
     "featured_collection_89bA7T": {
       "type": "featured-collection",
       "settings": {
-        "title": "Chanderi Sarees",
-        "home_featured_products": "bandhani-saree",
+        "title": "Katan Sarees",
+        "home_featured_products": "katan-sarees",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": false,
@@ -237,7 +237,7 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "https://maps.app.goo.gl/DCfh1oZ3",
+            "link": "https://g.co/kgs/QW7PEib",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -313,18 +313,6 @@
         "grid": "4"
       }
     },
-    "featured_collection_iLYJh9": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our Best Seller",
-        "home_featured_products": "bestsellers",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "blog_posts_TpkNXz": {
       "type": "blog-posts",
       "settings": {
@@ -364,19 +352,55 @@
         "full_width": true,
         "space_around": true
       }
+    },
+    "slideshow_8kPraMa": {
+      "type": "slideshow",
+      "blocks": {
+        "image_QCkTrR": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/footer_1.png",
+            "image_mobile": "shopify://shop_images/footer_1_-_mobile_size.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_QCkTrR"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
     }
   },
   "order": [
     "slideshow",
-    "featured_collection_CYzjFp",
     "new_list_collections_w4Dxha",
+    "featured_collection_CYzjFp",
     "new_featured_collection_NnhHd7",
     "slideshow_ALK7H7",
     "featured_collection_89bA7T",
     "slideshow_8kPraM",
     "new_list_collections_pqkbbp",
-    "featured_collection_iLYJh9",
     "blog_posts_TpkNXz",
-    "17191198064dfa0775"
+    "17191198064dfa0775",
+    "slideshow_8kPraMa"
   ]
 }

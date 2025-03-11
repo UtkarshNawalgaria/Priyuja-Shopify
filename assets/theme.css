@@ -3634,7 +3634,6 @@ strong {
   font-weight: 700;
 }
 
-p[data-spam-detection-disclaimer],
 small {
   font-size: 0.85em;
 }
@@ -3781,34 +3780,17 @@ h3 {
 
 .h1,
 h1 {
-  font-size: calc(var(--typeHeaderSize) * 0.85);
+  font-size: calc(var(--typeHeaderSize));
 }
 
 .h2,
 h2 {
-  font-size: calc(var(--typeHeaderSize) * 0.55);
+  font-size: calc(var(--typeHeaderSize) / var(--typography-ratio));
 }
 
 .h3,
 h3 {
-  font-size: calc(var(--typeHeaderSize) * 0.62);
-}
-
-@media only screen and (min-width: 769px) {
-  .h1,
-  h1 {
-    font-size: var(--typeHeaderSize);
-  }
-
-  .h2,
-  h2 {
-    font-size: calc(var(--typeHeaderSize) * 0.65);
-  }
-
-  .h3,
-  h3 {
-    font-size: calc(var(--typeHeaderSize) * 0.65);
-  }
+  font-size: calc(var(--typeHeaderSize) / var(--typography-ratio) / var(--typography-ratio));
 }
 
 .h4,
@@ -7620,6 +7602,7 @@ form + .footer__social {
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
+  letter-spacing: 0.07em;
 }
 
 .site-header--heading-style .site-nav__link {
