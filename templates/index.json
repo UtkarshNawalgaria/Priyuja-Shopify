@@ -12,25 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_kbQLqx": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 65,
-            "subheading": "",
-            "link": "shopify://collections/all",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/7_7870a525-8838-437e-a9d1-c43ced14a785.png",
-            "image_mobile": "shopify://shop_images/3_116432ff-1abc-4b44-a57d-09e181acf499.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
         "image_tHinMX": {
           "type": "image",
           "settings": {
@@ -71,7 +52,6 @@
         }
       },
       "block_order": [
-        "image_kbQLqx",
         "image_tHinMX",
         "image_AnVpxQ"
       ],
