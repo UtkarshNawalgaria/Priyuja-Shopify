@@ -413,6 +413,7 @@ h4.product-specification__heading {
 
 #wishlisthero-product-page-button-container button {
   text-align: left !important;
+  padding: 0px !important;
 }
 
 .app-icon-text {
@@ -785,10 +786,26 @@ offer-list {
   display: block;
 }
 
+.product-block__offer-list details {
+  cursor: pointer;
+}
+
+.product-block__offer-list details summary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-block__offer-list details summary svg {
+  width: 30px;
+  height: 30px;
+}
+
 .product-block__offer-list h4 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0;
+  margin-bottom: 10px;
 }
 
 .product-block__offer-list .offer-list {
@@ -835,8 +852,7 @@ offer-list {
 }
 
 .product-block--tab details summary svg {
-  width: 15px;
-  transition: rotate 0.3s;
+  width: 20px;
 }
 
 .product-block--tab details[open] svg {
@@ -920,4 +936,12 @@ a[data-drawer-trigger] {
 
 .product-block--product_form {
   margin-bottom: 0;
+}
+
+#app-input-btn {
+  text-align: left;
+}
+
+#app-input-btn .zip-app-btn {
+  background: #a91c0c !important;
 }

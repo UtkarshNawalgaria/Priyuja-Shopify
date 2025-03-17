@@ -19,14 +19,14 @@
             "title": "",
             "title_size": 65,
             "subheading": "",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections/katan-sarees",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/6_ba529a5d-3d27-4ba2-ae73-5194af414e23.png",
-            "image_mobile": "shopify://shop_images/Priyuja_Banners_-_Mobile_Size.png",
+            "image": "shopify://shop_images/Katan_Sarees_banner.png",
+            "image_mobile": "shopify://shop_images/Katan_Sarees_Banner_Mobile.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -44,8 +44,8 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/Priyuja_Banner_2_-_Desktop_Size.jpg",
-            "image_mobile": "shopify://shop_images/Priyuja_Banners_-_Mobile_Size_2.jpg",
+            "image": "shopify://shop_images/Kota_Sarees_Banner.png",
+            "image_mobile": "shopify://shop_images/Kota_Sarees_Banner_Mobile.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
