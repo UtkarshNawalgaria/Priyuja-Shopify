@@ -71,8 +71,8 @@
         "collection_eyXhNg": {
           "type": "collection",
           "settings": {
-            "collection": "katan-sarees",
-            "cover_image": "shopify://shop_images/Katan_Sarees.png",
+            "collection": "tissue-sarees",
+            "cover_image": "shopify://shop_images/Semi_Tissue_Sarees.jpg",
             "show_collection_title": false
           }
         },
@@ -80,23 +80,23 @@
           "type": "collection",
           "settings": {
             "collection": "khaddi-georgette-sarees",
-            "cover_image": "shopify://shop_images/Khaddi_Georgette_Sarees.png",
+            "cover_image": "shopify://shop_images/Khaddi_Georgette_Sarees.jpg",
             "show_collection_title": false
           }
         },
         "collection_Fkr4fM": {
           "type": "collection",
           "settings": {
-            "collection": "kota-sarees",
-            "cover_image": "shopify://shop_images/Kota_Sarees.png",
+            "collection": "cotton-sarees",
+            "cover_image": "shopify://shop_images/Cotton_Sarees.jpg",
             "show_collection_title": false
           }
         },
         "collection_LKmjkx": {
           "type": "collection",
           "settings": {
-            "collection": "tissue-silk-banarasi-sarees",
-            "cover_image": "shopify://shop_images/Tissue_Sarees.png",
+            "collection": "katan-sarees",
+            "cover_image": "shopify://shop_images/Katan_Sarees.jpg",
             "show_collection_title": false
           }
         }
