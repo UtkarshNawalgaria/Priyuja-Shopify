@@ -410,27 +410,7 @@
                       {%- render 'product-complementary', block: block, product: product, type: 'block', image_style: block.settings.image_style -%}
                     </div>
                   {%- when 'related_products' -%}
-                    {% assign related_products = product.metafields.custom.related_products.value %}
-                    {% assign related_products_count = related_products | reverse | reverse | size %}
-
-                    {% if related_products_count > 0 %}
-                      <div class="product-block related-products" {{ block.shopify_attributes }}>
-                        {% if block.settings.heading %}
-                          <p class="related-products__title">{{ block.settings.heading }}</p>
-                        {% endif %}
-                        <div class="products_list">
-                          {%- for _product in related_products -%}
-                            {% assign first_image = _product.media[0] %}
-                            <div class="related-products__item">
-                              <a href="{{ _product.url }}">
-                                {{ first_image | image_url: height: 100 | image_tag }}
-                                <span>{{ _product.metafields.custom.color }}</span>
-                              </a>
-                            </div>
-                          {%- endfor -%}
-                        </div>
-                      </div>
-                    {% endif %}
+                    {% render 'related-products', product: product, block: block %}
                   {%- when 'trust_badge' -%}
                     <div class="product-block product-block--trust_badge" {{ block.shopify_attributes }}>
                       <div class="aos-animate" style="max-width: {{ block.settings.trust_image.width }}px; margin: 0 auto;">

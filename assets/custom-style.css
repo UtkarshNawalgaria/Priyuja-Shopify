@@ -647,6 +647,12 @@ h4.product-specification__heading {
   gap: 10px;
 }
 
+.product-block.related-products .related-products__item .current {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 2px;
+}
+
 .product-block.related-products .related-products__item img {
   border-radius: 3px;
 }
