@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "t:sections.header-group.name",
@@ -17,14 +17,23 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "text": "BOOK VIDEO CALL",
-            "link_text": "To Experience Our Entire Collection",
+            "text": "Get 20% OFF First Purchase",
+            "link_text": "Use CODE - FIRST20",
+            "link": ""
+          }
+        },
+        "announcement_JctViF": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping all over India",
+            "link_text": "30-day postage paid returns",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-0"
+        "announcement-0",
+        "announcement_JctViF"
       ],
       "settings": {
         "announcement_compact": true
@@ -45,9 +54,7 @@
       "block_order": [
         "header-0"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "main_menu_link_list": "new-main-menu",
         "hover_menu": true,
