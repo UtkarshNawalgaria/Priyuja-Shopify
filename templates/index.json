@@ -127,6 +127,18 @@
         "divider": false
       }
     },
+    "featured_collection_89bA7T": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Linen Sarees",
+        "home_featured_products": "linen-sarees",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
     "new_featured_collection_NnhHd7": {
       "type": "new-featured-collection",
       "blocks": {
@@ -193,18 +205,6 @@
         "autoplay": false,
         "autoplay_speed": 5,
         "lazyload_images": true
-      }
-    },
-    "featured_collection_89bA7T": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Linen Sarees",
-        "home_featured_products": "linen-sarees",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": false,
-        "view_all": false,
-        "divider": false
       }
     },
     "slideshow_8kPraM": {
@@ -374,9 +374,9 @@
     "slideshow",
     "new_list_collections_w4Dxha",
     "featured_collection_CYzjFp",
-    "new_featured_collection_NnhHd7",
-    "slideshow_ALK7H7",
     "featured_collection_89bA7T",
+    "slideshow_ALK7H7",
+    "new_featured_collection_NnhHd7",
     "slideshow_8kPraM",
     "new_list_collections_pqkbbp",
     "blog_posts_TpkNXz",
