@@ -38,7 +38,7 @@
             "title": "",
             "title_size": 65,
             "subheading": "",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections/kota-sarees",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -251,7 +251,7 @@
           "settings": {
             "collection": "kadhwa-saree",
             "cover_image": "shopify://shop_images/Kadhwa_Weaves.png",
-            "show_collection_title": false
+            "show_collection_title": true
           }
         },
         "collection_wDQrjY": {
