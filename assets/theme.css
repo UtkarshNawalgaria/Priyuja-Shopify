@@ -6394,6 +6394,12 @@ ul + .footer__small-text {
   margin-bottom: 15px;
 }
 
+.site-footer .other-links .header {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
 .site-footer .other-links ul {
   list-style: none;
   display: flex;

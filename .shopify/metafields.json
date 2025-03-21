@@ -73,6 +73,16 @@
         "name": "list.collection_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "group_type",
+      "namespace": "custom",
+      "name": "Group Type",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "company": [],

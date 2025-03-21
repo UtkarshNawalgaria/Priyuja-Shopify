@@ -101,19 +101,34 @@
       </p>
     {%- endif -%}
     <div class="other-links">
-      {% liquid
-        assign collections_to_show = blank
-        if section.settings.more_collection_links != blank
-          assign collections_to_show = section.settings.more_collection_links
-        else
-          assign collections_to_show = collections
-        endif
-      %}
+      <div class="header">Explore our Fabrics</div>
       <ul>
-        {% for collection in collections_to_show %}
-          <li>
-            <a href="{{ collection.url }}">{{ collection.title }} |</a>
-          </li>
+        {% for collection in collections %}
+          {% if collection.metafields.custom.group_type.value == "fabric" %}
+            <li>
+              <a href="{{ collection.url }}">{{ collection.title }} |</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <div class="header">Explore our Colors</div>
+      <ul>
+        {% for collection in collections %}
+          {% if collection.metafields.custom.group_type.value == "color" %}
+            <li>
+              <a href="{{ collection.url }}">{{ collection.title }} |</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <div class="header">Explore our Weaves</div>
+      <ul>
+        {% for collection in collections %}
+          {% if collection.metafields.custom.group_type.value == "weave" %}
+            <li>
+              <a href="{{ collection.url }}">{{ collection.title }} |</a>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
