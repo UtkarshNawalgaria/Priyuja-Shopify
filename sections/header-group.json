@@ -17,8 +17,8 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "text": "Use CODE - FIRST20",
-            "link_text": "Get 20% OFF First Purchase",
+            "text": "Use CODE - FIRST10",
+            "link_text": "Get 10% OFF First Purchase",
             "link": ""
           }
         },
