@@ -139,38 +139,6 @@
         "divider": false
       }
     },
-    "new_featured_collection_NnhHd7": {
-      "type": "new-featured-collection",
-      "blocks": {
-        "tab_6fPiEy": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Festive",
-            "collection": "festive-sarees"
-          }
-        },
-        "tab_iDixTr": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Formal",
-            "collection": "formal-sarees"
-          }
-        }
-      },
-      "block_order": [
-        "tab_6fPiEy",
-        "tab_iDixTr"
-      ],
-      "settings": {
-        "title": "Shop by Occasion",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false,
-        "background_color": "#faeee6"
-      }
-    },
     "slideshow_ALK7H7": {
       "type": "slideshow",
       "blocks": {
@@ -205,6 +173,38 @@
         "autoplay": false,
         "autoplay_speed": 5,
         "lazyload_images": true
+      }
+    },
+    "new_featured_collection_NnhHd7": {
+      "type": "new-featured-collection",
+      "blocks": {
+        "tab_6fPiEy": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Festive",
+            "collection": "festive-sarees"
+          }
+        },
+        "tab_iDixTr": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Formal",
+            "collection": "formal-sarees"
+          }
+        }
+      },
+      "block_order": [
+        "tab_6fPiEy",
+        "tab_iDixTr"
+      ],
+      "settings": {
+        "title": "Shop by Occasion",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false,
+        "background_color": "#faeee6"
       }
     },
     "slideshow_8kPraM": {
@@ -285,6 +285,7 @@
         "collection_FryYNg",
         "collection_YRp4hf"
       ],
+      "disabled": true,
       "settings": {
         "title_enable": true,
         "title": "Shop By Weaves",
