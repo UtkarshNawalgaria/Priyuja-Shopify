@@ -26,26 +26,25 @@
           "type": "sales_point",
           "settings": {
             "icon": "globe",
-            "text": "Free Shipping all over India"
+            "text": "Free Shipping all over India",
+            "show_icon": true
           }
         },
         "sales_point_UVzzeq": {
           "type": "sales_point",
           "settings": {
             "icon": "truck",
-            "text": "*COD Available"
+            "text": "COD Available",
+            "show_icon": true
           }
         },
         "sales_point_B6bRbj": {
           "type": "sales_point",
           "settings": {
             "icon": "package",
-            "text": "Easy 7 day Returns"
+            "text": "Easy 7 day Returns",
+            "show_icon": true
           }
-        },
-        "separator": {
-          "type": "separator",
-          "settings": {}
         },
         "quantity_selector_XeJGQA": {
           "type": "quantity_selector",
@@ -67,8 +66,8 @@
           "type": "offer_list",
           "settings": {
             "header": "Our Offers",
-            "offer_1_code": "FIRST20",
-            "offer_1_text": "Get 20% off on all products",
+            "offer_1_code": "FIRST10",
+            "offer_1_text": "Get 10% off on all products",
             "offer_2_code": "",
             "offer_2_text": "",
             "offer_3_code": "",
@@ -80,6 +79,14 @@
           "settings": {
             "heading": "Product Specification",
             "field_list": "Fabric,Color,Weave,Border,Pallu,Occasion,Loom"
+          }
+        },
+        "sales_point_color_note": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "*Note - The colors seen in the image may vary from the actual product due to different computer screen resolutions and displays.",
+            "show_icon": false
           }
         },
         "description": {
@@ -115,15 +122,7 @@
         "share": {
           "type": "share",
           "settings": {}
-        },
-        "sales_point_color_note": {
-          "type": "sales_point",
-          "settings": {
-            "icon": "package",
-            "text": "*Note - The colors seen in the image may vary from the actual product due to different computer screen resolutions and displays.",
-            "show_icon": false
-          }
-        },
+        }
       },
       "block_order": [
         "price",
@@ -196,6 +195,19 @@
     "collection-return": {
       "type": "collection-return",
       "settings": {}
+    },
+    "featured_collection_pJHYU9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "all-sarees",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
     }
   },
   "order": [
@@ -204,6 +216,7 @@
     "product-recommendations",
     "1719414030206c37f9",
     "recently-viewed",
-    "collection-return"
+    "collection-return",
+    "featured_collection_pJHYU9"
   ]
 }
