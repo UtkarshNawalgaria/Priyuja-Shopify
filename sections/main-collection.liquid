@@ -51,7 +51,7 @@
                 <div data-scroll-to>
                   {% render 'collection-grid',
                     collection: collection,
-                    items: collection.products,
+                    items: collection.products | sort_by: 'created-descending',
                     enable_sidebar: section.settings.enable_sidebar,
                     filter_style: section.settings.filter_style,
                     enable_sort: section.settings.enable_sort,
