@@ -198,10 +198,9 @@
     },
     "featured_collection_pJHYU9": {
       "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.featured_collection.name",
       "settings": {
         "title": "Featured collection",
-        "home_featured_products": "all-sarees",
+        "home_featured_products": "sarees",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
