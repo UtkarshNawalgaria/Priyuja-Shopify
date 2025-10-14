@@ -104,37 +104,6 @@
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
-      },
-      "940650814580334357": {
-        "type": "shopify://apps/product-compare/blocks/app-embed-block/2ec083cc-5677-4d10-a2af-c02464aa361b",
-        "disabled": false,
-        "settings": {}
-      },
-      "7870687481494312845": {
-        "type": "shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
-        "disabled": false,
-        "settings": {
-          "customThemeName": "Impulse",
-          "additionalWLButtonCssClasses": "",
-          "additionalWLCartBubbleCssClasses": "",
-          "extraHTMLToAppend": "",
-          "disableAutomaticButtonAddition": false
-        }
-      },
-      "15202526072292146591": {
-        "type": "shopify://apps/lm-add-to-cart-sticky/blocks/app-embed/2af1b5f6-34fa-4b15-b391-c6e67976f074",
-        "disabled": false,
-        "settings": {}
-      },
-      "9356323809658795675": {
-        "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
-        "disabled": false,
-        "settings": {
-          "debugging_popup_script": "",
-          "debugging_pops_script": "",
-          "debugging_global_script": "",
-          "enable_reelPops": true
-        }
       }
     }
   },
