@@ -115,8 +115,7 @@
           "type": "text_with_image",
           "settings": {
             "heading": "Visit Our Store",
-            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053",
-            "image": "shopify://shop_images/Priyuja_Store.png"
+            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053"
           }
         },
         "share": {
@@ -172,15 +171,6 @@
     },
     "1719414030206c37f9": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_9YPfKK": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_9YPfKK"
-      ],
       "settings": {
         "full_width": false,
         "space_around": false
@@ -209,6 +199,27 @@
         "view_all": true,
         "divider": false
       }
+    },
+    "17604604216a15c2a7": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_VX9HFg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_VX9HFg"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -218,6 +229,7 @@
     "1719414030206c37f9",
     "recently-viewed",
     "collection-return",
-    "featured_collection_pJHYU9"
+    "featured_collection_pJHYU9",
+    "17604604216a15c2a7"
   ]
 }
