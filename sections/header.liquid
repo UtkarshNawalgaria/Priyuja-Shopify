@@ -36,7 +36,8 @@
 {%- render 'cart-drawer' -%}
 
 <style>
-  .site-nav__dropdown-link:not(.site-nav__dropdown-link--top-level) {
+  .site-nav__dropdown-link:not(.site-nav__dropdown-link--top-level),
+  .site-nav__link {
     font-size: {{ settings.type_navigation_size }}px;
   }
   {% if settings.type_navigation_capitalize %}
@@ -47,7 +48,6 @@
     }
     .site-nav__link {
       text-transform: uppercase;
-      font-size: {{ settings.type_navigation_size }}px;
     }
   {% endif %}
 

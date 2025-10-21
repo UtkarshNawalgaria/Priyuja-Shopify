@@ -38,7 +38,9 @@
           <div class="page-width">
             <header class="section-header section-header--hero">
               <div class="section-header__shadow">
-                {%- render 'breadcrumbs' -%}
+                {% if section.settings.show_breadcrumbs == true %}
+                  {%- render 'breadcrumbs' -%}
+                {% endif %}
                 <h1 class="section-header__title">
                   {{ collection.title }}
                 </h1>
@@ -54,8 +56,10 @@
       {% if section.settings.collection_image != blank %}
         <div>{{ section.settings.collection_image | image_url: width: 1920 | image_tag }}</div>
       {% endif %}
-      <header class="section-header section-header--flush">
-        {%- render 'breadcrumbs' -%}
+      <header class="section-header section-header--flush {% if section.settings.text_position == 'center' %}text-center{% endif %}">
+        {% if section.settings.show_breadcrumbs == true %}
+          {%- render 'breadcrumbs' -%}
+        {% endif %}
         <h1 class="section-header__title">
           {{ collection.title }}
         </h1>
@@ -98,6 +102,27 @@
       "id": "parallax",
       "label": "t:sections.collection-header.settings.parallax.label",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "label": "Show Breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Header Text Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
     },
     {
       "type": "select",

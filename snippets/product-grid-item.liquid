@@ -44,6 +44,10 @@ Arguments
       endif
     endfor
   endif
+
+  if on_sale == true
+    assign saved_amount = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round
+  endif
 -%}
 
 <div class="grid__item grid-product {{ gridView }} {% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
@@ -61,7 +65,7 @@ Arguments
       {%- endunless -%}
       {%- if on_sale and product.available -%}
         <div class="grid-product__tag grid-product__tag--sale">
-          {{ 'products.general.sale' | t }}
+          {{ saved_amount }}% off
         </div>
       {%- endif -%}
     {%- endif -%}
@@ -75,7 +79,6 @@ Arguments
 
       if image_style == 'circle'
         assign fixed_aspect_ratio = true
-        assign imageRatio = 'square'
       endif
 
       assign preview_image = product.featured_media.preview_image

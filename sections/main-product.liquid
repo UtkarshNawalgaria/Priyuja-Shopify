@@ -13,6 +13,7 @@
   image_container_width: section.settings.image_size,
   product_zoom_enable: section.settings.product_zoom_enable,
   sku_enable: section.settings.sku_enable,
+  show_breadcrumbs: section.settings.show_breadcrumbs,
   isModal: is_modal,
   thumbnail_position: section.settings.thumbnail_position,
   thumbnail_height: section.settings.thumbnail_height,
@@ -31,6 +32,11 @@
       "type": "checkbox",
       "id": "sku_enable",
       "label": "t:sections.main-product.settings.sku_enable.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "label": "Show Breadcrumbs"
     },
     {
       "type": "header",
@@ -611,6 +617,12 @@
           "label": "Offer Description"
         },
         {
+          "type": "text",
+          "id": "offer_1_percentage",
+          "label": "Percentage (Optional)",
+          "info": "Enter just the number, e.g., 10, 20, 50"
+        },
+        {
           "type": "header",
           "content": "Offer 2"
         },
@@ -625,6 +637,12 @@
           "label": "Offer Description"
         },
         {
+          "type": "text",
+          "id": "offer_2_percentage",
+          "label": "Percentage (Optional)",
+          "info": "Enter just the number, e.g., 10, 20, 50"
+        },
+        {
           "type": "header",
           "content": "Offer 3"
         },
@@ -637,6 +655,52 @@
           "type": "text",
           "id": "offer_3_text",
           "label": "Offer Description"
+        },
+        {
+          "type": "text",
+          "id": "offer_3_percentage",
+          "label": "Percentage (Optional)",
+          "info": "Enter just the number, e.g., 10, 20, 50"
+        },
+        {
+          "type": "header",
+          "content": "Offer 4"
+        },
+        {
+          "type": "text",
+          "id": "offer_4_code",
+          "label": "Discount Code"
+        },
+        {
+          "type": "text",
+          "id": "offer_4_text",
+          "label": "Offer Description"
+        },
+        {
+          "type": "text",
+          "id": "offer_4_percentage",
+          "label": "Percentage (Optional)",
+          "info": "Enter just the number, e.g., 10, 20, 50"
+        },
+        {
+          "type": "header",
+          "content": "Offer 5"
+        },
+        {
+          "type": "text",
+          "id": "offer_5_code",
+          "label": "Discount Code"
+        },
+        {
+          "type": "text",
+          "id": "offer_5_text",
+          "label": "Offer Description"
+        },
+        {
+          "type": "text",
+          "id": "offer_5_percentage",
+          "label": "Percentage (Optional)",
+          "info": "Enter just the number, e.g., 10, 20, 50"
         }
       ]
     },

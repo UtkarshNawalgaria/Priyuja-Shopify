@@ -1,53 +1,276 @@
-<offer-list class="product-block block-padding product-block__offer-list">
-  <details>
-    <summary>
-      <span>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-        </svg>
-      </span>
-      <h4>{{ block.settings.header }}</h4>
-    </summary>
-    <div>
-      <div class="offer-list">
-        {% if block.settings.offer_1_code != blank %}
-          <div class="offer-item">
-            <span class="offer-code">{{ block.settings.offer_1_code }}</span>
-            {% if block.settings.offer_1_text != blank %}
-              <p class="offer-text">{{ block.settings.offer_1_text }}</p>
-            {% endif %}
-            <span class="info">Click to Copy</span>
-          </div>
-        {% endif %}
-        {% if block.settings.offer_2_code != blank %}
-          <div class="offer-item">
-            <span class="offer-code">{{ block.settings.offer_2_code }}</span>
-            {% if block.settings.offer_2_text != blank %}
-              <p class="offer-text">{{ block.settings.offer_2_text }}</p>
-            {% endif %}
-            <span class="info">Click to Copy</span>
-          </div>
-        {% endif %}
-        {% if block.settings.offer_3_code != blank %}
-          <div class="offer-item 3">
-            <span class="offer-code">{{ block.settings.offer_3_code }}</span>
-            {% if block.settings.offer_3_text != blank %}
-              <p class="offer-text">{{ block.settings.offer_3_text }}</p>
-            {% endif %}
-            <span class="info">Click to Copy</span>
-          </div>
-        {% endif %}
-        {% if block.settings.offer_4_code != blank %}
-          <div class="offer-item">
-            <span class="offer-code">{{ block.settings.offer_4_code }}</span>
-            {% if block.settings.offer_4_text != blank %}
-              <p class="offer-text">{{ block.settings.offer_4_text }}</p>
-            {% endif %}
-            <span class="info">Click to Copy</span>
-          </div>
-        {% endif %}
+{%- liquid
+  assign has_offers = false
+  if block.settings.offer_1_code != blank or block.settings.offer_2_code != blank or block.settings.offer_3_code != blank or block.settings.offer_4_code != blank or block.settings.offer_5_code != blank
+    assign has_offers = true
+  endif
+-%}
+
+{% if has_offers %}
+  <div class="product-block block-padding product-block__offer-list">
+    <button type="button" class="offer-trigger" data-offer-drawer-trigger="{{ block.id }}">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="offer-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z"
+        />
+      </svg>
+      <span class="offer-text">{{ block.settings.header }}</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="offer-arrow"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Offer Sidebar Drawer -->
+  <div class="offer-drawer" id="offer-drawer-{{ block.id }}" data-offer-drawer="{{ block.id }}">
+    <div class="offer-drawer__overlay" data-offer-drawer-close="{{ block.id }}"></div>
+    <div class="offer-drawer__content">
+      <div class="offer-drawer__header">
+        <h3>{{ block.settings.header }}</h3>
+        <button type="button" class="offer-drawer__close" data-offer-drawer-close="{{ block.id }}">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-      <p style="font-size: 12px;"><i>*Coupon can be applied at checkout</i></p>
+      <div class="offer-drawer__body">
+        {% if block.settings.offer_1_code != blank %}
+          <div class="offer-drawer-item" data-offer-code="{{ block.settings.offer_1_code }}">
+            <div class="offer-drawer-item__icon">
+              {% if block.settings.offer_1_percentage != blank %}
+                <div class="percentage-badge">{{ block.settings.offer_1_percentage }}%</div>
+              {% else %}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 14.25 5.25 10.5m0 0L1.5 14.25M5.25 10.5v8.25M15 9.75l3.75-3.75m0 0L22.5 9.75M18.75 6v8.25"
+                  />
+                </svg>
+              {% endif %}
+            </div>
+            <div class="offer-drawer-item__content">
+              <p class="offer-drawer-item__text">{{ block.settings.offer_1_text }}</p>
+              <div class="offer-drawer-item__code">
+                <span class="code">{{ block.settings.offer_1_code }}</span>
+                <button type="button" class="copy-btn" data-copy-code="{{ block.settings.offer_1_code }}">
+                  Copy Code
+                </button>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.offer_2_code != blank %}
+          <div class="offer-drawer-item" data-offer-code="{{ block.settings.offer_2_code }}">
+            <div class="offer-drawer-item__icon">
+              {% if block.settings.offer_2_percentage != blank %}
+                <div class="percentage-badge">{{ block.settings.offer_2_percentage }}%</div>
+              {% else %}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 14.25 5.25 10.5m0 0L1.5 14.25M5.25 10.5v8.25M15 9.75l3.75-3.75m0 0L22.5 9.75M18.75 6v8.25"
+                  />
+                </svg>
+              {% endif %}
+            </div>
+            <div class="offer-drawer-item__content">
+              <p class="offer-drawer-item__text">{{ block.settings.offer_2_text }}</p>
+              <div class="offer-drawer-item__code">
+                <span class="code">{{ block.settings.offer_2_code }}</span>
+                <button type="button" class="copy-btn" data-copy-code="{{ block.settings.offer_2_code }}">
+                  Copy Code
+                </button>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.offer_3_code != blank %}
+          <div class="offer-drawer-item" data-offer-code="{{ block.settings.offer_3_code }}">
+            <div class="offer-drawer-item__icon">
+              {% if block.settings.offer_3_percentage != blank %}
+                <div class="percentage-badge">{{ block.settings.offer_3_percentage }}%</div>
+              {% else %}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 14.25 5.25 10.5m0 0L1.5 14.25M5.25 10.5v8.25M15 9.75l3.75-3.75m0 0L22.5 9.75M18.75 6v8.25"
+                  />
+                </svg>
+              {% endif %}
+            </div>
+            <div class="offer-drawer-item__content">
+              <p class="offer-drawer-item__text">{{ block.settings.offer_3_text }}</p>
+              <div class="offer-drawer-item__code">
+                <span class="code">{{ block.settings.offer_3_code }}</span>
+                <button type="button" class="copy-btn" data-copy-code="{{ block.settings.offer_3_code }}">
+                  Copy Code
+                </button>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.offer_4_code != blank %}
+          <div class="offer-drawer-item" data-offer-code="{{ block.settings.offer_4_code }}">
+            <div class="offer-drawer-item__icon">
+              {% if block.settings.offer_4_percentage != blank %}
+                <div class="percentage-badge">{{ block.settings.offer_4_percentage }}%</div>
+              {% else %}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 14.25 5.25 10.5m0 0L1.5 14.25M5.25 10.5v8.25M15 9.75l3.75-3.75m0 0L22.5 9.75M18.75 6v8.25"
+                  />
+                </svg>
+              {% endif %}
+            </div>
+            <div class="offer-drawer-item__content">
+              <p class="offer-drawer-item__text">{{ block.settings.offer_4_text }}</p>
+              <div class="offer-drawer-item__code">
+                <span class="code">{{ block.settings.offer_4_code }}</span>
+                <button type="button" class="copy-btn" data-copy-code="{{ block.settings.offer_4_code }}">
+                  Copy Code
+                </button>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.offer_5_code != blank %}
+          <div class="offer-drawer-item" data-offer-code="{{ block.settings.offer_5_code }}">
+            <div class="offer-drawer-item__icon">
+              {% if block.settings.offer_5_percentage != blank %}
+                <div class="percentage-badge">{{ block.settings.offer_5_percentage }}%</div>
+              {% else %}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 14.25 5.25 10.5m0 0L1.5 14.25M5.25 10.5v8.25M15 9.75l3.75-3.75m0 0L22.5 9.75M18.75 6v8.25"
+                  />
+                </svg>
+              {% endif %}
+            </div>
+            <div class="offer-drawer-item__content">
+              <p class="offer-drawer-item__text">{{ block.settings.offer_5_text }}</p>
+              <div class="offer-drawer-item__code">
+                <span class="code">{{ block.settings.offer_5_code }}</span>
+                <button type="button" class="copy-btn" data-copy-code="{{ block.settings.offer_5_code }}">
+                  Copy Code
+                </button>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        <p class="offer-drawer__note">
+          <i>*Coupon can be applied at checkout</i>
+        </p>
+      </div>
     </div>
-  </details>
-</offer-list>
+  </div>
+
+  <script>
+    (function () {
+      const blockId = '{{ block.id }}';
+      const trigger = document.querySelector('[data-offer-drawer-trigger="' + blockId + '"]');
+      const drawer = document.querySelector('[data-offer-drawer="' + blockId + '"]');
+      const closeButtons = document.querySelectorAll('[data-offer-drawer-close="' + blockId + '"]');
+      const copyButtons = drawer.querySelectorAll('[data-copy-code]');
+
+      // Open drawer
+      if (trigger) {
+        trigger.addEventListener('click', function () {
+          drawer.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+
+      // Close drawer
+      closeButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          drawer.classList.remove('is-open');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // Copy code functionality
+      copyButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const code = this.getAttribute('data-copy-code');
+          navigator.clipboard
+            .writeText(code)
+            .then(function () {
+              const originalText = btn.textContent;
+              btn.textContent = 'Copied!';
+              btn.classList.add('copied');
+              setTimeout(function () {
+                btn.textContent = originalText;
+                btn.classList.remove('copied');
+              }, 2000);
+            })
+            .catch(function (err) {
+              console.error('Failed to copy code:', err);
+            });
+        });
+      });
+    })();
+  </script>
+{% endif %}
