@@ -1,0 +1,272 @@
+{%- liquid
+  assign per_row = 4
+  assign initial_product_count = 8
+-%}
+
+<div class="page-width all-products-grid-section">
+  <div
+    id="AllProductsSection-{{ section.id }}"
+    data-section-id="{{ section.id }}"
+    data-section-type="all-products-grid"
+  >
+    {%- if section.settings.title != blank -%}
+      <div class="section-header">
+        <h2 class="section-header__title">
+          {{ section.settings.title }}
+        </h2>
+      </div>
+    {%- endif -%}
+
+    {%- paginate collections.all.products by initial_product_count -%}
+      <div class="all-products-grid__wrapper">
+        <div class="grid grid--uniform" id="all-products-grid-{{ section.id }}">
+          {%- for product in collections.all.products -%}
+            {%- render 'product-grid-item',
+              product: product,
+              per_row: per_row,
+              quick_shop_enable: settings.quick_shop_enable,
+              fallback: 'variable'
+            -%}
+          {%- endfor -%}
+        </div>
+
+        {%- if paginate.next -%}
+          <div class="all-products-grid__loading text-center" id="loading-indicator-{{ section.id }}">
+            <div class="loading-spinner" style="display: none;">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                class="spinner"
+                viewBox="0 0 66 66"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+              <span>Loading more products...</span>
+            </div>
+          </div>
+          <div class="all-products-grid__next-url" data-next-url="{{ paginate.next.url }}" style="display: none;"></div>
+        {%- endif -%}
+      </div>
+    {%- endpaginate -%}
+  </div>
+</div>
+
+<style>
+  .all-products-grid-section {
+    padding: 40px 0;
+  }
+
+  .all-products-grid-section .section-header {
+    margin-bottom: 40px;
+  }
+
+  .all-products-grid-section .section-header__title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .all-products-grid__wrapper {
+    position: relative;
+  }
+
+  .all-products-grid__loading {
+    padding: 40px 0;
+    min-height: 100px;
+  }
+
+  .loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .loading-spinner .spinner {
+    width: 40px;
+    height: 40px;
+    animation: rotator 1.4s linear infinite;
+  }
+
+  .loading-spinner .path {
+    stroke: #000;
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash 1.4s ease-in-out infinite;
+  }
+
+  @keyframes rotator {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 187;
+    }
+    50% {
+      stroke-dashoffset: 46.75;
+      transform: rotate(135deg);
+    }
+    100% {
+      stroke-dashoffset: 187;
+      transform: rotate(270deg);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .all-products-grid-section {
+      padding: 20px 0;
+    }
+
+    .all-products-grid-section .section-header {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const sectionId = '{{ section.id }}';
+    const gridContainer = document.getElementById('all-products-grid-' + sectionId);
+    const loadingIndicator = document.getElementById('loading-indicator-' + sectionId);
+    const nextUrlContainer = document.querySelector(
+      '#AllProductsSection-' + sectionId + ' .all-products-grid__next-url'
+    );
+
+    if (!gridContainer || !loadingIndicator || !nextUrlContainer) {
+      return;
+    }
+
+    let isLoading = false;
+    let nextUrl = nextUrlContainer.getAttribute('data-next-url');
+    const loadingSpinner = loadingIndicator.querySelector('.loading-spinner');
+
+    function loadMoreProducts() {
+      if (isLoading || !nextUrl) {
+        return;
+      }
+
+      isLoading = true;
+      if (loadingSpinner) {
+        loadingSpinner.style.display = 'flex';
+      }
+
+      fetch(nextUrl)
+        .then((response) => response.text())
+        .then((data) => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(data, 'text/html');
+
+          // Find the products in the loaded page
+          const newProducts = doc.querySelectorAll('#all-products-grid-' + sectionId + ' > .grid__item');
+
+          // Append new products to the grid
+          newProducts.forEach((product) => {
+            gridContainer.appendChild(product);
+          });
+
+          // Reinitialize theme components for new products
+          if (window.AOS) {
+            AOS.refreshHard();
+          }
+
+          // Reinitialize quick shop and other product grid features
+          if (window.theme && window.theme.reinitProductGridItem) {
+            window.theme.reinitProductGridItem(gridContainer);
+          }
+
+          // Reinitialize quick shop modals
+          if (window.theme && window.theme.initQuickShop) {
+            window.theme.initQuickShop();
+          }
+
+          // Trigger wishlist hero re-initialization if available
+          if (window.WishlistHero && window.WishlistHero.init) {
+            window.WishlistHero.init();
+          }
+
+          // Update next URL
+          const newNextUrlContainer = doc.querySelector(
+            '#AllProductsSection-' + sectionId + ' .all-products-grid__next-url'
+          );
+          if (newNextUrlContainer) {
+            nextUrl = newNextUrlContainer.getAttribute('data-next-url');
+            nextUrlContainer.setAttribute('data-next-url', nextUrl);
+          } else {
+            nextUrl = null;
+            if (loadingSpinner) {
+              loadingSpinner.style.display = 'none';
+            }
+          }
+
+          isLoading = false;
+        })
+        .catch((error) => {
+          console.error('Error loading more products:', error);
+          isLoading = false;
+          if (loadingSpinner) {
+            loadingSpinner.style.display = 'none';
+          }
+        });
+    }
+
+    // Infinite scroll detection
+    function checkScroll() {
+      if (!nextUrl || isLoading) {
+        return;
+      }
+
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const triggerPosition = document.documentElement.scrollHeight - 500; // Trigger 500px before bottom
+
+      if (scrollPosition >= triggerPosition) {
+        loadMoreProducts();
+      }
+    }
+
+    // Throttle scroll events
+    let scrollTimeout;
+    function throttledScroll() {
+      if (!scrollTimeout) {
+        scrollTimeout = setTimeout(function () {
+          checkScroll();
+          scrollTimeout = null;
+        }, 100);
+      }
+    }
+
+    // Add scroll listener
+    window.addEventListener('scroll', throttledScroll);
+
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', function () {
+      window.removeEventListener('scroll', throttledScroll);
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "All Products Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "All Products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "All Products Grid"
+    }
+  ]
+}
+{% endschema %}
