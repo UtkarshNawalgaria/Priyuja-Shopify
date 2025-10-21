@@ -17,8 +17,8 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "text": "Use CODE - FIRST10",
-            "link_text": "Get 10% OFF First Purchase",
+            "text": "Sale is Live",
+            "link_text": "",
             "link": ""
           }
         },
@@ -45,8 +45,8 @@
         "header-0": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/priyuja-logo.png",
-            "desktop_logo_width": 140,
+            "logo": "shopify://shop_images/PP_Ecom_Logo_no_bg_400x200_0b2149a0-56b2-4512-8cd7-62ff8e23aa77.png",
+            "desktop_logo_width": 200,
             "mobile_logo_width": 160
           }
         }
@@ -56,7 +56,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "main_menu_link_list": "new-main-menu",
+        "main_menu_link_list": "main-menu-1",
         "hover_menu": true,
         "mega_menu_images": true,
         "main_menu_alignment": "left-center",
@@ -65,9 +65,9 @@
         "sticky_collection": false,
         "toolbar_menu": "",
         "toolbar_social": false,
-        "show_locale_selector": true,
-        "show_currency_selector": true,
-        "show_currency_flags": true
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false
       }
     }
   },

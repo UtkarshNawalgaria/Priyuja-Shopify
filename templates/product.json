@@ -16,6 +16,27 @@
           "type": "price",
           "settings": {}
         },
+        "offer_list_FgbmrN": {
+          "type": "offer_list",
+          "settings": {
+            "header": "Special Offers",
+            "offer_1_code": "",
+            "offer_1_text": "",
+            "offer_1_percentage": "",
+            "offer_2_code": "",
+            "offer_2_text": "",
+            "offer_2_percentage": "",
+            "offer_3_code": "",
+            "offer_3_text": "",
+            "offer_3_percentage": "",
+            "offer_4_code": "",
+            "offer_4_text": "",
+            "offer_4_percentage": "",
+            "offer_5_code": "",
+            "offer_5_text": "",
+            "offer_5_percentage": ""
+          }
+        },
         "related_products_kFgtbC": {
           "type": "related_products",
           "settings": {
@@ -62,18 +83,6 @@
           "type": "separator",
           "settings": {}
         },
-        "offer_list_WthdjK": {
-          "type": "offer_list",
-          "settings": {
-            "header": "Our Offers",
-            "offer_1_code": "FIRST10",
-            "offer_1_text": "Get 10% off on all products",
-            "offer_2_code": "",
-            "offer_2_text": "",
-            "offer_3_code": "",
-            "offer_3_text": ""
-          }
-        },
         "product_specification_t7GN7t": {
           "type": "product_specification",
           "settings": {
@@ -111,13 +120,6 @@
             "page": "shipping-policy"
           }
         },
-        "text_with_image_4F3GJb": {
-          "type": "text_with_image",
-          "settings": {
-            "heading": "Visit Our Store",
-            "text": "2nd Floor, Flameproof House, B-39, Off New Link Rd, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {}
@@ -125,6 +127,7 @@
       },
       "block_order": [
         "price",
+        "offer_list_FgbmrN",
         "related_products_kFgtbC",
         "sales_point",
         "sales_point_UVzzeq",
@@ -132,78 +135,31 @@
         "quantity_selector_XeJGQA",
         "buy_buttons",
         "separator_CVFcCe",
-        "offer_list_WthdjK",
         "product_specification_t7GN7t",
         "sales_point_color_note",
         "description",
         "tab",
         "tab_VQqH6J",
-        "text_with_image_4F3GJb",
         "share"
       ],
       "settings": {
         "sku_enable": true,
+        "show_breadcrumbs": false,
         "image_position": "left",
         "image_size": "large",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
         "thumbnail_height": "flexible",
         "thumbnail_arrows": true,
-        "mobile_layout": "partial",
+        "mobile_layout": "full",
         "enable_video_looping": true,
         "product_video_style": "muted"
       }
     },
-    "sub": {
-      "type": "product-full-width",
-      "disabled": true,
-      "settings": {
-        "max_width": true
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "product_recommendations_heading": "You may also like",
-        "related_count": 5,
-        "products_per_row": 5
-      }
-    },
     "1719414030206c37f9": {
       "type": "apps",
-      "settings": {
-        "full_width": false,
-        "space_around": false
-      }
-    },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "disabled": true,
-      "settings": {
-        "recent_count": 5
-      }
-    },
-    "collection-return": {
-      "type": "collection-return",
-      "disabled": true,
-      "settings": {}
-    },
-    "featured_collection_pJHYU9": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "home_featured_products": "sarees",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "17604604216a15c2a7": {
-      "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_VX9HFg": {
+        "judge_me_reviews_review_widget_9YPfKK": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
@@ -214,22 +170,24 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_VX9HFg"
+        "judge_me_reviews_review_widget_9YPfKK"
       ],
       "settings": {
         "full_width": false,
-        "space_around": true
+        "space_around": false
+      }
+    },
+    "all_products_grid_VA8XQQ": {
+      "type": "all-products-grid",
+      "name": "All Products Grid",
+      "settings": {
+        "title": "All Products"
       }
     }
   },
   "order": [
     "main",
-    "sub",
-    "product-recommendations",
     "1719414030206c37f9",
-    "recently-viewed",
-    "collection-return",
-    "featured_collection_pJHYU9",
-    "17604604216a15c2a7"
+    "all_products_grid_VA8XQQ"
   ]
 }

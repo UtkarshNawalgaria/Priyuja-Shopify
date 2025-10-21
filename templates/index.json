@@ -19,41 +19,21 @@
             "title": "",
             "title_size": 65,
             "subheading": "",
-            "link": "shopify://collections/katan-sarees",
+            "link": "shopify://collections/tissue-sarees",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/Banner_1_-_Desktop_Banner.jpg",
-            "image_mobile": "shopify://shop_images/Banner_1_-_Mobile_Banner.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_AnVpxQ": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 65,
-            "subheading": "",
-            "link": "shopify://collections/kota-sarees",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/Banner_2_-_Desktop_Banner.jpg",
-            "image_mobile": "shopify://shop_images/Banner_2_-_Mobile_Banner.jpg",
+            "image": "shopify://shop_images/2.jpg",
+            "image_mobile": "shopify://shop_images/4.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "image_tHinMX",
-        "image_AnVpxQ"
+        "image_tHinMX"
       ],
       "settings": {
         "section_height": "natural",
@@ -65,74 +45,12 @@
         "lazyload_images": true
       }
     },
-    "new_list_collections_w4Dxha": {
-      "type": "new-list-collections",
-      "blocks": {
-        "collection_eyXhNg": {
-          "type": "collection",
-          "settings": {
-            "collection": "tissue-sarees",
-            "cover_image": "shopify://shop_images/Semi_Tissue_Sarees.jpg",
-            "show_collection_title": false
-          }
-        },
-        "collection_XG9eY8": {
-          "type": "collection",
-          "settings": {
-            "collection": "khaddi-georgette-sarees",
-            "cover_image": "shopify://shop_images/Khaddi_Georgette_Sarees.jpg",
-            "show_collection_title": false
-          }
-        },
-        "collection_Fkr4fM": {
-          "type": "collection",
-          "settings": {
-            "collection": "cotton-sarees",
-            "cover_image": "shopify://shop_images/Cotton_Sarees.jpg",
-            "show_collection_title": false
-          }
-        },
-        "collection_LKmjkx": {
-          "type": "collection",
-          "settings": {
-            "collection": "katan-sarees",
-            "cover_image": "shopify://shop_images/Katan_Sarees.jpg",
-            "show_collection_title": false
-          }
-        }
-      },
-      "block_order": [
-        "collection_eyXhNg",
-        "collection_XG9eY8",
-        "collection_Fkr4fM",
-        "collection_LKmjkx"
-      ],
-      "settings": {
-        "title_enable": true,
-        "title": "Shop By Fabrics",
-        "display_type": "selected",
-        "sort": "alphabetical",
-        "grid": "4"
-      }
-    },
-    "featured_collection_CYzjFp": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Sarees Below Rs 5000",
-        "home_featured_products": "sarees-under-5000",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "featured_collection_89bA7T": {
       "type": "featured-collection",
       "settings": {
-        "title": "Linen Sarees",
-        "home_featured_products": "linen-sarees",
-        "per_row": 4,
+        "title": "Mul Cotton Sarees",
+        "home_featured_products": "mulmul-cotton",
+        "per_row": 5,
         "rows": 1,
         "mobile_scrollable": false,
         "view_all": false,
@@ -149,14 +67,13 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "https://wa.me/+919112044277",
+            "link": "",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/8_fa98a130-b079-4d0d-9d37-741813e7a424.png",
-            "image_mobile": "shopify://shop_images/4_a628858b-ef12-4a36-9a46-3263f5a70424.png",
+            "image": "shopify://shop_images/Silk_Sarees.webp",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -175,138 +92,50 @@
         "lazyload_images": true
       }
     },
-    "new_featured_collection_NnhHd7": {
-      "type": "new-featured-collection",
-      "blocks": {
-        "tab_6fPiEy": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Festive",
-            "collection": "festive-sarees"
-          }
-        },
-        "tab_iDixTr": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Formal",
-            "collection": "formal-sarees"
-          }
-        }
-      },
-      "block_order": [
-        "tab_6fPiEy",
-        "tab_iDixTr"
-      ],
-      "settings": {
-        "title": "Shop by Occasion",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false,
-        "background_color": "#faeee6"
-      }
-    },
-    "slideshow_8kPraM": {
-      "type": "slideshow",
-      "blocks": {
-        "image_QCkTrR": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "https://g.co/kgs/QW7PEib",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/9_4782a67b-fcc7-4fee-91df-c26557549f12.png",
-            "image_mobile": "shopify://shop_images/5_ff657173-97bb-4372-af55-43cd89722f56.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_QCkTrR"
-      ],
-      "settings": {
-        "section_height": "natural",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "bars",
-        "autoplay": false,
-        "autoplay_speed": 5,
-        "lazyload_images": true
-      }
-    },
-    "new_list_collections_pqkbbp": {
+    "new_list_collections_w4Dxha": {
       "type": "new-list-collections",
       "blocks": {
-        "collection_XfUtfb": {
+        "collection_eyXhNg": {
           "type": "collection",
           "settings": {
-            "collection": "kadhwa-saree",
-            "cover_image": "shopify://shop_images/Kadhwa_Weaves.png",
-            "show_collection_title": true
-          }
-        },
-        "collection_wDQrjY": {
-          "type": "collection",
-          "settings": {
-            "collection": "rangkat-saree",
-            "cover_image": "shopify://shop_images/Rangkat_Weaves.png",
+            "collection": "tissue-sarees",
             "show_collection_title": false
           }
         },
-        "collection_FryYNg": {
+        "collection_XG9eY8": {
           "type": "collection",
           "settings": {
-            "collection": "jaal-saree",
-            "cover_image": "shopify://shop_images/Jaal_Weaves.png",
+            "collection": "khaddi-georgette-sarees",
             "show_collection_title": false
           }
         },
-        "collection_YRp4hf": {
+        "collection_Fkr4fM": {
           "type": "collection",
           "settings": {
-            "collection": "meenakari-saree",
-            "cover_image": "shopify://shop_images/Meenakari_Weaves.png",
+            "collection": "cotton-sarees",
+            "show_collection_title": false
+          }
+        },
+        "collection_LKmjkx": {
+          "type": "collection",
+          "settings": {
+            "collection": "katan-sarees",
             "show_collection_title": false
           }
         }
       },
       "block_order": [
-        "collection_XfUtfb",
-        "collection_wDQrjY",
-        "collection_FryYNg",
-        "collection_YRp4hf"
+        "collection_eyXhNg",
+        "collection_XG9eY8",
+        "collection_Fkr4fM",
+        "collection_LKmjkx"
       ],
-      "disabled": true,
       "settings": {
         "title_enable": true,
-        "title": "Shop By Weaves",
+        "title": "Shop By Fabrics",
         "display_type": "selected",
         "sort": "alphabetical",
         "grid": "4"
-      }
-    },
-    "blog_posts_TpkNXz": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "Blog",
-        "blog": "news",
-        "post_limit": 3,
-        "blog_show_tags": false,
-        "blog_show_date": true,
-        "blog_show_comments": true,
-        "blog_show_author": true,
-        "view_all": false,
-        "blog_image_size": "landscape",
-        "divider": false
       }
     },
     "17191198064dfa0775": {
@@ -338,55 +167,13 @@
         "full_width": true,
         "space_around": true
       }
-    },
-    "slideshow_8kPraMa": {
-      "type": "slideshow",
-      "blocks": {
-        "image_QCkTrR": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/footer_1.png",
-            "image_mobile": "shopify://shop_images/footer_1_-_mobile_size.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_QCkTrR"
-      ],
-      "settings": {
-        "section_height": "natural",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "bars",
-        "autoplay": false,
-        "autoplay_speed": 5,
-        "lazyload_images": true
-      }
     }
   },
   "order": [
     "slideshow",
-    "new_list_collections_w4Dxha",
-    "featured_collection_CYzjFp",
     "featured_collection_89bA7T",
     "slideshow_ALK7H7",
-    "new_featured_collection_NnhHd7",
-    "slideshow_8kPraM",
-    "new_list_collections_pqkbbp",
-    "blog_posts_TpkNXz",
-    "17191198064dfa0775",
-    "slideshow_8kPraMa"
+    "new_list_collections_w4Dxha",
+    "17191198064dfa0775"
   ]
 }

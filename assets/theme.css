@@ -7058,7 +7058,7 @@ form + .footer__social {
 
 @media only screen and (min-width: 769px) {
   .site-header {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   .toolbar + .header-sticky-wrapper .site-header {
@@ -10839,6 +10839,8 @@ html[dir="rtl"] .grid-product__content {
   margin-right: 5px;
   -webkit-text-decoration: line-through;
   text-decoration: line-through;
+  font-size: 14px;
+  color: grey;
 }
 
 .grid-product__price--savings {
@@ -10868,13 +10870,14 @@ html[dir="rtl"] .grid-product__content {
 @media only screen and (min-width: 769px) {
   .grid-product__tag {
     font-size: calc(var(--typeBaseSize) * 0.85);
-    padding: 7px 7px 7px 9px;
   }
 }
 
 .grid-product__tag--sale {
   background-color: var(--colorSaleTag);
   color: var(--colorSaleTagText);
+  top: 5px;
+  right: 5px;
 }
 
 .quick-product__btn {
@@ -12083,7 +12086,7 @@ html[dir="rtl"] .background-media-text__text {
 
 .announcement-slider__slide {
   overflow: hidden;
-  padding: 0 5px;
+  padding: 0;
   position: relative;
   width: 100%;
 }

@@ -13,21 +13,16 @@
       "type": "collection-header",
       "settings": {
         "enable": true,
-        "collection_image_enable": true,
+        "collection_image_enable": false,
         "parallax": false,
-        "parallax_direction": "top",
-        "collection_image": "shopify://shop_images/Collection_Page_Offer_Banner.jpg"
+        "show_breadcrumbs": false,
+        "text_position": "center",
+        "parallax_direction": "top"
       }
     },
     "main-collection": {
       "type": "main-collection",
       "blocks": {
-        "subcollections": {
-          "type": "subcollections",
-          "settings": {
-            "subcollections_per_row": 5
-          }
-        },
         "product_grid": {
           "type": "product_grid",
           "settings": {
@@ -39,7 +34,6 @@
         }
       },
       "block_order": [
-        "subcollections",
         "product_grid"
       ],
       "settings": {
