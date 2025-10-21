@@ -14,45 +14,25 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_hN4c3x": {
-          "type": "image",
+        "menu_tyBgye": {
+          "type": "menu",
           "settings": {
-            "image": "shopify://shop_images/Yolowink_Color_Logo_2.png",
-            "image-link": "https://yolowink.myshopify.com",
-            "image_width": 190
-          }
-        },
-        "links": {
-          "type": "links",
-          "settings": {
-            "menu": "footer"
-          }
-        },
-        "links_ikCX77": {
-          "type": "links",
-          "settings": {
-            "menu": "footer-policy"
-          }
-        },
-        "social_media_FpBpaW": {
-          "type": "social_media",
-          "settings": {
-            "title": "Follow us",
-            "content": ""
+            "show_footer_title": false,
+            "menu": "footer-menu",
+            "container_width": 25
           }
         }
       },
       "block_order": [
-        "image_hN4c3x",
-        "links",
-        "links_ikCX77",
-        "social_media_FpBpaW"
+        "menu_tyBgye"
       ],
       "settings": {
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "show_currency_flags": true,
         "show_payment_icons": true,
-        "enable_follow_on_shop": true,
-        "show_country_selector": true,
-        "show_locale_selector": true
+        "show_copyright": false,
+        "copyright_text": ""
       }
     }
   },

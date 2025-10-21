@@ -100,38 +100,40 @@
         {%- endif -%}
       </p>
     {%- endif -%}
-    <div class="other-links">
-      <div class="header">Explore our Fabrics</div>
-      <ul>
-        {% for collection in collections %}
-          {% if collection.metafields.custom.group_type.value == "fabric" %}
-            <li>
-              <a href="{{ collection.url }}">{{ collection.title }} |</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <div class="header">Explore our Colors</div>
-      <ul>
-        {% for collection in collections %}
-          {% if collection.metafields.custom.group_type.value == "color" %}
-            <li>
-              <a href="{{ collection.url }}">{{ collection.title }} |</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <div class="header">Explore our Weaves</div>
-      <ul>
-        {% for collection in collections %}
-          {% if collection.metafields.custom.group_type.value == "weave" %}
-            <li>
-              <a href="{{ collection.url }}">{{ collection.title }} |</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+    {% if section.settings.show_collection_links %}
+      <div class="other-links">
+        <div class="header">Explore our Fabrics</div>
+        <ul>
+          {% for collection in collections %}
+            {% if collection.metafields.custom.group_type.value == "fabric" %}
+              <li>
+                <a href="{{ collection.url }}">{{ collection.title }} |</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <div class="header">Explore our Colors</div>
+        <ul>
+          {% for collection in collections %}
+            {% if collection.metafields.custom.group_type.value == "color" %}
+              <li>
+                <a href="{{ collection.url }}">{{ collection.title }} |</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <div class="header">Explore our Weaves</div>
+        <ul>
+          {% for collection in collections %}
+            {% if collection.metafields.custom.group_type.value == "weave" %}
+              <li>
+                <a href="{{ collection.url }}">{{ collection.title }} |</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
   </div>
 </footer>
 
@@ -187,6 +189,12 @@
       "type": "text",
       "id": "copyright_text",
       "label": "t:sections.footer.settings.copyright_text.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_links",
+      "label": "Show Collection Links",
+      "default": false
     },
     {
       "type": "collection_list",
