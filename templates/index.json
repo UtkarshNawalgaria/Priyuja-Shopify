@@ -57,6 +57,18 @@
         "divider": false
       }
     },
+    "featured_collection_Yyzcnh": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Tissue Sarees",
+        "home_featured_products": "tissue-sarees",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
     "slideshow_ALK7H7": {
       "type": "slideshow",
       "blocks": {
@@ -172,6 +184,7 @@
   "order": [
     "slideshow",
     "featured_collection_89bA7T",
+    "featured_collection_Yyzcnh",
     "slideshow_ALK7H7",
     "new_list_collections_w4Dxha",
     "17191198064dfa0775"
