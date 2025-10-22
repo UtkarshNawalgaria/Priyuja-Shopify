@@ -57,18 +57,6 @@
         "divider": false
       }
     },
-    "featured_collection_Yyzcnh": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Tissue Sarees",
-        "home_featured_products": "tissue-sarees",
-        "per_row": 5,
-        "rows": 1,
-        "mobile_scrollable": false,
-        "view_all": false,
-        "divider": false
-      }
-    },
     "slideshow_ALK7H7": {
       "type": "slideshow",
       "blocks": {
@@ -79,7 +67,7 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "",
+            "link": "shopify://collections/all",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -102,6 +90,18 @@
         "autoplay": false,
         "autoplay_speed": 5,
         "lazyload_images": true
+      }
+    },
+    "featured_collection_Yyzcnh": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Tissue Sarees",
+        "home_featured_products": "tissue-sarees",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
       }
     },
     "new_list_collections_w4Dxha": {
@@ -184,8 +184,8 @@
   "order": [
     "slideshow",
     "featured_collection_89bA7T",
-    "featured_collection_Yyzcnh",
     "slideshow_ALK7H7",
+    "featured_collection_Yyzcnh",
     "new_list_collections_w4Dxha",
     "17191198064dfa0775"
   ]
