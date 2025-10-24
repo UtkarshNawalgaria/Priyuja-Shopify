@@ -37,9 +37,9 @@
           "settings": {
             "logo": "shopify://shop_images/PP_Ecom_Logo_no_bg_400x200_0b2149a0-56b2-4512-8cd7-62ff8e23aa77.png",
             "desktop_logo_height": 20,
-            "show_brand_text": false,
-            "brand_text": "<p>Add a short description about your brand or store.</p>",
-            "show_social_icons": false,
+            "show_brand_text": true,
+            "brand_text": "<p>2nd Floor, Flameproof House, B-39, Off New Link Rd, opp. T-Series, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053</p>",
+            "show_social_icons": true,
             "container_width": 30
           }
         }
