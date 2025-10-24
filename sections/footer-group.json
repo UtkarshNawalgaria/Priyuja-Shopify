@@ -17,22 +17,50 @@
         "menu_tyBgye": {
           "type": "menu",
           "settings": {
-            "show_footer_title": false,
-            "menu": "footer-menu",
-            "container_width": 25
+            "show_footer_title": true,
+            "custom_heading": "Policy Links",
+            "menu": "policy-menu",
+            "container_width": 35
+          }
+        },
+        "menu_ff3hQH": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "custom_heading": "Support Links",
+            "menu": "footer",
+            "container_width": 35
+          }
+        },
+        "logo_social_EEHdeq": {
+          "type": "logo_social",
+          "settings": {
+            "logo": "shopify://shop_images/PP_Ecom_Logo_no_bg_400x200_0b2149a0-56b2-4512-8cd7-62ff8e23aa77.png",
+            "desktop_logo_height": 20,
+            "show_brand_text": true,
+            "brand_text": "<p>2nd Floor, Flameproof House, B-39, Off New Link Rd, opp. T-Series, Veera Desai Industrial Estate, Andheri West, Mumbai, Maharashtra 400053</p>",
+            "show_social_icons": true,
+            "container_width": 30
           }
         }
       },
       "block_order": [
-        "menu_tyBgye"
+        "menu_tyBgye",
+        "menu_ff3hQH",
+        "logo_social_EEHdeq"
       ],
       "settings": {
         "show_locale_selector": true,
         "show_currency_selector": true,
         "show_currency_flags": true,
+        "footer_background_image": "shopify://shop_images/Pallu_Patari_Footer_BG.jpg",
+        "background_position": "bottom center",
+        "background_size": "cover",
         "show_payment_icons": true,
-        "show_copyright": false,
-        "copyright_text": ""
+        "show_copyright": true,
+        "copyright_text": "",
+        "show_collection_links": false,
+        "more_collection_links": []
       }
     }
   },

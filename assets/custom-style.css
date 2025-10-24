@@ -36,6 +36,64 @@
   text-align: left;
 }
 
+.footer__logo-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__brand-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+  text-align: left;
+}
+
+.footer__brand-text p {
+  margin: 0 0 10px 0;
+}
+
+.footer__brand-text p:last-child {
+  margin-bottom: 0;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__social-icons li {
+  margin: 0;
+}
+
+.footer__social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.footer__social-icons a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__logo-block {
+    gap: 15px;
+  }
+
+  .footer__brand-text {
+    font-size: 13px;
+  }
+
+  .footer__social-icons {
+    gap: 12px;
+  }
+}
+
 .site-footer__linklist a,
 .footer__collapsible p {
   color: #fff;
@@ -56,12 +114,10 @@
 }
 
 footer.site-footer {
-  background: #c8675c url("https://cdn.shopify.com/s/files/1/0716/7426/5786/files/footer_2.png?v=1761056402") no-repeat left top;
-  /* padding-bottom: 8% !important; */
-  padding-top: 40px !important;
-  background-position: bottom center !important;
+  background: #c8675c;
+  /* Background image is now managed through the theme customizer */
+  /* Navigate to: Theme Customizer > Footer > Footer Background */
   position: relative;
-  background-size: cover !important;
 }
 
 .site-footer {
@@ -71,7 +127,7 @@ footer.site-footer {
 }
 
 .site-footer .page-width {
-  padding-bottom: 180px;
+  padding-bottom: 50px;
   max-width: 69%;
 }
 

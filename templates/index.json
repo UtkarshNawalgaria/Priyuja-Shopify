@@ -45,6 +45,56 @@
         "lazyload_images": true
       }
     },
+    "new_list_collections_w4Dxha": {
+      "type": "new-list-collections",
+      "blocks": {
+        "collection_eyXhNg": {
+          "type": "collection",
+          "settings": {
+            "collection": "mulmul-cotton",
+            "cover_image": "shopify://shop_images/Mul_Cotton.jpg",
+            "show_collection_title": false
+          }
+        },
+        "collection_XG9eY8": {
+          "type": "collection",
+          "settings": {
+            "collection": "kota-sarees",
+            "cover_image": "shopify://shop_images/9.jpg",
+            "show_collection_title": false
+          }
+        },
+        "collection_Fkr4fM": {
+          "type": "collection",
+          "settings": {
+            "collection": "tissue-sarees",
+            "cover_image": "shopify://shop_images/Tissue.jpg",
+            "show_collection_title": false
+          }
+        },
+        "collection_LKmjkx": {
+          "type": "collection",
+          "settings": {
+            "collection": "chanderi-sarees",
+            "cover_image": "shopify://shop_images/Chanderi.jpg",
+            "show_collection_title": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_eyXhNg",
+        "collection_XG9eY8",
+        "collection_Fkr4fM",
+        "collection_LKmjkx"
+      ],
+      "settings": {
+        "title_enable": true,
+        "title": "Shop By Fabrics",
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "grid": "4"
+      }
+    },
     "featured_collection_89bA7T": {
       "type": "featured-collection",
       "settings": {
@@ -104,53 +154,6 @@
         "divider": false
       }
     },
-    "new_list_collections_w4Dxha": {
-      "type": "new-list-collections",
-      "blocks": {
-        "collection_eyXhNg": {
-          "type": "collection",
-          "settings": {
-            "collection": "tissue-sarees",
-            "show_collection_title": false
-          }
-        },
-        "collection_XG9eY8": {
-          "type": "collection",
-          "settings": {
-            "collection": "khaddi-georgette-sarees",
-            "show_collection_title": false
-          }
-        },
-        "collection_Fkr4fM": {
-          "type": "collection",
-          "settings": {
-            "collection": "cotton-sarees",
-            "show_collection_title": false
-          }
-        },
-        "collection_LKmjkx": {
-          "type": "collection",
-          "settings": {
-            "collection": "katan-sarees",
-            "show_collection_title": false
-          }
-        }
-      },
-      "block_order": [
-        "collection_eyXhNg",
-        "collection_XG9eY8",
-        "collection_Fkr4fM",
-        "collection_LKmjkx"
-      ],
-      "disabled": true,
-      "settings": {
-        "title_enable": true,
-        "title": "Shop By Fabrics",
-        "display_type": "selected",
-        "sort": "alphabetical",
-        "grid": "4"
-      }
-    },
     "17191198064dfa0775": {
       "type": "apps",
       "blocks": {
@@ -184,10 +187,10 @@
   },
   "order": [
     "slideshow",
+    "new_list_collections_w4Dxha",
     "featured_collection_89bA7T",
     "slideshow_ALK7H7",
     "featured_collection_Yyzcnh",
-    "new_list_collections_w4Dxha",
     "17191198064dfa0775"
   ]
 }

@@ -6542,7 +6542,7 @@ ul + .footer__small-text {
 
 @media only screen and (min-width: 769px) {
   .footer__logo {
-    margin: 0 0 20px;
+    margin: 0;
   }
 }
 

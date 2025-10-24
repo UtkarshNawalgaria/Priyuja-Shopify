@@ -16,13 +16,22 @@
   endif
 -%}
 
-{%- if settings.color_footer == settings.color_body_bg -%}
-  {%- style -%}
+{%- style -%}
+  {%- if settings.color_footer == settings.color_body_bg -%}
     .site-footer {
       border-top: 1px solid {{ settings.color_borders }};
     }
-  {%- endstyle -%}
-{%- endif -%}
+  {%- endif -%}
+
+  {%- if section.settings.footer_background_image != blank -%}
+    footer.site-footer {
+      background-image: url('{{ section.settings.footer_background_image | image_url: width: 2000 }}') !important;
+      background-repeat: no-repeat !important;
+      background-position: {{ section.settings.background_position }} !important;
+      background-size: {{ section.settings.background_size }} !important;
+    }
+  {%- endif -%}
+{%- endstyle -%}
 
 <footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
@@ -94,7 +103,8 @@
 
     {%- if section.settings.show_copyright -%}
       <p class="footer__small-text">
-        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+        &copy; {{ 'now' | date: '%Y' }}
+        {{ shop.name }}
         {%- if section.settings.copyright_text != blank -%}
           {{ section.settings.copyright_text }}
         {%- endif -%}
@@ -105,7 +115,7 @@
         <div class="header">Explore our Fabrics</div>
         <ul>
           {% for collection in collections %}
-            {% if collection.metafields.custom.group_type.value == "fabric" %}
+            {% if collection.metafields.custom.group_type.value == 'fabric' %}
               <li>
                 <a href="{{ collection.url }}">{{ collection.title }} |</a>
               </li>
@@ -115,7 +125,7 @@
         <div class="header">Explore our Colors</div>
         <ul>
           {% for collection in collections %}
-            {% if collection.metafields.custom.group_type.value == "color" %}
+            {% if collection.metafields.custom.group_type.value == 'color' %}
               <li>
                 <a href="{{ collection.url }}">{{ collection.title }} |</a>
               </li>
@@ -125,7 +135,7 @@
         <div class="header">Explore our Weaves</div>
         <ul>
           {% for collection in collections %}
-            {% if collection.metafields.custom.group_type.value == "weave" %}
+            {% if collection.metafields.custom.group_type.value == 'weave' %}
               <li>
                 <a href="{{ collection.url }}">{{ collection.title }} |</a>
               </li>
@@ -169,6 +179,80 @@
       "id": "show_currency_flags",
       "label": "t:sections.footer.settings.show_currency_flags.label",
       "default": true
+    },
+    {
+      "type": "header",
+      "content": "Footer Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_background_image",
+      "label": "Background Image",
+      "info": "Upload a background image for the footer"
+    },
+    {
+      "type": "select",
+      "id": "background_position",
+      "label": "Background Position",
+      "default": "bottom center",
+      "options": [
+        {
+          "value": "top left",
+          "label": "Top Left"
+        },
+        {
+          "value": "top center",
+          "label": "Top Center"
+        },
+        {
+          "value": "top right",
+          "label": "Top Right"
+        },
+        {
+          "value": "center left",
+          "label": "Center Left"
+        },
+        {
+          "value": "center center",
+          "label": "Center Center"
+        },
+        {
+          "value": "center right",
+          "label": "Center Right"
+        },
+        {
+          "value": "bottom left",
+          "label": "Bottom Left"
+        },
+        {
+          "value": "bottom center",
+          "label": "Bottom Center"
+        },
+        {
+          "value": "bottom right",
+          "label": "Bottom Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "background_size",
+      "label": "Background Size",
+      "default": "cover",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto"
+        },
+        {
+          "value": "cover",
+          "label": "Cover"
+        },
+        {
+          "value": "contain",
+          "label": "Contain"
+        }
+      ]
     },
     {
       "type": "header",
@@ -224,6 +308,33 @@
           "unit": "px"
         },
         {
+          "type": "header",
+          "content": "Brand Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_brand_text",
+          "label": "Show brand text",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "brand_text",
+          "label": "Brand description",
+          "default": "<p>Add a short description about your brand or store.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Social Icons"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_icons",
+          "label": "Show social icons",
+          "default": false,
+          "info": "Social links are managed in Theme Settings > Social Media"
+        },
+        {
           "type": "range",
           "id": "container_width",
           "label": "t:sections.footer.blocks.logo.settings.container_width.label",
@@ -243,6 +354,12 @@
           "type": "checkbox",
           "id": "show_footer_title",
           "label": "t:sections.footer.blocks.navigation.settings.show_footer_title.label"
+        },
+        {
+          "type": "text",
+          "id": "custom_heading",
+          "label": "Custom Heading",
+          "info": "Leave blank to use the default menu title"
         },
         {
           "type": "link_list",
